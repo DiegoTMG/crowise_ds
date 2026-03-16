@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Move: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 20 20"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" d="M6.13721 3.8628H9.09869L9.0924 9.09021L7.57108 9.08839V9.08581L7.01992 9.08772L5.42892 9.08581V9.09325L3.8628 9.09869L3.8628 6.13721L0 10L3.8628 13.8628V10.9013L5.42892 10.9068V10.9142L7.02015 10.9123L7.57108 10.9142V10.9116L9.09021 10.9098L9.08839 12.4289H9.08581L9.08772 12.9801L9.08581 14.5711H9.09325L9.09869 16.1372H6.13721L10 20L13.8628 16.1372H10.9013L10.9068 14.5711H10.9142L10.9123 12.9798L10.9142 12.4289H10.9116L10.9098 10.9076L16.1372 10.9013V13.8628L20 10L16.1372 6.13721V9.09869L10.9076 9.0924L10.9013 3.8628H13.8628L10 0L6.13721 3.8628Z" fill="currentColor"/>
+  </svg>
+);
+
+Move.displayName = "Move";
+export default Move;

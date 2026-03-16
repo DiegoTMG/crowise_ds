@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vector">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.91211L16 6.34068V11.0001H14V7.65947L8 5.08804L2 7.65947V11.0001H0V6.34068L8 2.91211Z" fill="var(--fill-0, #696F88)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 8H11.5V11H9.5V10H6.5V11H4.5V8Z" fill="var(--fill-0, #696F88)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 2.17558V11.0001H14V2H15C14 2 14 1.99902 14 1.99803L14 1.99603L14 1.99194L14.0001 1.9834L14.0006 1.96489C14.001 1.95192 14.0017 1.93768 14.0027 1.92225C14.0048 1.89143 14.0082 1.85564 14.014 1.81561C14.0254 1.73572 14.0459 1.63751 14.0826 1.52752C14.1571 1.30407 14.2957 1.04006 14.5429 0.792893C15.0466 0.289213 15.8459 0 17 0C18.1541 0 18.9534 0.289213 19.4571 0.792893C19.7043 1.04006 19.8429 1.30407 19.9174 1.52752C19.9541 1.63751 19.9746 1.73572 19.986 1.81561C19.9918 1.85564 19.9952 1.89143 19.9973 1.92225C19.9983 1.93768 19.999 1.95192 19.9994 1.96489L19.9999 1.9834L20 1.99194L20 1.99603L20 1.99803C20 1.99902 20 2 19 2H20V11H18V2.17558C17.9688 2.15651 17.9181 2.13095 17.84 2.10493C17.6836 2.0528 17.4197 2 17 2C16.5803 2 16.3164 2.0528 16.16 2.10493C16.0819 2.13095 16.0312 2.15651 16 2.17558Z" fill="var(--fill-0, #696F88)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 14H0V12H20V14Z" fill="var(--fill-0, #696F88)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 17H0V15H20V17Z" fill="var(--fill-0, #696F88)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 20H0V18H20V20Z" fill="var(--fill-0, #696F88)"/>
+</g>
+</svg>

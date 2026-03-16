@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const CalendarToday: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 20 22"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M18 2H17V0H15V2H5V0H3V2H2C0.9 2 0 2.9 0 4V20C0 21.1 0.9 22 2 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 20H2V9H18V20ZM2 7H18V4H2V7Z" fill="currentColor"/>
+  </svg>
+);
+
+CalendarToday.displayName = "CalendarToday";
+export default CalendarToday;

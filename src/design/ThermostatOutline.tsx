@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const ThermostatOutline: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 12 22"
+    fill="none"
+    {...props}
+  >
+    <path d="M7 10C7 9.44772 6.55228 9 6 9C5.44772 9 5 9.44772 5 10V14.2676C4.4022 14.6134 4 15.2597 4 16C4 17.1046 4.89543 18 6 18C7.10457 18 8 17.1046 8 16C8 15.2597 7.5978 14.6134 7 14.2676V10Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M1 5C1 2.23858 3.23858 0 6 0C8.76142 0 11 2.23858 11 5V12.6824C11.6317 13.6329 12 14.7746 12 16C12 19.3137 9.31371 22 6 22C2.68629 22 0 19.3137 0 16C0 14.7746 0.368327 13.6329 1 12.6824V5ZM6 2C4.34315 2 3 3.34315 3 5V13.3333L2.79949 13.6002C2.29723 14.2687 2 15.0982 2 16C2 18.2091 3.79086 20 6 20C8.20914 20 10 18.2091 10 16C10 15.0982 9.70277 14.2687 9.20051 13.6002L9 13.3333V5C9 3.34315 7.65685 2 6 2Z" fill="currentColor"/>
+  </svg>
+);
+
+ThermostatOutline.displayName = "ThermostatOutline";
+export default ThermostatOutline;

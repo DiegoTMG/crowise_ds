@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Flip: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 18 22"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M10 22H8V0H10V22ZM0 18V4C0 2.9 0.9 2 2 2H6V4H2V18H6V20H2C0.9 20 0 19.1 0 18ZM16 8H18V6H16V8ZM12 20H14V18H12V20ZM16 2V4H18C18 2.9 17.1 2 16 2ZM16 16H18V14H16V16ZM14 4H12V2H14V4ZM16 12H18V10H16V12ZM18 18C18 19.1 17.1 20 16 20V18H18Z" fill="currentColor"/>
+  </svg>
+);
+
+Flip.displayName = "Flip";
+export default Flip;

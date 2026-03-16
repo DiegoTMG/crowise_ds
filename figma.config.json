@@ -1,0 +1,11 @@
+{
+  "codeConnect": {
+    "parser": "react",
+    "include": ["src/**/*.figma.tsx", "src/**/*.tsx"],
+    "importPaths": {
+      "src/crop/*": "@icons-library/cropwise/crop",
+      "src/design/*": "@icons-library/cropwise/design",
+      "src/feature/*": "@icons-library/cropwise/feature"
+    }
+  }
+}

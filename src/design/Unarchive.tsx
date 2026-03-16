@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Unarchive: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 18 18"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M16.15 0.55L17.54 2.23C17.83 2.57 18 3.02 18 3.5V16C18 17.1 17.1 18 16 18H2C0.9 18 0 17.1 0 16V3.5C0 3.02 0.17 2.57 0.46 2.23L1.84 0.55C2.12 0.21 2.53 0 3 0H15C15.47 0 15.88 0.21 16.15 0.55ZM14.76 2H3.24L2.42 3H15.59L14.76 2ZM2 16V5H16V16H2ZM7.55 11H5L9 7L13 11H10.45V14H7.55V11Z" fill="currentColor"/>
+  </svg>
+);
+
+Unarchive.displayName = "Unarchive";
+export default Unarchive;

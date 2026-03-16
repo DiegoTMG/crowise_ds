@@ -1,0 +1,1973 @@
+{
+  "crop": [
+    {
+      "name": "acai-palm",
+      "component": "AcaiPalm",
+      "import": "import { AcaiPalm } from \"./src/crop\";"
+    },
+    {
+      "name": "african-oil",
+      "component": "AfricanOil",
+      "import": "import { AfricanOil } from \"./src/crop\";"
+    },
+    {
+      "name": "alfafa",
+      "component": "Alfafa",
+      "import": "import { Alfafa } from \"./src/crop\";"
+    },
+    {
+      "name": "almond",
+      "component": "Almond",
+      "import": "import { Almond } from \"./src/crop\";"
+    },
+    {
+      "name": "aloe-vera",
+      "component": "AloeVera",
+      "import": "import { AloeVera } from \"./src/crop\";"
+    },
+    {
+      "name": "alyssum",
+      "component": "Alyssum",
+      "import": "import { Alyssum } from \"./src/crop\";"
+    },
+    {
+      "name": "amaranth",
+      "component": "Amaranth",
+      "import": "import { Amaranth } from \"./src/crop\";"
+    },
+    {
+      "name": "anise",
+      "component": "Anise",
+      "import": "import { Anise } from \"./src/crop\";"
+    },
+    {
+      "name": "apple",
+      "component": "Apple",
+      "import": "import { Apple } from \"./src/crop\";"
+    },
+    {
+      "name": "apricot",
+      "component": "Apricot",
+      "import": "import { Apricot } from \"./src/crop\";"
+    },
+    {
+      "name": "aquatic",
+      "component": "Aquatic",
+      "import": "import { Aquatic } from \"./src/crop\";"
+    },
+    {
+      "name": "arracacha",
+      "component": "Arracacha",
+      "import": "import { Arracacha } from \"./src/crop\";"
+    },
+    {
+      "name": "arroche",
+      "component": "Arroche",
+      "import": "import { Arroche } from \"./src/crop\";"
+    },
+    {
+      "name": "artichoke",
+      "component": "Artichoke",
+      "import": "import { Artichoke } from \"./src/crop\";"
+    },
+    {
+      "name": "asparagus",
+      "component": "Asparagus",
+      "import": "import { Asparagus } from \"./src/crop\";"
+    },
+    {
+      "name": "atemoya",
+      "component": "Atemoya",
+      "import": "import { Atemoya } from \"./src/crop\";"
+    },
+    {
+      "name": "avocado",
+      "component": "Avocado",
+      "import": "import { Avocado } from \"./src/crop\";"
+    },
+    {
+      "name": "banana",
+      "component": "Banana",
+      "import": "import { Banana } from \"./src/crop\";"
+    },
+    {
+      "name": "barbados-cherry",
+      "component": "BarbadosCherry",
+      "import": "import { BarbadosCherry } from \"./src/crop\";"
+    },
+    {
+      "name": "basil",
+      "component": "Basil",
+      "import": "import { Basil } from \"./src/crop\";"
+    },
+    {
+      "name": "bean",
+      "component": "Bean",
+      "import": "import { Bean } from \"./src/crop\";"
+    },
+    {
+      "name": "beets",
+      "component": "Beets",
+      "import": "import { Beets } from \"./src/crop\";"
+    },
+    {
+      "name": "berries-fruit",
+      "component": "BerriesFruit",
+      "import": "import { BerriesFruit } from \"./src/crop\";"
+    },
+    {
+      "name": "brazil-nut",
+      "component": "BrazilNut",
+      "import": "import { BrazilNut } from \"./src/crop\";"
+    },
+    {
+      "name": "broccoli",
+      "component": "Broccoli",
+      "import": "import { Broccoli } from \"./src/crop\";"
+    },
+    {
+      "name": "brussel",
+      "component": "Brussel",
+      "import": "import { Brussel } from \"./src/crop\";"
+    },
+    {
+      "name": "cabbage",
+      "component": "Cabbage",
+      "import": "import { Cabbage } from \"./src/crop\";"
+    },
+    {
+      "name": "cachew",
+      "component": "Cachew",
+      "import": "import { Cachew } from \"./src/crop\";"
+    },
+    {
+      "name": "camu-camu",
+      "component": "CamuCamu",
+      "import": "import { CamuCamu } from \"./src/crop\";"
+    },
+    {
+      "name": "canola",
+      "component": "Canola",
+      "import": "import { Canola } from \"./src/crop\";"
+    },
+    {
+      "name": "carrots",
+      "component": "Carrots",
+      "import": "import { Carrots } from \"./src/crop\";"
+    },
+    {
+      "name": "cassava",
+      "component": "Cassava",
+      "import": "import { Cassava } from \"./src/crop\";"
+    },
+    {
+      "name": "castor-bean",
+      "component": "CastorBean",
+      "import": "import { CastorBean } from \"./src/crop\";"
+    },
+    {
+      "name": "cauliflower",
+      "component": "Cauliflower",
+      "import": "import { Cauliflower } from \"./src/crop\";"
+    },
+    {
+      "name": "celery",
+      "component": "Celery",
+      "import": "import { Celery } from \"./src/crop\";"
+    },
+    {
+      "name": "cereals",
+      "component": "Cereals",
+      "import": "import { Cereals } from \"./src/crop\";"
+    },
+    {
+      "name": "chamomile",
+      "component": "Chamomile",
+      "import": "import { Chamomile } from \"./src/crop\";"
+    },
+    {
+      "name": "cherry",
+      "component": "Cherry",
+      "import": "import { Cherry } from \"./src/crop\";"
+    },
+    {
+      "name": "chia",
+      "component": "Chia",
+      "import": "import { Chia } from \"./src/crop\";"
+    },
+    {
+      "name": "chickpea",
+      "component": "Chickpea",
+      "import": "import { Chickpea } from \"./src/crop\";"
+    },
+    {
+      "name": "chicory",
+      "component": "Chicory",
+      "import": "import { Chicory } from \"./src/crop\";"
+    },
+    {
+      "name": "chives",
+      "component": "Chives",
+      "import": "import { Chives } from \"./src/crop\";"
+    },
+    {
+      "name": "chrysanthemum",
+      "component": "Chrysanthemum",
+      "import": "import { Chrysanthemum } from \"./src/crop\";"
+    },
+    {
+      "name": "clove",
+      "component": "Clove",
+      "import": "import { Clove } from \"./src/crop\";"
+    },
+    {
+      "name": "clover",
+      "component": "Clover",
+      "import": "import { Clover } from \"./src/crop\";"
+    },
+    {
+      "name": "cocoa",
+      "component": "Cocoa",
+      "import": "import { Cocoa } from \"./src/crop\";"
+    },
+    {
+      "name": "coconut",
+      "component": "Coconut",
+      "import": "import { Coconut } from \"./src/crop\";"
+    },
+    {
+      "name": "coffee",
+      "component": "Coffee",
+      "import": "import { Coffee } from \"./src/crop\";"
+    },
+    {
+      "name": "coriander",
+      "component": "Coriander",
+      "import": "import { Coriander } from \"./src/crop\";"
+    },
+    {
+      "name": "corn",
+      "component": "Corn",
+      "import": "import { Corn } from \"./src/crop\";"
+    },
+    {
+      "name": "cotton",
+      "component": "Cotton",
+      "import": "import { Cotton } from \"./src/crop\";"
+    },
+    {
+      "name": "cucumber",
+      "component": "Cucumber",
+      "import": "import { Cucumber } from \"./src/crop\";"
+    },
+    {
+      "name": "cupuassu",
+      "component": "Cupuassu",
+      "import": "import { Cupuassu } from \"./src/crop\";"
+    },
+    {
+      "name": "dragon-fruit",
+      "component": "DragonFruit",
+      "import": "import { DragonFruit } from \"./src/crop\";"
+    },
+    {
+      "name": "eggplant",
+      "component": "Eggplant",
+      "import": "import { Eggplant } from \"./src/crop\";"
+    },
+    {
+      "name": "endive",
+      "component": "Endive",
+      "import": "import { Endive } from \"./src/crop\";"
+    },
+    {
+      "name": "estilosante",
+      "component": "Estilosante",
+      "import": "import { Estilosante } from \"./src/crop\";"
+    },
+    {
+      "name": "eucalyptus",
+      "component": "Eucalyptus",
+      "import": "import { Eucalyptus } from \"./src/crop\";"
+    },
+    {
+      "name": "fennel",
+      "component": "Fennel",
+      "import": "import { Fennel } from \"./src/crop\";"
+    },
+    {
+      "name": "fig",
+      "component": "Fig",
+      "import": "import { Fig } from \"./src/crop\";"
+    },
+    {
+      "name": "flowers",
+      "component": "Flowers",
+      "import": "import { Flowers } from \"./src/crop\";"
+    },
+    {
+      "name": "garlic",
+      "component": "Garlic",
+      "import": "import { Garlic } from \"./src/crop\";"
+    },
+    {
+      "name": "gladiolus",
+      "component": "Gladiolus",
+      "import": "import { Gladiolus } from \"./src/crop\";"
+    },
+    {
+      "name": "grapes",
+      "component": "Grapes",
+      "import": "import { Grapes } from \"./src/crop\";"
+    },
+    {
+      "name": "grass",
+      "component": "Grass",
+      "import": "import { Grass } from \"./src/crop\";"
+    },
+    {
+      "name": "guava",
+      "component": "Guava",
+      "import": "import { Guava } from \"./src/crop\";"
+    },
+    {
+      "name": "hazelnuts",
+      "component": "Hazelnuts",
+      "import": "import { Hazelnuts } from \"./src/crop\";"
+    },
+    {
+      "name": "hemp",
+      "component": "Hemp",
+      "import": "import { Hemp } from \"./src/crop\";"
+    },
+    {
+      "name": "herb",
+      "component": "Herb",
+      "import": "import { Herb } from \"./src/crop\";"
+    },
+    {
+      "name": "hops",
+      "component": "Hops",
+      "import": "import { Hops } from \"./src/crop\";"
+    },
+    {
+      "name": "hydrangea",
+      "component": "Hydrangea",
+      "import": "import { Hydrangea } from \"./src/crop\";"
+    },
+    {
+      "name": "kiwi",
+      "component": "Kiwi",
+      "import": "import { Kiwi } from \"./src/crop\";"
+    },
+    {
+      "name": "lantana",
+      "component": "Lantana",
+      "import": "import { Lantana } from \"./src/crop\";"
+    },
+    {
+      "name": "lemon",
+      "component": "Lemon",
+      "import": "import { Lemon } from \"./src/crop\";"
+    },
+    {
+      "name": "lentil",
+      "component": "Lentil",
+      "import": "import { Lentil } from \"./src/crop\";"
+    },
+    {
+      "name": "lettuce",
+      "component": "Lettuce",
+      "import": "import { Lettuce } from \"./src/crop\";"
+    },
+    {
+      "name": "lily-flower",
+      "component": "LilyFlower",
+      "import": "import { LilyFlower } from \"./src/crop\";"
+    },
+    {
+      "name": "linseed",
+      "component": "Linseed",
+      "import": "import { Linseed } from \"./src/crop\";"
+    },
+    {
+      "name": "lychee",
+      "component": "Lychee",
+      "import": "import { Lychee } from \"./src/crop\";"
+    },
+    {
+      "name": "macadamia",
+      "component": "Macadamia",
+      "import": "import { Macadamia } from \"./src/crop\";"
+    },
+    {
+      "name": "mango",
+      "component": "Mango",
+      "import": "import { Mango } from \"./src/crop\";"
+    },
+    {
+      "name": "melon-cantaloupe",
+      "component": "MelonCantaloupe",
+      "import": "import { MelonCantaloupe } from \"./src/crop\";"
+    },
+    {
+      "name": "millet",
+      "component": "Millet",
+      "import": "import { Millet } from \"./src/crop\";"
+    },
+    {
+      "name": "mint",
+      "component": "Mint",
+      "import": "import { Mint } from \"./src/crop\";"
+    },
+    {
+      "name": "mushrooms",
+      "component": "Mushrooms",
+      "import": "import { Mushrooms } from \"./src/crop\";"
+    },
+    {
+      "name": "mustard",
+      "component": "Mustard",
+      "import": "import { Mustard } from \"./src/crop\";"
+    },
+    {
+      "name": "oats",
+      "component": "Oats",
+      "import": "import { Oats } from \"./src/crop\";"
+    },
+    {
+      "name": "okra",
+      "component": "Okra",
+      "import": "import { Okra } from \"./src/crop\";"
+    },
+    {
+      "name": "olive",
+      "component": "Olive",
+      "import": "import { Olive } from \"./src/crop\";"
+    },
+    {
+      "name": "onions",
+      "component": "Onions",
+      "import": "import { Onions } from \"./src/crop\";"
+    },
+    {
+      "name": "orange",
+      "component": "Orange",
+      "import": "import { Orange } from \"./src/crop\";"
+    },
+    {
+      "name": "papaya",
+      "component": "Papaya",
+      "import": "import { Papaya } from \"./src/crop\";"
+    },
+    {
+      "name": "parsley",
+      "component": "Parsley",
+      "import": "import { Parsley } from \"./src/crop\";"
+    },
+    {
+      "name": "parsnip",
+      "component": "Parsnip",
+      "import": "import { Parsnip } from \"./src/crop\";"
+    },
+    {
+      "name": "passion-fruit",
+      "component": "PassionFruit",
+      "import": "import { PassionFruit } from \"./src/crop\";"
+    },
+    {
+      "name": "peach-plum",
+      "component": "PeachPlum",
+      "import": "import { PeachPlum } from \"./src/crop\";"
+    },
+    {
+      "name": "peanut",
+      "component": "Peanut",
+      "import": "import { Peanut } from \"./src/crop\";"
+    },
+    {
+      "name": "pear",
+      "component": "Pear",
+      "import": "import { Pear } from \"./src/crop\";"
+    },
+    {
+      "name": "pecan",
+      "component": "Pecan",
+      "import": "import { Pecan } from \"./src/crop\";"
+    },
+    {
+      "name": "pepper",
+      "component": "Pepper",
+      "import": "import { Pepper } from \"./src/crop\";"
+    },
+    {
+      "name": "pineapple",
+      "component": "Pineapple",
+      "import": "import { Pineapple } from \"./src/crop\";"
+    },
+    {
+      "name": "pinus",
+      "component": "Pinus",
+      "import": "import { Pinus } from \"./src/crop\";"
+    },
+    {
+      "name": "pistachio",
+      "component": "Pistachio",
+      "import": "import { Pistachio } from \"./src/crop\";"
+    },
+    {
+      "name": "pod",
+      "component": "Pod",
+      "import": "import { Pod } from \"./src/crop\";"
+    },
+    {
+      "name": "pomegranate",
+      "component": "Pomegranate",
+      "import": "import { Pomegranate } from \"./src/crop\";"
+    },
+    {
+      "name": "poplar",
+      "component": "Poplar",
+      "import": "import { Poplar } from \"./src/crop\";"
+    },
+    {
+      "name": "potato",
+      "component": "Potato",
+      "import": "import { Potato } from \"./src/crop\";"
+    },
+    {
+      "name": "pumpkin",
+      "component": "Pumpkin",
+      "import": "import { Pumpkin } from \"./src/crop\";"
+    },
+    {
+      "name": "quince",
+      "component": "Quince",
+      "import": "import { Quince } from \"./src/crop\";"
+    },
+    {
+      "name": "radish",
+      "component": "Radish",
+      "import": "import { Radish } from \"./src/crop\";"
+    },
+    {
+      "name": "rattlepod",
+      "component": "Rattlepod",
+      "import": "import { Rattlepod } from \"./src/crop\";"
+    },
+    {
+      "name": "rhubarb",
+      "component": "Rhubarb",
+      "import": "import { Rhubarb } from \"./src/crop\";"
+    },
+    {
+      "name": "rice",
+      "component": "Rice",
+      "import": "import { Rice } from \"./src/crop\";"
+    },
+    {
+      "name": "rosemary",
+      "component": "Rosemary",
+      "import": "import { Rosemary } from \"./src/crop\";"
+    },
+    {
+      "name": "safflower",
+      "component": "Safflower",
+      "import": "import { Safflower } from \"./src/crop\";"
+    },
+    {
+      "name": "sapodilla",
+      "component": "Sapodilla",
+      "import": "import { Sapodilla } from \"./src/crop\";"
+    },
+    {
+      "name": "scallion",
+      "component": "Scallion",
+      "import": "import { Scallion } from \"./src/crop\";"
+    },
+    {
+      "name": "sesame",
+      "component": "Sesame",
+      "import": "import { Sesame } from \"./src/crop\";"
+    },
+    {
+      "name": "shallots",
+      "component": "Shallots",
+      "import": "import { Shallots } from \"./src/crop\";"
+    },
+    {
+      "name": "sorghum",
+      "component": "Sorghum",
+      "import": "import { Sorghum } from \"./src/crop\";"
+    },
+    {
+      "name": "spinach",
+      "component": "Spinach",
+      "import": "import { Spinach } from \"./src/crop\";"
+    },
+    {
+      "name": "squash",
+      "component": "Squash",
+      "import": "import { Squash } from \"./src/crop\";"
+    },
+    {
+      "name": "starfruit",
+      "component": "Starfruit",
+      "import": "import { Starfruit } from \"./src/crop\";"
+    },
+    {
+      "name": "strawberry",
+      "component": "Strawberry",
+      "import": "import { Strawberry } from \"./src/crop\";"
+    },
+    {
+      "name": "sugar-beets",
+      "component": "SugarBeets",
+      "import": "import { SugarBeets } from \"./src/crop\";"
+    },
+    {
+      "name": "sugarcane",
+      "component": "Sugarcane",
+      "import": "import { Sugarcane } from \"./src/crop\";"
+    },
+    {
+      "name": "sunflower",
+      "component": "Sunflower",
+      "import": "import { Sunflower } from \"./src/crop\";"
+    },
+    {
+      "name": "sweet-potato",
+      "component": "SweetPotato",
+      "import": "import { SweetPotato } from \"./src/crop\";"
+    },
+    {
+      "name": "tangerine",
+      "component": "Tangerine",
+      "import": "import { Tangerine } from \"./src/crop\";"
+    },
+    {
+      "name": "tobacco",
+      "component": "Tobacco",
+      "import": "import { Tobacco } from \"./src/crop\";"
+    },
+    {
+      "name": "tomato",
+      "component": "Tomato",
+      "import": "import { Tomato } from \"./src/crop\";"
+    },
+    {
+      "name": "tree",
+      "component": "Tree",
+      "import": "import { Tree } from \"./src/crop\";"
+    },
+    {
+      "name": "triticale",
+      "component": "Triticale",
+      "import": "import { Triticale } from \"./src/crop\";"
+    },
+    {
+      "name": "tulip",
+      "component": "Tulip",
+      "import": "import { Tulip } from \"./src/crop\";"
+    },
+    {
+      "name": "vector",
+      "component": "Vector",
+      "import": "import { Vector } from \"./src/crop\";"
+    },
+    {
+      "name": "vegetable-leaf",
+      "component": "VegetableLeaf",
+      "import": "import { VegetableLeaf } from \"./src/crop\";"
+    },
+    {
+      "name": "vetch",
+      "component": "Vetch",
+      "import": "import { Vetch } from \"./src/crop\";"
+    },
+    {
+      "name": "walnut",
+      "component": "Walnut",
+      "import": "import { Walnut } from \"./src/crop\";"
+    },
+    {
+      "name": "watercress",
+      "component": "Watercress",
+      "import": "import { Watercress } from \"./src/crop\";"
+    },
+    {
+      "name": "watermelon",
+      "component": "Watermelon",
+      "import": "import { Watermelon } from \"./src/crop\";"
+    },
+    {
+      "name": "wheat",
+      "component": "Wheat",
+      "import": "import { Wheat } from \"./src/crop\";"
+    },
+    {
+      "name": "yellow-lupine",
+      "component": "YellowLupine",
+      "import": "import { YellowLupine } from \"./src/crop\";"
+    },
+    {
+      "name": "yerba-mate",
+      "component": "YerbaMate",
+      "import": "import { YerbaMate } from \"./src/crop\";"
+    }
+  ],
+  "design": [
+    {
+      "name": "access-alarm",
+      "component": "AccessAlarm",
+      "import": "import { AccessAlarm } from \"./src/design\";"
+    },
+    {
+      "name": "adb",
+      "component": "Adb",
+      "import": "import { Adb } from \"./src/design\";"
+    },
+    {
+      "name": "add-alarm",
+      "component": "AddAlarm",
+      "import": "import { AddAlarm } from \"./src/design\";"
+    },
+    {
+      "name": "add-chart",
+      "component": "AddChart",
+      "import": "import { AddChart } from \"./src/design\";"
+    },
+    {
+      "name": "add-photo-alternate",
+      "component": "AddPhotoAlternate",
+      "import": "import { AddPhotoAlternate } from \"./src/design\";"
+    },
+    {
+      "name": "add",
+      "component": "Add",
+      "import": "import { Add } from \"./src/design\";"
+    },
+    {
+      "name": "alarm-off",
+      "component": "AlarmOff",
+      "import": "import { AlarmOff } from \"./src/design\";"
+    },
+    {
+      "name": "alarm-on",
+      "component": "AlarmOn",
+      "import": "import { AlarmOn } from \"./src/design\";"
+    },
+    {
+      "name": "align-horizontal-center",
+      "component": "AlignHorizontalCenter",
+      "import": "import { AlignHorizontalCenter } from \"./src/design\";"
+    },
+    {
+      "name": "align-horizontal-left",
+      "component": "AlignHorizontalLeft",
+      "import": "import { AlignHorizontalLeft } from \"./src/design\";"
+    },
+    {
+      "name": "align-horizontal-right",
+      "component": "AlignHorizontalRight",
+      "import": "import { AlignHorizontalRight } from \"./src/design\";"
+    },
+    {
+      "name": "align-vertical-bottom",
+      "component": "AlignVerticalBottom",
+      "import": "import { AlignVerticalBottom } from \"./src/design\";"
+    },
+    {
+      "name": "align-vertical-center",
+      "component": "AlignVerticalCenter",
+      "import": "import { AlignVerticalCenter } from \"./src/design\";"
+    },
+    {
+      "name": "align-vertical-top",
+      "component": "AlignVerticalTop",
+      "import": "import { AlignVerticalTop } from \"./src/design\";"
+    },
+    {
+      "name": "android",
+      "component": "Android",
+      "import": "import { Android } from \"./src/design\";"
+    },
+    {
+      "name": "archive",
+      "component": "Archive",
+      "import": "import { Archive } from \"./src/design\";"
+    },
+    {
+      "name": "arrow-back-ios",
+      "component": "ArrowBackIos",
+      "import": "import { ArrowBackIos } from \"./src/design\";"
+    },
+    {
+      "name": "arrow-circle-down",
+      "component": "ArrowCircleDown",
+      "import": "import { ArrowCircleDown } from \"./src/design\";"
+    },
+    {
+      "name": "arrow-circle-up",
+      "component": "ArrowCircleUp",
+      "import": "import { ArrowCircleUp } from \"./src/design\";"
+    },
+    {
+      "name": "arrow-drop-down-circle",
+      "component": "ArrowDropDownCircle",
+      "import": "import { ArrowDropDownCircle } from \"./src/design\";"
+    },
+    {
+      "name": "arrow-forward-ios",
+      "component": "ArrowForwardIos",
+      "import": "import { ArrowForwardIos } from \"./src/design\";"
+    },
+    {
+      "name": "article",
+      "component": "Article",
+      "import": "import { Article } from \"./src/design\";"
+    },
+    {
+      "name": "assignment",
+      "component": "Assignment",
+      "import": "import { Assignment } from \"./src/design\";"
+    },
+    {
+      "name": "attach-file",
+      "component": "AttachFile",
+      "import": "import { AttachFile } from \"./src/design\";"
+    },
+    {
+      "name": "attach-money",
+      "component": "AttachMoney",
+      "import": "import { AttachMoney } from \"./src/design\";"
+    },
+    {
+      "name": "attachment",
+      "component": "Attachment",
+      "import": "import { Attachment } from \"./src/design\";"
+    },
+    {
+      "name": "autorenew",
+      "component": "Autorenew",
+      "import": "import { Autorenew } from \"./src/design\";"
+    },
+    {
+      "name": "bar-chart",
+      "component": "BarChart",
+      "import": "import { BarChart } from \"./src/design\";"
+    },
+    {
+      "name": "block",
+      "component": "Block",
+      "import": "import { Block } from \"./src/design\";"
+    },
+    {
+      "name": "bluetooth-connected",
+      "component": "BluetoothConnected",
+      "import": "import { BluetoothConnected } from \"./src/design\";"
+    },
+    {
+      "name": "bluetooth-disabled",
+      "component": "BluetoothDisabled",
+      "import": "import { BluetoothDisabled } from \"./src/design\";"
+    },
+    {
+      "name": "bluetooth-searching",
+      "component": "BluetoothSearching",
+      "import": "import { BluetoothSearching } from \"./src/design\";"
+    },
+    {
+      "name": "bluetooth",
+      "component": "Bluetooth",
+      "import": "import { Bluetooth } from \"./src/design\";"
+    },
+    {
+      "name": "calendar-today",
+      "component": "CalendarToday",
+      "import": "import { CalendarToday } from \"./src/design\";"
+    },
+    {
+      "name": "cancel-clear",
+      "component": "CancelClear",
+      "import": "import { CancelClear } from \"./src/design\";"
+    },
+    {
+      "name": "check",
+      "component": "Check",
+      "import": "import { Check } from \"./src/design\";"
+    },
+    {
+      "name": "checklist-rtl",
+      "component": "ChecklistRtl",
+      "import": "import { ChecklistRtl } from \"./src/design\";"
+    },
+    {
+      "name": "checklist",
+      "component": "Checklist",
+      "import": "import { Checklist } from \"./src/design\";"
+    },
+    {
+      "name": "close",
+      "component": "Close",
+      "import": "import { Close } from \"./src/design\";"
+    },
+    {
+      "name": "cloud-done",
+      "component": "CloudDone",
+      "import": "import { CloudDone } from \"./src/design\";"
+    },
+    {
+      "name": "cloud-download",
+      "component": "CloudDownload",
+      "import": "import { CloudDownload } from \"./src/design\";"
+    },
+    {
+      "name": "cloud-error",
+      "component": "CloudError",
+      "import": "import { CloudError } from \"./src/design\";"
+    },
+    {
+      "name": "cloud-off",
+      "component": "CloudOff",
+      "import": "import { CloudOff } from \"./src/design\";"
+    },
+    {
+      "name": "cloud-upload",
+      "component": "CloudUpload",
+      "import": "import { CloudUpload } from \"./src/design\";"
+    },
+    {
+      "name": "cloud",
+      "component": "Cloud",
+      "import": "import { Cloud } from \"./src/design\";"
+    },
+    {
+      "name": "collapse-all",
+      "component": "CollapseAll",
+      "import": "import { CollapseAll } from \"./src/design\";"
+    },
+    {
+      "name": "control-point",
+      "component": "ControlPoint",
+      "import": "import { ControlPoint } from \"./src/design\";"
+    },
+    {
+      "name": "coordinates",
+      "component": "Coordinates",
+      "import": "import { Coordinates } from \"./src/design\";"
+    },
+    {
+      "name": "copy",
+      "component": "Copy",
+      "import": "import { Copy } from \"./src/design\";"
+    },
+    {
+      "name": "create-new-folder",
+      "component": "CreateNewFolder",
+      "import": "import { CreateNewFolder } from \"./src/design\";"
+    },
+    {
+      "name": "crop-free",
+      "component": "CropFree",
+      "import": "import { CropFree } from \"./src/design\";"
+    },
+    {
+      "name": "date-from",
+      "component": "DateFrom",
+      "import": "import { DateFrom } from \"./src/design\";"
+    },
+    {
+      "name": "date-to",
+      "component": "DateTo",
+      "import": "import { DateTo } from \"./src/design\";"
+    },
+    {
+      "name": "delete",
+      "component": "Delete",
+      "import": "import { Delete } from \"./src/design\";"
+    },
+    {
+      "name": "direction-east",
+      "component": "DirectionEast",
+      "import": "import { DirectionEast } from \"./src/design\";"
+    },
+    {
+      "name": "direction-north",
+      "component": "DirectionNorth",
+      "import": "import { DirectionNorth } from \"./src/design\";"
+    },
+    {
+      "name": "direction-northeast",
+      "component": "DirectionNortheast",
+      "import": "import { DirectionNortheast } from \"./src/design\";"
+    },
+    {
+      "name": "direction-northwest",
+      "component": "DirectionNorthwest",
+      "import": "import { DirectionNorthwest } from \"./src/design\";"
+    },
+    {
+      "name": "direction-south",
+      "component": "DirectionSouth",
+      "import": "import { DirectionSouth } from \"./src/design\";"
+    },
+    {
+      "name": "direction-southeast",
+      "component": "DirectionSoutheast",
+      "import": "import { DirectionSoutheast } from \"./src/design\";"
+    },
+    {
+      "name": "direction-southwest",
+      "component": "DirectionSouthwest",
+      "import": "import { DirectionSouthwest } from \"./src/design\";"
+    },
+    {
+      "name": "direction-west",
+      "component": "DirectionWest",
+      "import": "import { DirectionWest } from \"./src/design\";"
+    },
+    {
+      "name": "done-all",
+      "component": "DoneAll",
+      "import": "import { DoneAll } from \"./src/design\";"
+    },
+    {
+      "name": "done",
+      "component": "Done",
+      "import": "import { Done } from \"./src/design\";"
+    },
+    {
+      "name": "double-arrow",
+      "component": "DoubleArrow",
+      "import": "import { DoubleArrow } from \"./src/design\";"
+    },
+    {
+      "name": "download-pdf",
+      "component": "DownloadPdf",
+      "import": "import { DownloadPdf } from \"./src/design\";"
+    },
+    {
+      "name": "download-xls",
+      "component": "DownloadXls",
+      "import": "import { DownloadXls } from \"./src/design\";"
+    },
+    {
+      "name": "drag-handle",
+      "component": "DragHandle",
+      "import": "import { DragHandle } from \"./src/design\";"
+    },
+    {
+      "name": "drag-indicator",
+      "component": "DragIndicator",
+      "import": "import { DragIndicator } from \"./src/design\";"
+    },
+    {
+      "name": "draw",
+      "component": "Draw",
+      "import": "import { Draw } from \"./src/design\";"
+    },
+    {
+      "name": "drive-file-move",
+      "component": "DriveFileMove",
+      "import": "import { DriveFileMove } from \"./src/design\";"
+    },
+    {
+      "name": "drive-folder-upload",
+      "component": "DriveFolderUpload",
+      "import": "import { DriveFolderUpload } from \"./src/design\";"
+    },
+    {
+      "name": "edit-note",
+      "component": "EditNote",
+      "import": "import { EditNote } from \"./src/design\";"
+    },
+    {
+      "name": "edit-off",
+      "component": "EditOff",
+      "import": "import { EditOff } from \"./src/design\";"
+    },
+    {
+      "name": "email",
+      "component": "Email",
+      "import": "import { Email } from \"./src/design\";"
+    },
+    {
+      "name": "facebook",
+      "component": "Facebook",
+      "import": "import { Facebook } from \"./src/design\";"
+    },
+    {
+      "name": "fast-forward",
+      "component": "FastForward",
+      "import": "import { FastForward } from \"./src/design\";"
+    },
+    {
+      "name": "fast-rewind",
+      "component": "FastRewind",
+      "import": "import { FastRewind } from \"./src/design\";"
+    },
+    {
+      "name": "filter-alt",
+      "component": "FilterAlt",
+      "import": "import { FilterAlt } from \"./src/design\";"
+    },
+    {
+      "name": "filter-list",
+      "component": "FilterList",
+      "import": "import { FilterList } from \"./src/design\";"
+    },
+    {
+      "name": "filter",
+      "component": "Filter",
+      "import": "import { Filter } from \"./src/design\";"
+    },
+    {
+      "name": "flip-to-back",
+      "component": "FlipToBack",
+      "import": "import { FlipToBack } from \"./src/design\";"
+    },
+    {
+      "name": "flip-to-front",
+      "component": "FlipToFront",
+      "import": "import { FlipToFront } from \"./src/design\";"
+    },
+    {
+      "name": "flip",
+      "component": "Flip",
+      "import": "import { Flip } from \"./src/design\";"
+    },
+    {
+      "name": "folder-open",
+      "component": "FolderOpen",
+      "import": "import { FolderOpen } from \"./src/design\";"
+    },
+    {
+      "name": "folder-shared",
+      "component": "FolderShared",
+      "import": "import { FolderShared } from \"./src/design\";"
+    },
+    {
+      "name": "folder",
+      "component": "Folder",
+      "import": "import { Folder } from \"./src/design\";"
+    },
+    {
+      "name": "format-align-center",
+      "component": "FormatAlignCenter",
+      "import": "import { FormatAlignCenter } from \"./src/design\";"
+    },
+    {
+      "name": "format-align-justify",
+      "component": "FormatAlignJustify",
+      "import": "import { FormatAlignJustify } from \"./src/design\";"
+    },
+    {
+      "name": "format-align-left",
+      "component": "FormatAlignLeft",
+      "import": "import { FormatAlignLeft } from \"./src/design\";"
+    },
+    {
+      "name": "format-align-right",
+      "component": "FormatAlignRight",
+      "import": "import { FormatAlignRight } from \"./src/design\";"
+    },
+    {
+      "name": "format-bold",
+      "component": "FormatBold",
+      "import": "import { FormatBold } from \"./src/design\";"
+    },
+    {
+      "name": "format-clear",
+      "component": "FormatClear",
+      "import": "import { FormatClear } from \"./src/design\";"
+    },
+    {
+      "name": "format-color-reset",
+      "component": "FormatColorReset",
+      "import": "import { FormatColorReset } from \"./src/design\";"
+    },
+    {
+      "name": "format-indent-decrease",
+      "component": "FormatIndentDecrease",
+      "import": "import { FormatIndentDecrease } from \"./src/design\";"
+    },
+    {
+      "name": "format-indent-increase",
+      "component": "FormatIndentIncrease",
+      "import": "import { FormatIndentIncrease } from \"./src/design\";"
+    },
+    {
+      "name": "format-italicon",
+      "component": "FormatItalicon",
+      "import": "import { FormatItalicon } from \"./src/design\";"
+    },
+    {
+      "name": "format-line-spacing",
+      "component": "FormatLineSpacing",
+      "import": "import { FormatLineSpacing } from \"./src/design\";"
+    },
+    {
+      "name": "format-list-bulleted",
+      "component": "FormatListBulleted",
+      "import": "import { FormatListBulleted } from \"./src/design\";"
+    },
+    {
+      "name": "format-list-numbered-rtl",
+      "component": "FormatListNumberedRtl",
+      "import": "import { FormatListNumberedRtl } from \"./src/design\";"
+    },
+    {
+      "name": "format-list-numbered",
+      "component": "FormatListNumbered",
+      "import": "import { FormatListNumbered } from \"./src/design\";"
+    },
+    {
+      "name": "format-paint",
+      "component": "FormatPaint",
+      "import": "import { FormatPaint } from \"./src/design\";"
+    },
+    {
+      "name": "format-quote",
+      "component": "FormatQuote",
+      "import": "import { FormatQuote } from \"./src/design\";"
+    },
+    {
+      "name": "format-shapes",
+      "component": "FormatShapes",
+      "import": "import { FormatShapes } from \"./src/design\";"
+    },
+    {
+      "name": "format-size",
+      "component": "FormatSize",
+      "import": "import { FormatSize } from \"./src/design\";"
+    },
+    {
+      "name": "format-strikethrough",
+      "component": "FormatStrikethrough",
+      "import": "import { FormatStrikethrough } from \"./src/design\";"
+    },
+    {
+      "name": "format-textdirection-l-to-r",
+      "component": "FormatTextdirectionLToR",
+      "import": "import { FormatTextdirectionLToR } from \"./src/design\";"
+    },
+    {
+      "name": "format-textdirection-r-to-l",
+      "component": "FormatTextdirectionRToL",
+      "import": "import { FormatTextdirectionRToL } from \"./src/design\";"
+    },
+    {
+      "name": "format-underlined",
+      "component": "FormatUnderlined",
+      "import": "import { FormatUnderlined } from \"./src/design\";"
+    },
+    {
+      "name": "fullscreen-exit",
+      "component": "FullscreenExit",
+      "import": "import { FullscreenExit } from \"./src/design\";"
+    },
+    {
+      "name": "fullscreen",
+      "component": "Fullscreen",
+      "import": "import { Fullscreen } from \"./src/design\";"
+    },
+    {
+      "name": "functions",
+      "component": "Functions",
+      "import": "import { Functions } from \"./src/design\";"
+    },
+    {
+      "name": "height",
+      "component": "Height",
+      "import": "import { Height } from \"./src/design\";"
+    },
+    {
+      "name": "help",
+      "component": "Help",
+      "import": "import { Help } from \"./src/design\";"
+    },
+    {
+      "name": "highlight",
+      "component": "Highlight",
+      "import": "import { Highlight } from \"./src/design\";"
+    },
+    {
+      "name": "horizontal-distribute",
+      "component": "HorizontalDistribute",
+      "import": "import { HorizontalDistribute } from \"./src/design\";"
+    },
+    {
+      "name": "image-not-supported",
+      "component": "ImageNotSupported",
+      "import": "import { ImageNotSupported } from \"./src/design\";"
+    },
+    {
+      "name": "image-search",
+      "component": "ImageSearch",
+      "import": "import { ImageSearch } from \"./src/design\";"
+    },
+    {
+      "name": "image",
+      "component": "Image",
+      "import": "import { Image } from \"./src/design\";"
+    },
+    {
+      "name": "info",
+      "component": "Info",
+      "import": "import { Info } from \"./src/design\";"
+    },
+    {
+      "name": "insert-drive-file",
+      "component": "InsertDriveFile",
+      "import": "import { InsertDriveFile } from \"./src/design\";"
+    },
+    {
+      "name": "insert-link",
+      "component": "InsertLink",
+      "import": "import { InsertLink } from \"./src/design\";"
+    },
+    {
+      "name": "insert-photo",
+      "component": "InsertPhoto",
+      "import": "import { InsertPhoto } from \"./src/design\";"
+    },
+    {
+      "name": "instagram",
+      "component": "Instagram",
+      "import": "import { Instagram } from \"./src/design\";"
+    },
+    {
+      "name": "keyboard-alt",
+      "component": "KeyboardAlt",
+      "import": "import { KeyboardAlt } from \"./src/design\";"
+    },
+    {
+      "name": "keyboard-arrow-down",
+      "component": "KeyboardArrowDown",
+      "import": "import { KeyboardArrowDown } from \"./src/design\";"
+    },
+    {
+      "name": "keyboard-arrow-left",
+      "component": "KeyboardArrowLeft",
+      "import": "import { KeyboardArrowLeft } from \"./src/design\";"
+    },
+    {
+      "name": "keyboard-arrow-right",
+      "component": "KeyboardArrowRight",
+      "import": "import { KeyboardArrowRight } from \"./src/design\";"
+    },
+    {
+      "name": "keyboard-arrow-up",
+      "component": "KeyboardArrowUp",
+      "import": "import { KeyboardArrowUp } from \"./src/design\";"
+    },
+    {
+      "name": "keyboard-voice",
+      "component": "KeyboardVoice",
+      "import": "import { KeyboardVoice } from \"./src/design\";"
+    },
+    {
+      "name": "light-mode",
+      "component": "LightMode",
+      "import": "import { LightMode } from \"./src/design\";"
+    },
+    {
+      "name": "linear-scale",
+      "component": "LinearScale",
+      "import": "import { LinearScale } from \"./src/design\";"
+    },
+    {
+      "name": "link-off",
+      "component": "LinkOff",
+      "import": "import { LinkOff } from \"./src/design\";"
+    },
+    {
+      "name": "link",
+      "component": "Link",
+      "import": "import { Link } from \"./src/design\";"
+    },
+    {
+      "name": "logout",
+      "component": "Logout",
+      "import": "import { Logout } from \"./src/design\";"
+    },
+    {
+      "name": "map",
+      "component": "Map",
+      "import": "import { Map } from \"./src/design\";"
+    },
+    {
+      "name": "mapoptions",
+      "component": "Mapoptions",
+      "import": "import { Mapoptions } from \"./src/design\";"
+    },
+    {
+      "name": "margin",
+      "component": "Margin",
+      "import": "import { Margin } from \"./src/design\";"
+    },
+    {
+      "name": "menu-book",
+      "component": "MenuBook",
+      "import": "import { MenuBook } from \"./src/design\";"
+    },
+    {
+      "name": "menu-open",
+      "component": "MenuOpen",
+      "import": "import { MenuOpen } from \"./src/design\";"
+    },
+    {
+      "name": "menu",
+      "component": "Menu",
+      "import": "import { Menu } from \"./src/design\";"
+    },
+    {
+      "name": "merge-type",
+      "component": "MergeType",
+      "import": "import { MergeType } from \"./src/design\";"
+    },
+    {
+      "name": "merge",
+      "component": "Merge",
+      "import": "import { Merge } from \"./src/design\";"
+    },
+    {
+      "name": "mic-none",
+      "component": "MicNone",
+      "import": "import { MicNone } from \"./src/design\";"
+    },
+    {
+      "name": "mic-off",
+      "component": "MicOff",
+      "import": "import { MicOff } from \"./src/design\";"
+    },
+    {
+      "name": "mic",
+      "component": "Mic",
+      "import": "import { Mic } from \"./src/design\";"
+    },
+    {
+      "name": "minimize",
+      "component": "Minimize",
+      "import": "import { Minimize } from \"./src/design\";"
+    },
+    {
+      "name": "monetization-on",
+      "component": "MonetizationOn",
+      "import": "import { MonetizationOn } from \"./src/design\";"
+    },
+    {
+      "name": "money-off",
+      "component": "MoneyOff",
+      "import": "import { MoneyOff } from \"./src/design\";"
+    },
+    {
+      "name": "more-horiz",
+      "component": "MoreHoriz",
+      "import": "import { MoreHoriz } from \"./src/design\";"
+    },
+    {
+      "name": "more-vert",
+      "component": "MoreVert",
+      "import": "import { MoreVert } from \"./src/design\";"
+    },
+    {
+      "name": "move",
+      "component": "Move",
+      "import": "import { Move } from \"./src/design\";"
+    },
+    {
+      "name": "multiline-chart",
+      "component": "MultilineChart",
+      "import": "import { MultilineChart } from \"./src/design\";"
+    },
+    {
+      "name": "multiple-stop",
+      "component": "MultipleStop",
+      "import": "import { MultipleStop } from \"./src/design\";"
+    },
+    {
+      "name": "open-in-full",
+      "component": "OpenInFull",
+      "import": "import { OpenInFull } from \"./src/design\";"
+    },
+    {
+      "name": "open-in-new",
+      "component": "OpenInNew",
+      "import": "import { OpenInNew } from \"./src/design\";"
+    },
+    {
+      "name": "organizer-deselected",
+      "component": "OrganizerDeselected",
+      "import": "import { OrganizerDeselected } from \"./src/design\";"
+    },
+    {
+      "name": "organizer-higher",
+      "component": "OrganizerHigher",
+      "import": "import { OrganizerHigher } from \"./src/design\";"
+    },
+    {
+      "name": "organizer-lower",
+      "component": "OrganizerLower",
+      "import": "import { OrganizerLower } from \"./src/design\";"
+    },
+    {
+      "name": "padding",
+      "component": "Padding",
+      "import": "import { Padding } from \"./src/design\";"
+    },
+    {
+      "name": "pause",
+      "component": "Pause",
+      "import": "import { Pause } from \"./src/design\";"
+    },
+    {
+      "name": "phonelink",
+      "component": "Phonelink",
+      "import": "import { Phonelink } from \"./src/design\";"
+    },
+    {
+      "name": "photo-add",
+      "component": "PhotoAdd",
+      "import": "import { PhotoAdd } from \"./src/design\";"
+    },
+    {
+      "name": "pie-chart",
+      "component": "PieChart",
+      "import": "import { PieChart } from \"./src/design\";"
+    },
+    {
+      "name": "play-disabled",
+      "component": "PlayDisabled",
+      "import": "import { PlayDisabled } from \"./src/design\";"
+    },
+    {
+      "name": "play-filled",
+      "component": "PlayFilled",
+      "import": "import { PlayFilled } from \"./src/design\";"
+    },
+    {
+      "name": "play",
+      "component": "Play",
+      "import": "import { Play } from \"./src/design\";"
+    },
+    {
+      "name": "post-add",
+      "component": "PostAdd",
+      "import": "import { PostAdd } from \"./src/design\";"
+    },
+    {
+      "name": "query-stats",
+      "component": "QueryStats",
+      "import": "import { QueryStats } from \"./src/design\";"
+    },
+    {
+      "name": "redo",
+      "component": "Redo",
+      "import": "import { Redo } from \"./src/design\";"
+    },
+    {
+      "name": "rename",
+      "component": "Rename",
+      "import": "import { Rename } from \"./src/design\";"
+    },
+    {
+      "name": "right-click",
+      "component": "RightClick",
+      "import": "import { RightClick } from \"./src/design\";"
+    },
+    {
+      "name": "rotate-90-degrees-ccw",
+      "component": "Rotate90DegreesCcw",
+      "import": "import { Rotate90DegreesCcw } from \"./src/design\";"
+    },
+    {
+      "name": "rotate-left",
+      "component": "RotateLeft",
+      "import": "import { RotateLeft } from \"./src/design\";"
+    },
+    {
+      "name": "rotate-right",
+      "component": "RotateRight",
+      "import": "import { RotateRight } from \"./src/design\";"
+    },
+    {
+      "name": "rule-folder",
+      "component": "RuleFolder",
+      "import": "import { RuleFolder } from \"./src/design\";"
+    },
+    {
+      "name": "ruler",
+      "component": "Ruler",
+      "import": "import { Ruler } from \"./src/design\";"
+    },
+    {
+      "name": "score",
+      "component": "Score",
+      "import": "import { Score } from \"./src/design\";"
+    },
+    {
+      "name": "search",
+      "component": "Search",
+      "import": "import { Search } from \"./src/design\";"
+    },
+    {
+      "name": "security",
+      "component": "Security",
+      "import": "import { Security } from \"./src/design\";"
+    },
+    {
+      "name": "settings-bluetooth",
+      "component": "SettingsBluetooth",
+      "import": "import { SettingsBluetooth } from \"./src/design\";"
+    },
+    {
+      "name": "settings-input-component",
+      "component": "SettingsInputComponent",
+      "import": "import { SettingsInputComponent } from \"./src/design\";"
+    },
+    {
+      "name": "settings-services",
+      "component": "SettingsServices",
+      "import": "import { SettingsServices } from \"./src/design\";"
+    },
+    {
+      "name": "settings",
+      "component": "Settings",
+      "import": "import { Settings } from \"./src/design\";"
+    },
+    {
+      "name": "short-text",
+      "component": "ShortText",
+      "import": "import { ShortText } from \"./src/design\";"
+    },
+    {
+      "name": "show-chart",
+      "component": "ShowChart",
+      "import": "import { ShowChart } from \"./src/design\";"
+    },
+    {
+      "name": "sidebar-close",
+      "component": "SidebarClose",
+      "import": "import { SidebarClose } from \"./src/design\";"
+    },
+    {
+      "name": "sidebar-open",
+      "component": "SidebarOpen",
+      "import": "import { SidebarOpen } from \"./src/design\";"
+    },
+    {
+      "name": "skip-next",
+      "component": "SkipNext",
+      "import": "import { SkipNext } from \"./src/design\";"
+    },
+    {
+      "name": "skip-previous",
+      "component": "SkipPrevious",
+      "import": "import { SkipPrevious } from \"./src/design\";"
+    },
+    {
+      "name": "snippet-folder",
+      "component": "SnippetFolder",
+      "import": "import { SnippetFolder } from \"./src/design\";"
+    },
+    {
+      "name": "split",
+      "component": "Split",
+      "import": "import { Split } from \"./src/design\";"
+    },
+    {
+      "name": "stacked-line-chart",
+      "component": "StackedLineChart",
+      "import": "import { StackedLineChart } from \"./src/design\";"
+    },
+    {
+      "name": "strikethrough-s",
+      "component": "StrikethroughS",
+      "import": "import { StrikethroughS } from \"./src/design\";"
+    },
+    {
+      "name": "subscript",
+      "component": "Subscript",
+      "import": "import { Subscript } from \"./src/design\";"
+    },
+    {
+      "name": "superscript",
+      "component": "Superscript",
+      "import": "import { Superscript } from \"./src/design\";"
+    },
+    {
+      "name": "swap-horiz",
+      "component": "SwapHoriz",
+      "import": "import { SwapHoriz } from \"./src/design\";"
+    },
+    {
+      "name": "switch-left",
+      "component": "SwitchLeft",
+      "import": "import { SwitchLeft } from \"./src/design\";"
+    },
+    {
+      "name": "switch-right",
+      "component": "SwitchRight",
+      "import": "import { SwitchRight } from \"./src/design\";"
+    },
+    {
+      "name": "table-chart",
+      "component": "TableChart",
+      "import": "import { TableChart } from \"./src/design\";"
+    },
+    {
+      "name": "table-rows",
+      "component": "TableRows",
+      "import": "import { TableRows } from \"./src/design\";"
+    },
+    {
+      "name": "text-fields",
+      "component": "TextFields",
+      "import": "import { TextFields } from \"./src/design\";"
+    },
+    {
+      "name": "thermostat-outline",
+      "component": "ThermostatOutline",
+      "import": "import { ThermostatOutline } from \"./src/design\";"
+    },
+    {
+      "name": "title",
+      "component": "Title",
+      "import": "import { Title } from \"./src/design\";"
+    },
+    {
+      "name": "topic",
+      "component": "Topic",
+      "import": "import { Topic } from \"./src/design\";"
+    },
+    {
+      "name": "translate",
+      "component": "Translate",
+      "import": "import { Translate } from \"./src/design\";"
+    },
+    {
+      "name": "trending-down",
+      "component": "TrendingDown",
+      "import": "import { TrendingDown } from \"./src/design\";"
+    },
+    {
+      "name": "trending-up",
+      "component": "TrendingUp",
+      "import": "import { TrendingUp } from \"./src/design\";"
+    },
+    {
+      "name": "unarchive",
+      "component": "Unarchive",
+      "import": "import { Unarchive } from \"./src/design\";"
+    },
+    {
+      "name": "uncollapse-all",
+      "component": "UncollapseAll",
+      "import": "import { UncollapseAll } from \"./src/design\";"
+    },
+    {
+      "name": "undo",
+      "component": "Undo",
+      "import": "import { Undo } from \"./src/design\";"
+    },
+    {
+      "name": "unfold-less",
+      "component": "UnfoldLess",
+      "import": "import { UnfoldLess } from \"./src/design\";"
+    },
+    {
+      "name": "unfold-more",
+      "component": "UnfoldMore",
+      "import": "import { UnfoldMore } from \"./src/design\";"
+    },
+    {
+      "name": "vertical-align-bottom",
+      "component": "VerticalAlignBottom",
+      "import": "import { VerticalAlignBottom } from \"./src/design\";"
+    },
+    {
+      "name": "vertical-align-center",
+      "component": "VerticalAlignCenter",
+      "import": "import { VerticalAlignCenter } from \"./src/design\";"
+    },
+    {
+      "name": "vertical-align-top",
+      "component": "VerticalAlignTop",
+      "import": "import { VerticalAlignTop } from \"./src/design\";"
+    },
+    {
+      "name": "vertical-distribute",
+      "component": "VerticalDistribute",
+      "import": "import { VerticalDistribute } from \"./src/design\";"
+    },
+    {
+      "name": "videocam-off",
+      "component": "VideocamOff",
+      "import": "import { VideocamOff } from \"./src/design\";"
+    },
+    {
+      "name": "videocam",
+      "component": "Videocam",
+      "import": "import { Videocam } from \"./src/design\";"
+    },
+    {
+      "name": "water",
+      "component": "Water",
+      "import": "import { Water } from \"./src/design\";"
+    },
+    {
+      "name": "whatsapp",
+      "component": "Whatsapp",
+      "import": "import { Whatsapp } from \"./src/design\";"
+    },
+    {
+      "name": "wrap-text",
+      "component": "WrapText",
+      "import": "import { WrapText } from \"./src/design\";"
+    },
+    {
+      "name": "youtube",
+      "component": "Youtube",
+      "import": "import { Youtube } from \"./src/design\";"
+    }
+  ],
+  "feature": [
+    {
+      "name": "apps",
+      "component": "Apps",
+      "import": "import { Apps } from \"./src/feature\";"
+    },
+    {
+      "name": "artificial-intelligence-ai",
+      "component": "ArtificialIntelligenceAi",
+      "import": "import { ArtificialIntelligenceAi } from \"./src/feature\";"
+    },
+    {
+      "name": "aspect-ratio",
+      "component": "AspectRatio",
+      "import": "import { AspectRatio } from \"./src/feature\";"
+    },
+    {
+      "name": "calendar-plan",
+      "component": "CalendarPlan",
+      "import": "import { CalendarPlan } from \"./src/feature\";"
+    },
+    {
+      "name": "category",
+      "component": "Category",
+      "import": "import { Category } from \"./src/feature\";"
+    },
+    {
+      "name": "design-services",
+      "component": "DesignServices",
+      "import": "import { DesignServices } from \"./src/feature\";"
+    },
+    {
+      "name": "disease-risk",
+      "component": "DiseaseRisk",
+      "import": "import { DiseaseRisk } from \"./src/feature\";"
+    },
+    {
+      "name": "drop",
+      "component": "Drop",
+      "import": "import { Drop } from \"./src/feature\";"
+    },
+    {
+      "name": "droplet-size",
+      "component": "DropletSize",
+      "import": "import { DropletSize } from \"./src/feature\";"
+    },
+    {
+      "name": "edit-field",
+      "component": "EditField",
+      "import": "import { EditField } from \"./src/feature\";"
+    },
+    {
+      "name": "farm",
+      "component": "Farm",
+      "import": "import { Farm } from \"./src/feature\";"
+    },
+    {
+      "name": "field",
+      "component": "Field",
+      "import": "import { Field } from \"./src/feature\";"
+    },
+    {
+      "name": "fixed-points",
+      "component": "FixedPoints",
+      "import": "import { FixedPoints } from \"./src/feature\";"
+    },
+    {
+      "name": "insect",
+      "component": "Insect",
+      "import": "import { Insect } from \"./src/feature\";"
+    },
+    {
+      "name": "integration",
+      "component": "Integration",
+      "import": "import { Integration } from \"./src/feature\";"
+    },
+    {
+      "name": "label",
+      "component": "Label",
+      "import": "import { Label } from \"./src/feature\";"
+    },
+    {
+      "name": "list-alt",
+      "component": "ListAlt",
+      "import": "import { ListAlt } from \"./src/feature\";"
+    },
+    {
+      "name": "organization",
+      "component": "Organization",
+      "import": "import { Organization } from \"./src/feature\";"
+    },
+    {
+      "name": "pest-control",
+      "component": "PestControl",
+      "import": "import { PestControl } from \"./src/feature\";"
+    },
+    {
+      "name": "planting",
+      "component": "Planting",
+      "import": "import { Planting } from \"./src/feature\";"
+    },
+    {
+      "name": "property-focus",
+      "component": "PropertyFocus",
+      "import": "import { PropertyFocus } from \"./src/feature\";"
+    },
+    {
+      "name": "satellite-alt",
+      "component": "SatelliteAlt",
+      "import": "import { SatelliteAlt } from \"./src/feature\";"
+    },
+    {
+      "name": "seeds",
+      "component": "Seeds",
+      "import": "import { Seeds } from \"./src/feature\";"
+    },
+    {
+      "name": "spray",
+      "component": "Spray",
+      "import": "import { Spray } from \"./src/feature\";"
+    },
+    {
+      "name": "timeline",
+      "component": "Timeline",
+      "import": "import { Timeline } from \"./src/feature\";"
+    },
+    {
+      "name": "trap",
+      "component": "Trap",
+      "import": "import { Trap } from \"./src/feature\";"
+    },
+    {
+      "name": "yield-by",
+      "component": "YieldBy",
+      "import": "import { YieldBy } from \"./src/feature\";"
+    }
+  ]
+}

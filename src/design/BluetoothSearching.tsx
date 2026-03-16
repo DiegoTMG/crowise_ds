@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const BluetoothSearching: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 18.01 20"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M7 0L12.71 5.71L8.41 10L12.71 14.29L7 20H6V12.41L1.41 17L0 15.59L5.59 10L0 4.41L1.41 3L6 7.59V0H7ZM16.53 4.71L15.27 5.97C15.9 7.18 16.25 8.54 16.25 9.99C16.25 11.44 15.89 12.81 15.27 14.01L16.47 15.21C17.44 13.67 18.01 11.85 18.01 9.9C18 8.01 17.46 6.23 16.53 4.71ZM11.2402 10.0114L13.5602 12.3314C13.8402 11.6114 14.0002 10.8214 14.0002 10.0014C14.0002 9.18141 13.8402 8.41141 13.5702 7.69141L11.2402 10.0114ZM8 3.82812L9.88 5.70813L8 7.58813V3.82812ZM8 16.17L9.88 14.29L8 12.41V16.17Z" fill="currentColor"/>
+  </svg>
+);
+
+BluetoothSearching.displayName = "BluetoothSearching";
+export default BluetoothSearching;

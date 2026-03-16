@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const PieChart: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 20 20"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M0 10C0 4.48 4.48 0 10 0C15.52 0 20 4.48 20 10C20 15.52 15.52 20 10 20C4.48 20 0 15.52 0 10ZM11 9H17.93C17.48 5.39 14.61 2.52 11 2.07V9ZM2 10C2 5.93 5.06 2.56 9 2.07V17.93C5.06 17.44 2 14.07 2 10ZM11 11V17.93C14.61 17.48 17.48 14.61 17.93 11H11Z" fill="currentColor"/>
+  </svg>
+);
+
+PieChart.displayName = "PieChart";
+export default PieChart;

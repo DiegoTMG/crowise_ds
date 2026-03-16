@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Integration: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 20 20"
+    fill="none"
+    {...props}
+  >
+    <path id="integration" fillRule="evenodd" clipRule="evenodd" d="M16 15H17C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9H16V6C16 4.89543 15.1046 4 14 4H11V3C11 1.34315 9.65685 0 8 0C6.34315 0 5 1.34315 5 3V4H2C0.895431 4 0 4.89543 0 6V11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H0V18C0 19.1046 0.89543 20 2 20H7V17C7 16.4477 7.44772 16 8 16C8.55229 16 9 16.4477 9 17V20H14C15.1046 20 16 19.1046 16 18V15ZM11 18H14V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H14V6H9V3C9 2.44772 8.55229 2 8 2C7.44772 2 7 2.44772 7 3V6H2V9H3C4.65685 9 6 10.3431 6 12C6 13.6569 4.65685 15 3 15H2V18H5V17C5 15.3431 6.34315 14 8 14C9.65686 14 11 15.3431 11 17V18Z" fill="currentColor"/>
+  </svg>
+);
+
+Integration.displayName = "Integration";
+export default Integration;

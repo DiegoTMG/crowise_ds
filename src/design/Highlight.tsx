@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Highlight: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16.994 20"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M9.4978 0H7.4978V3H9.4978V0ZM2.4978 12L5.4978 15V20H11.4978V15L14.4978 12V7H2.4978V12ZM4.4978 9H12.4978V11.17L9.4978 14.17V18H7.4978V14.17L4.4978 11.17V9ZM0 3.87574L1.4136 2.46094L3.5358 4.58134L2.1222 5.99614L0 3.87574ZM15.5808 2.46094L13.458 4.58074L14.8712 5.99594L16.994 3.87614L15.5808 2.46094Z" fill="currentColor"/>
+  </svg>
+);
+
+Highlight.displayName = "Highlight";
+export default Highlight;

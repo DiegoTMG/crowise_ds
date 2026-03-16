@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Score: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 18 18"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M2 0H16C17.1 0 18 0.9 18 2V16C18 17.1 17.1 18 16 18H2C0.9 18 0 17.1 0 16V2C0 0.9 0.9 0 2 0ZM10 16H16V10L10 16ZM10 16L6 12L2 16H10ZM16 7.5L10 13.5L6 9.5L2 13.5V2H16V7.5ZM9 3H10.5V6V9H9V3ZM14.2 9L12.2 6L14.2 3H12.5L10.5 6L12.5 9H14.2ZM5.5 7.5H8V9H4V5.25H6.5V4.5H4V3H8V6.75H5.5V7.5Z" fill="currentColor"/>
+  </svg>
+);
+
+Score.displayName = "Score";
+export default Score;

@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const DoneAll: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 23.25 13.4102"
+    fill="none"
+    {...props}
+  >
+    <path id="vector" fillRule="evenodd" clipRule="evenodd" d="M21.83 0L11.25 10.58L7.07 6.41L5.66 7.82L11.25 13.41L23.25 1.41L21.83 0ZM17.59 1.41L16.18 0L9.84 6.34L11.25 7.75L17.59 1.41ZM5.59 13.4102L0 7.82016L1.42 6.41016L7 12.0002L5.59 13.4102Z" fill="currentColor"/>
+  </svg>
+);
+
+DoneAll.displayName = "DoneAll";
+export default DoneAll;
