@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const ConsistencyIndex: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M18 6L17.9999 10.071C17.6733 10.0243 17.3395 10.0001 17 10.0001C16.6605 10.0001 16.3266 10.0243 15.9999 10.071L16 6H6V16H10.0709C10.0242 16.3266 10 16.6606 10 17.0001C10 17.3396 10.0242 17.6734 10.0709 18H6V20H4V18H2V16H4V6H2V4H4V2H6V4H16V2H18V4H20V6H18Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M12 17C12 14.24 14.24 12 17 12C19.76 12 22 14.24 22 17C22 19.76 19.76 22 17 22C14.24 22 12 19.76 12 17ZM16.5 17.2L18.65 19.35L19.35 18.64L17.5 16.79V14H16.5V17.2Z" fill="currentColor"/>
+  </svg>
+);
+
+ConsistencyIndex.displayName = "ConsistencyIndex";
+export default ConsistencyIndex;

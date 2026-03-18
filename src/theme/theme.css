@@ -1,0 +1,766 @@
+/* ==========================================================================
+   Cropwise Design System v2 — CSS Theme Variables
+   Source: Figma DSv2 (var-set-id: 29-2022)
+   ========================================================================== */
+
+:root {
+  /* -----------------------------------------------------------------------
+     MONO
+     ----------------------------------------------------------------------- */
+  --mono-white-100: #ffffff;
+  --mono-black-100: #000000;
+  --mono-black-50: rgba(0, 0, 0, 0.5);
+
+  /* -----------------------------------------------------------------------
+     BRAND
+     ----------------------------------------------------------------------- */
+  --brand-cropwise-green: #73DC78;
+  --brand-syngenta-green: #009933;
+  --brand-syngenta-navy: #00004B;
+
+  /* -----------------------------------------------------------------------
+     PURPLE
+     ----------------------------------------------------------------------- */
+  --purple-10: #F6F2FE;
+  --purple-20: #E7DDFC;
+  --purple-30: #D2BDF9;
+  --purple-40: #BA99F6;
+  --purple-50: #9664F0;
+  --purple-60: #8354D6;
+  --purple-70: #643AAA;
+  --purple-80: #462779;
+  --purple-90: #2E1954;
+  --purple-100: #1C0D35;
+
+  /* -----------------------------------------------------------------------
+     BLUE
+     ----------------------------------------------------------------------- */
+  --blue-10: #EAF6FF;
+  --blue-20: #C6E6FF;
+  --blue-30: #82CFFF;
+  --blue-40: #31B4F2;
+  --blue-50: #0092E4;
+  --blue-60: #0071CD;
+  --blue-70: #005693;
+  --blue-80: #003B69;
+  --blue-90: #002747;
+  --blue-100: #00172D;
+
+  /* -----------------------------------------------------------------------
+     OCEAN
+     ----------------------------------------------------------------------- */
+  --ocean-10: #DEF5FE;
+  --ocean-20: #C7E7F3;
+  --ocean-30: #AAD5E5;
+  --ocean-40: #8BBFD2;
+  --ocean-50: #61A4C1;
+  --ocean-60: #357D9A;
+  --ocean-70: #1F6C8B;
+  --ocean-80: #0D5070;
+  --ocean-90: #06344E;
+  --ocean-100: #041F2E;
+
+  /* -----------------------------------------------------------------------
+     CYAN
+     ----------------------------------------------------------------------- */
+  --cyan-10: #E1FDFE;
+  --cyan-20: #C3FAFD;
+  --cyan-30: #8FF7FB;
+  --cyan-40: #49EAF2;
+  --cyan-50: #00D2DF;
+  --cyan-60: #00A8B8;
+  --cyan-70: #00808C;
+  --cyan-80: #00636C;
+  --cyan-90: #004A4F;
+  --cyan-100: #003536;
+
+  /* -----------------------------------------------------------------------
+     TEAL
+     ----------------------------------------------------------------------- */
+  --teal-10: #E0F9F7;
+  --teal-20: #A9EFE8;
+  --teal-30: #5FD2C8;
+  --teal-40: #46BBB0;
+  --teal-50: #2B9C92;
+  --teal-60: #217C74;
+  --teal-70: #165C56;
+  --teal-80: #0D413C;
+  --teal-90: #062B27;
+  --teal-100: #021917;
+
+  /* -----------------------------------------------------------------------
+     GREEN
+     ----------------------------------------------------------------------- */
+  --green-10: #DFFBE8;
+  --green-20: #C3EAD1;
+  --green-30: #90D6AA;
+  --green-40: #5EBB7F;
+  --green-50: #19A04B;
+  --green-60: #14803C;
+  --green-70: #0C612C;
+  --green-80: #06431C;
+  --green-90: #032D10;
+  --green-100: #011B07;
+
+  /* -----------------------------------------------------------------------
+     LIME
+     ----------------------------------------------------------------------- */
+  --lime-10: #F4FFE6;
+  --lime-20: #DAFFBA;
+  --lime-30: #B8F98E;
+  --lime-40: #91E866;
+  --lime-50: #6CD947;
+  --lime-60: #51B232;
+  --lime-70: #3C8925;
+  --lime-80: #2A6219;
+  --lime-90: #1B410E;
+  --lime-100: #0E2707;
+
+  /* -----------------------------------------------------------------------
+     OLIVE
+     ----------------------------------------------------------------------- */
+  --olive-10: #F7F9E5;
+  --olive-20: #E9F1C2;
+  --olive-30: #D4E18A;
+  --olive-40: #BFD14D;
+  --olive-50: #A2BA1E;
+  --olive-60: #83951B;
+  --olive-70: #667317;
+  --olive-80: #4B5612;
+  --olive-90: #323B0D;
+  --olive-100: #151A03;
+
+  /* -----------------------------------------------------------------------
+     BROWN
+     ----------------------------------------------------------------------- */
+  --brown-10: #F8F2ED;
+  --brown-20: #EADBCB;
+  --brown-30: #D1B99E;
+  --brown-40: #B99272;
+  --brown-50: #9F6D4A;
+  --brown-60: #7E5236;
+  --brown-70: #5F3B27;
+  --brown-80: #43291A;
+  --brown-90: #2C1A10;
+  --brown-100: #1A0E08;
+
+  /* -----------------------------------------------------------------------
+     YELLOW
+     ----------------------------------------------------------------------- */
+  --yellow-10: #FFFAE5;
+  --yellow-20: #FFF3BF;
+  --yellow-30: #FFE88A;
+  --yellow-40: #FFDA4D;
+  --yellow-50: #FFCA11;
+  --yellow-60: #D6A000;
+  --yellow-70: #AA7D00;
+  --yellow-80: #805E00;
+  --yellow-90: #573F00;
+  --yellow-100: #2E2500;
+
+  /* -----------------------------------------------------------------------
+     ORANGE
+     ----------------------------------------------------------------------- */
+  --orange-10: #FFF7EB;
+  --orange-20: #FFE4C2;
+  --orange-30: #FFC388;
+  --orange-40: #FFA24D;
+  --orange-50: #FF7D0A;
+  --orange-60: #DB6300;
+  --orange-70: #AD4D00;
+  --orange-80: #823900;
+  --orange-90: #5A2600;
+  --orange-100: #2D1500;
+
+  /* -----------------------------------------------------------------------
+     RED
+     ----------------------------------------------------------------------- */
+  --red-10: #FFF1F1;
+  --red-20: #FFD9D9;
+  --red-30: #FFB3B3;
+  --red-40: #F98989;
+  --red-50: #EB4B4B;
+  --red-60: #CF3537;
+  --red-70: #9C2628;
+  --red-80: #70191A;
+  --red-90: #4C0E0F;
+  --red-100: #300606;
+
+  /* -----------------------------------------------------------------------
+     PINK
+     ----------------------------------------------------------------------- */
+  --pink-10: #FFF1F3;
+  --pink-20: #FFD8DF;
+  --pink-30: #FFB2C1;
+  --pink-40: #FF7D96;
+  --pink-50: #E85D78;
+  --pink-60: #BB485D;
+  --pink-70: #8D3545;
+  --pink-80: #65232F;
+  --pink-90: #45161E;
+  --pink-100: #2B0A10;
+
+  /* -----------------------------------------------------------------------
+     MAGENTA
+     ----------------------------------------------------------------------- */
+  --magenta-10: #FFF0F7;
+  --magenta-20: #FFD6E8;
+  --magenta-30: #FFADD3;
+  --magenta-40: #FA7DB6;
+  --magenta-50: #E85599;
+  --magenta-60: #C33F7F;
+  --magenta-70: #982F63;
+  --magenta-80: #722448;
+  --magenta-90: #501732;
+  --magenta-100: #310D1F;
+
+  /* -----------------------------------------------------------------------
+     NEUTRAL
+     ----------------------------------------------------------------------- */
+  --neutral-10: #F3F4F6;
+  --neutral-20: #DFE2E7;
+  --neutral-30: #C2C7D0;
+  --neutral-40: #A3A9B9;
+  --neutral-50: #868CA2;
+  --neutral-60: #696F88;
+  --neutral-70: #4D5165;
+  --neutral-80: #363948;
+  --neutral-90: #232630;
+  --neutral-100: #14151C;
+
+  /* -----------------------------------------------------------------------
+     EFFECTS / FOCUS
+     ----------------------------------------------------------------------- */
+  --border-weight-large: 3px;
+  --focus-border: 0 0 0 var(--border-weight-large) rgba(0, 146, 228, 0.5);
+  --ai-glow-light-mode:
+    0 0 8px 0 #D2BDF9,
+    0 0 4px 0 #84BCD0;
+  --ai-glow-dark-mode:
+    0 0 12px 0 #6800FF,
+    0 0 6px 0 #60A9EB;
+
+  /* -----------------------------------------------------------------------
+     SPACING
+     ----------------------------------------------------------------------- */
+  --spacing-medium: 16px;
+
+  /* -----------------------------------------------------------------------
+     TYPOGRAPHY
+     ----------------------------------------------------------------------- */
+
+  /* Font families */
+  --font-family-primary: "Noto Sans", sans-serif;
+  --font-family-display: "Anek Tamil", sans-serif;
+
+  /* Annotation / Display */
+  --font-display-1: 700 120px/100% var(--font-family-display);
+  --font-display-1-letter-spacing: -1px;
+
+  --font-display-2: 700 80px/100% var(--font-family-display);
+  --font-display-2-letter-spacing: -0.5px;
+
+  /* Annotation / Headings */
+  --font-heading-1: 500 48px/100% var(--font-family-primary);
+  --font-heading-1-letter-spacing: -1px;
+
+  --font-heading-2: 500 40px/100% var(--font-family-display);
+  --font-heading-2-letter-spacing: 0;
+
+  --font-heading-3: 500 28px/100% var(--font-family-display);
+  --font-heading-3-letter-spacing: 0;
+
+  /* Annotation / Sub-heading */
+  --font-subheading-1: 500 56px/100% var(--font-family-primary);
+  --font-subheading-1-letter-spacing: 0;
+
+  /* Annotation / Labels */
+  --font-label-1: 600 32px/100% var(--font-family-primary);
+  --font-label-1-letter-spacing: -1px;
+
+  --font-label-3: 600 16px/100% var(--font-family-primary);
+  --font-label-3-letter-spacing: 2px;
+
+  --font-label-4: 500 12px/100% var(--font-family-primary);
+  --font-label-4-letter-spacing: 4px;
+
+  /* Annotation / Body */
+  --font-body: 500 20px/100% var(--font-family-primary);
+  --font-body-letter-spacing: 0;
+
+  /* Regular text */
+  --font-regular-20: 400 20px/28px var(--font-family-primary);
+  --font-regular-20-letter-spacing: -0.75px;
+
+  /* -----------------------------------------------------------------------
+     ANNOTATION COLORS
+     ----------------------------------------------------------------------- */
+  --annotation-dark-yellow: #726109;
+  --annotation-dark-gray: #555D64;
+  --annotation-mid-black: #393E43;
+  --annotation-mid-white: #FFFFFF;
+  --annotation-mid-yellow: #EDCD27;
+  --annotation-mid-pink: #DA33AB;
+  --annotation-mid-green: #27B61A;
+  --annotation-mid-red: #CD2626;
+  --annotation-mid-blue: #2986DC;
+  --annotation-light-yellow: #F8F1D1;
+  --annotation-light-gray: #E1E5E9;
+  --annotation-light-pink: #F9ECF6;
+  --annotation-light-blue: #DCE9F5;
+
+  /* -----------------------------------------------------------------------
+     LEGACY / UTILITY
+     ----------------------------------------------------------------------- */
+  --black-100: #0D1A33;
+  --white: #FFFFFF;
+  --grey: #FAFAFA;
+  --bg-yellow: #FFFBC7;
+  --opacity-green: #219653;
+  --opacity-orange: #F2994A;
+  --opacity-red: #EB5757;
+
+  /* =======================================================================
+     SEMANTIC COLOR VARIABLES  (Light mode — Default role)
+     Source: Figma DSv2 "Semantic color variables" table (section 84:3518)
+     Pattern: --{category}-default-{state}-{level}
+     Values reference primitive tokens above via var().
+     ======================================================================= */
+
+  /* -----------------------------------------------------------------------
+     FILL – Default
+     ----------------------------------------------------------------------- */
+  --fill-default-none-primary:       var(--mono-white-100);
+  --fill-default-none-secondary:     var(--neutral-10);
+  --fill-default-enabled-primary:    var(--green-60);
+  --fill-default-disabled-primary:   var(--neutral-20);
+  --fill-default-hover-primary:      var(--green-50);
+  --fill-default-focus-primary:      var(--green-60);
+  --fill-default-pressed-primary:    var(--green-70);
+  --fill-default-enabled-secondary:  var(--green-20);
+  --fill-default-disabled-secondary: var(--neutral-10);
+  --fill-default-hover-secondary:    var(--green-10);
+  --fill-default-focus-secondary:    var(--green-20);
+  --fill-default-pressed-secondary:  var(--green-30);
+  --fill-default-enabled-tertiary:   var(--mono-white-100);
+  --fill-default-disabled-tertiary:  var(--mono-white-100);
+  --fill-default-hover-tertiary:     var(--mono-white-100);
+  --fill-default-focus-tertiary:     var(--mono-white-100);
+  --fill-default-pressed-tertiary:   var(--neutral-10);
+  --fill-default-enabled-quaternary:  var(--neutral-20);
+  --fill-default-disabled-quaternary: var(--neutral-10);
+  --fill-default-hover-quaternary:    var(--neutral-10);
+  --fill-default-focus-quaternary:    var(--neutral-20);
+  --fill-default-pressed-quaternary:  var(--neutral-30);
+
+  /* -----------------------------------------------------------------------
+     TEXT – Default
+     ----------------------------------------------------------------------- */
+  --text-default-none-primary:       var(--neutral-100);
+  --text-default-none-secondary:     var(--neutral-60);
+  --text-default-enabled-primary:    var(--mono-white-100);
+  --text-default-disabled-primary:   var(--neutral-30);
+  --text-default-hover-primary:      var(--mono-white-100);
+  --text-default-focus-primary:      var(--mono-white-100);
+  --text-default-pressed-primary:    var(--neutral-10);
+  --text-default-enabled-secondary:  var(--green-60);
+  --text-default-disabled-secondary: var(--neutral-30);
+  --text-default-hover-secondary:    var(--green-50);
+  --text-default-focus-secondary:    var(--green-60);
+  --text-default-pressed-secondary:  var(--green-70);
+  --text-default-enabled-tertiary:   var(--neutral-100);
+  --text-default-disabled-tertiary:  var(--neutral-30);
+  --text-default-hover-tertiary:     var(--neutral-80);
+  --text-default-focus-tertiary:     var(--neutral-100);
+  --text-default-pressed-tertiary:   var(--neutral-100);
+
+  /* -----------------------------------------------------------------------
+     ICON – Default
+     ----------------------------------------------------------------------- */
+  --icon-default-none-primary:       var(--neutral-60);
+  --icon-default-enabled-primary:    var(--mono-white-100);
+  --icon-default-disabled-primary:   var(--neutral-30);
+  --icon-default-hover-primary:      var(--mono-white-100);
+  --icon-default-focus-primary:      var(--mono-white-100);
+  --icon-default-pressed-primary:    var(--neutral-10);
+  --icon-default-enabled-secondary:  var(--green-60);
+  --icon-default-disabled-secondary: var(--neutral-30);
+  --icon-default-hover-secondary:    var(--green-50);
+  --icon-default-focus-secondary:    var(--green-60);
+  --icon-default-pressed-secondary:  var(--green-70);
+  --icon-default-enabled-tertiary:   var(--neutral-60);
+  --icon-default-disabled-tertiary:  var(--neutral-30);
+  --icon-default-hover-tertiary:     var(--neutral-50);
+  --icon-default-focus-tertiary:     var(--neutral-60);
+  --icon-default-pressed-tertiary:   var(--neutral-70);
+
+  /* -----------------------------------------------------------------------
+     BORDER – Default
+     ----------------------------------------------------------------------- */
+  --border-default-none-primary:       var(--neutral-60);
+  --border-default-none-secondary:     var(--neutral-40);
+  --border-default-enabled-primary:    var(--green-60);
+  --border-default-disabled-primary:   var(--neutral-30);
+  --border-default-hover-primary:      var(--green-50);
+  --border-default-focus-primary:      var(--green-60);
+  --border-default-pressed-primary:    var(--green-70);
+  --border-default-enabled-secondary:  var(--neutral-40);
+  --border-default-disabled-secondary: var(--neutral-20);
+  --border-default-hover-secondary:    var(--neutral-30);
+  --border-default-focus-secondary:    var(--neutral-40);
+  --border-default-pressed-secondary:  var(--neutral-50);
+
+  /* -----------------------------------------------------------------------
+     OVERLAY – Default
+     ----------------------------------------------------------------------- */
+  --overlay-default-none-primary:      var(--mono-black-50);
+
+  /* =======================================================================
+     SEMANTIC COLOR VARIABLES  (Light mode — Select role)
+     ======================================================================= */
+
+  /* -----------------------------------------------------------------------
+     FILL – Select
+     ----------------------------------------------------------------------- */
+  --fill-select-enabled-primary:     var(--blue-60);
+  --fill-select-disabled-primary:    var(--neutral-20);
+  --fill-select-hover-primary:       var(--blue-50);
+  --fill-select-focus-primary:       var(--blue-60);
+  --fill-select-pressed-primary:     var(--blue-70);
+  --fill-select-enabled-secondary:   var(--blue-10);
+  --fill-select-disabled-secondary:  var(--blue-10);
+  --fill-select-hover-secondary:     var(--blue-20);
+  --fill-select-focus-secondary:     var(--blue-10);
+  --fill-select-pressed-secondary:   var(--blue-30);
+  --fill-select-enabled-tertiary:    var(--mono-white-100);
+  --fill-select-disabled-tertiary:   var(--mono-white-100);
+  --fill-select-hover-tertiary:      var(--mono-white-100);
+  --fill-select-focus-tertiary:      var(--mono-white-100);
+  --fill-select-pressed-tertiary:    var(--neutral-10);
+
+  /* -----------------------------------------------------------------------
+     TEXT – Select
+     ----------------------------------------------------------------------- */
+  --text-select-none-primary:        var(--neutral-100);
+  --text-select-none-secondary:      var(--neutral-60);
+  --text-select-enabled-primary:     var(--mono-white-100);
+  --text-select-disabled-primary:    var(--neutral-30);
+  --text-select-hover-primary:       var(--mono-white-100);
+  --text-select-focus-primary:       var(--mono-white-100);
+  --text-select-pressed-primary:     var(--neutral-10);
+  --text-select-enabled-secondary:   var(--blue-60);
+  --text-select-disabled-secondary:  var(--neutral-40);
+  --text-select-hover-secondary:     var(--blue-50);
+  --text-select-focus-secondary:     var(--blue-60);
+  --text-select-pressed-secondary:   var(--blue-70);
+
+  /* -----------------------------------------------------------------------
+     ICON – Select
+     ----------------------------------------------------------------------- */
+  --icon-select-none-primary:        var(--neutral-60);
+  --icon-select-enabled-primary:     var(--mono-white-100);
+  --icon-select-disabled-primary:    var(--neutral-30);
+  --icon-select-hover-primary:       var(--mono-white-100);
+  --icon-select-focus-primary:       var(--mono-white-100);
+  --icon-select-pressed-primary:     var(--neutral-10);
+  --icon-select-enabled-secondary:   var(--blue-60);
+  --icon-select-disabled-secondary:  var(--neutral-40);
+  --icon-select-hover-secondary:     var(--blue-50);
+  --icon-select-focus-secondary:     var(--blue-60);
+  --icon-select-pressed-secondary:   var(--blue-70);
+
+  /* -----------------------------------------------------------------------
+     BORDER – Select
+     ----------------------------------------------------------------------- */
+  --border-select-none-primary:        var(--neutral-60);
+  --border-select-none-secondary:      var(--neutral-30);
+  --border-select-enabled-primary:     var(--blue-60);
+  --border-select-disabled-primary:    var(--neutral-30);
+  --border-select-hover-primary:       var(--blue-50);
+  --border-select-focus-primary:       var(--blue-60);
+  --border-select-pressed-primary:     var(--blue-70);
+  --border-select-enabled-secondary:   var(--neutral-60);
+  --border-select-disabled-secondary:  var(--neutral-40);
+  --border-select-hover-secondary:     var(--neutral-50);
+  --border-select-focus-secondary:     var(--neutral-60);
+  --border-selector-pressed-secondary: var(--neutral-70);
+
+  /* =======================================================================
+     SEMANTIC COLOR VARIABLES  (Light mode — Info role)
+     ======================================================================= */
+
+  /* -----------------------------------------------------------------------
+     FILL – Info
+     ----------------------------------------------------------------------- */
+  --fill-info-none-primary:          var(--blue-10);
+  --fill-info-none-secondary:        var(--blue-60);
+  --fill-info-enabled-primary:       var(--green-60);
+  --fill-info-disabled-primary:      var(--neutral-20);
+  --fill-info-hover-primary:         var(--green-50);
+  --fill-info-focus-primary:         var(--green-60);
+  --fill-info-pressed-primary:       var(--green-70);
+  --fill-info-enabled-secondary:     var(--mono-white-100);
+  --fill-info-disabled-secondary:    var(--mono-white-100);
+  --fill-info-hover-secondary:       var(--mono-white-100);
+  --fill-info-focus-secondary:       var(--mono-white-100);
+  --fill-info-pressed-secondary:     var(--neutral-10);
+
+  /* -----------------------------------------------------------------------
+     TEXT – Info
+     ----------------------------------------------------------------------- */
+  --text-info-none-primary:          var(--neutral-100);
+  --text-info-none-secondary:        var(--neutral-60);
+  --text-info-none-tertiary:         var(--mono-white-100);
+  --text-info-enabled-primary:       var(--mono-white-100);
+  --text-info-disabled-primary:      var(--neutral-30);
+  --text-info-hover-primary:         var(--mono-white-100);
+  --text-info-focus-primary:         var(--mono-white-100);
+  --text-info-pressed-primary:       var(--neutral-10);
+  --text-info-enabled-secondary:     var(--green-60);
+  --text-info-disabled-secondary:    var(--neutral-30);
+  --text-info-hover-secondary:       var(--green-50);
+  --text-info-focus-secondary:       var(--green-60);
+  --text-info-pressed-secondary:     var(--green-70);
+
+  /* -----------------------------------------------------------------------
+     ICON – Info
+     ----------------------------------------------------------------------- */
+  --icon-info-none-primary:          var(--blue-60);
+  --icon-info-none-secondary:        var(--neutral-60);
+  --icon-info-none-tertiary:         var(--mono-white-100);
+  --icon-info-enabled-primary:       var(--mono-white-100);
+  --icon-info-disabled-primary:      var(--neutral-30);
+  --icon-info-hover-primary:         var(--mono-white-100);
+  --icon-info-focus-primary:         var(--mono-white-100);
+  --icon-info-pressed-primary:       var(--neutral-10);
+  --icon-info-enabled-secondary:     var(--green-60);
+  --icon-info-disabled-secondary:    var(--neutral-30);
+  --icon-info-hover-secondary:       var(--green-50);
+  --icon-info-focus-secondary:       var(--green-60);
+  --icon-info-pressed-secondary:     var(--green-70);
+
+  /* -----------------------------------------------------------------------
+     BORDER – Info
+     ----------------------------------------------------------------------- */
+  --border-info-none-primary:        var(--blue-60);
+  --border-info-none-secondary:      var(--blue-30);
+  --border-info-enabled-primary:     var(--green-60);
+  --border-info-disabled-primary:    var(--neutral-30);
+  --border-info-hover-primary:       var(--green-50);
+  --border-info-focus-primary:       var(--green-60);
+  --border-info-pressed-primary:     var(--green-70);
+  --border-info-enabled-secondary:   var(--neutral-60);
+  --border-info-disabled-secondary:  var(--neutral-30);
+  --border-info-hover-secondary:     var(--neutral-50);
+  --border-info-focus-secondary:     var(--neutral-60);
+  --border-info-pressed-secondary:   var(--neutral-70);
+
+  /* =======================================================================
+     SEMANTIC COLOR VARIABLES  (Light mode — Success role)
+     ======================================================================= */
+
+  /* -----------------------------------------------------------------------
+     FILL – Success
+     ----------------------------------------------------------------------- */
+  --fill-success-none-primary:       var(--green-10);
+  --fill-success-none-secondary:     var(--green-60);
+  --fill-success-enabled-primary:    var(--green-60);
+  --fill-success-disabled-primary:   var(--neutral-20);
+  --fill-success-hover-primary:      var(--green-50);
+  --fill-success-focus-primary:      var(--green-60);
+  --fill-success-pressed-primary:    var(--green-70);
+  --fill-success-enabled-secondary:  var(--mono-white-100);
+  --fill-success-disabled-secondary: var(--mono-white-100);
+  --fill-success-hover-secondary:    var(--mono-white-100);
+  --fill-success-focus-secondary:    var(--mono-white-100);
+  --fill-success-pressed-secondary:  var(--neutral-10);
+
+  /* -----------------------------------------------------------------------
+     TEXT – Success
+     ----------------------------------------------------------------------- */
+  --text-success-none-primary:       var(--neutral-100);
+  --text-success-none-secondary:     var(--neutral-60);
+  --text-success-none-tertiary:      var(--mono-white-100);
+  --text-success-enabled-primary:    var(--mono-white-100);
+  --text-success-disabled-primary:   var(--neutral-30);
+  --text-success-hover-primary:      var(--mono-white-100);
+  --text-success-focus-primary:      var(--mono-white-100);
+  --text-success-pressed-primary:    var(--neutral-10);
+  --text-success-enabled-secondary:  var(--green-60);
+  --text-success-disabled-secondary: var(--neutral-30);
+  --text-success-hover-secondary:    var(--green-50);
+  --text-success-focus-secondary:    var(--green-60);
+  --text-success-pressed-secondary:  var(--green-70);
+
+  /* -----------------------------------------------------------------------
+     ICON – Success
+     ----------------------------------------------------------------------- */
+  --icon-success-none-primary:       var(--green-60);
+  --icon-success-none-secondary:     var(--neutral-60);
+  --icon-success-none-tertiary:      var(--mono-white-100);
+  --icon-success-enabled-primary:    var(--mono-white-100);
+  --icon-success-disabled-primary:   var(--neutral-30);
+  --icon-success-hover-primary:      var(--mono-white-100);
+  --icon-success-focus-primary:      var(--mono-white-100);
+  --icon-success-pressed-primary:    var(--neutral-10);
+  --icon-success-enabled-secondary:  var(--green-60);
+  --icon-success-disabled-secondary: var(--neutral-30);
+  --icon-success-hover-secondary:    var(--green-50);
+  --icon-success-focus-secondary:    var(--green-60);
+  --icon-success-pressed-secondary:  var(--green-70);
+
+  /* -----------------------------------------------------------------------
+     BORDER – Success
+     ----------------------------------------------------------------------- */
+  --border-success-none-primary:       var(--green-60);
+  --border-success-none-secondary:     var(--green-30);
+  --border-success-enabled-primary:    var(--green-60);
+  --border-success-disabled-primary:   var(--neutral-30);
+  --border-success-hover-primary:      var(--green-50);
+  --border-success-focus-primary:      var(--green-60);
+  --border-success-pressed-primary:    var(--green-70);
+  --border-success-enabled-secondary:  var(--neutral-60);
+  --border-success-disabled-secondary: var(--neutral-30);
+  --border-success-hover-secondary:    var(--neutral-50);
+  --border-success-focus-secondary:    var(--neutral-60);
+  --border-success-pressed-secondary:  var(--neutral-70);
+
+  /* =======================================================================
+     SEMANTIC COLOR VARIABLES  (Light mode — Warning role)
+     ======================================================================= */
+
+  /* -----------------------------------------------------------------------
+     FILL – Warning
+     ----------------------------------------------------------------------- */
+  --fill-warning-none-primary:       var(--yellow-10);
+  --fill-warning-none-secondary:     var(--yellow-40);
+  --fill-warning-enabled-primary:    var(--green-60);
+  --fill-warning-disabled-primary:   var(--neutral-20);
+  --fill-warning-hover-primary:      var(--green-50);
+  --fill-warning-focus-primary:      var(--green-60);
+  --fill-warning-pressed-primary:    var(--green-70);
+  --fill-warning-enabled-secondary:  var(--mono-white-100);
+  --fill-warning-disabled-secondary: var(--mono-white-100);
+  --fill-warning-hover-secondary:    var(--mono-white-100);
+  --fill-warning-focus-secondary:    var(--mono-white-100);
+  --fill-warning-pressed-secondary:  var(--neutral-10);
+
+  /* -----------------------------------------------------------------------
+     TEXT – Warning
+     ----------------------------------------------------------------------- */
+  --text-warning-none-primary:       var(--neutral-100);
+  --text-warning-none-secondary:     var(--neutral-60);
+  --text-warning-enabled-primary:    var(--mono-white-100);
+  --text-warning-disabled-primary:   var(--neutral-30);
+  --text-warning-hover-primary:      var(--mono-white-100);
+  --text-warning-focus-primary:      var(--mono-white-100);
+  --text-warning-pressed-primary:    var(--neutral-10);
+  --text-warning-enabled-secondary:  var(--green-60);
+  --text-warning-disabled-secondary: var(--neutral-30);
+  --text-warning-hover-secondary:    var(--green-50);
+  --text-warning-focus-secondary:    var(--green-60);
+  --text-warning-pressed-secondary:  var(--green-70);
+
+  /* -----------------------------------------------------------------------
+     ICON – Warning
+     ----------------------------------------------------------------------- */
+  --icon-warning-none-primary:       var(--yellow-50);
+  --icon-warning-none-secondary:     var(--neutral-60);
+  --icon-warning-none-tertiary:      var(--neutral-100);
+  --icon-warning-enabled-primary:    var(--mono-white-100);
+  --icon-warning-disabled-primary:   var(--neutral-30);
+  --icon-warning-hover-primary:      var(--mono-white-100);
+  --icon-warning-focus-primary:      var(--mono-white-100);
+  --icon-warning-pressed-primary:    var(--neutral-10);
+  --icon-warning-enabled-secondary:  var(--green-60);
+  --icon-warning-disabled-secondary: var(--neutral-30);
+  --icon-warning-hover-secondary:    var(--green-50);
+  --icon-warning-focus-secondary:    var(--green-60);
+  --icon-warning-pressed-secondary:  var(--green-70);
+
+  /* -----------------------------------------------------------------------
+     BORDER – Warning
+     ----------------------------------------------------------------------- */
+  --border-warning-none-primary:       var(--yellow-60);
+  --border-warning-none-secondary:     var(--yellow-30);
+  --border-warning-enabled-primary:    var(--green-60);
+  --border-warning-disabled-primary:   var(--neutral-30);
+  --border-warning-hover-primary:      var(--green-50);
+  --border-warning-focus-primary:      var(--green-60);
+  --border-warning-pressed-primary:    var(--green-70);
+  --border-warning-enabled-secondary:  var(--neutral-60);
+  --border-warning-disabled-secondary: var(--neutral-30);
+  --border-warning-hover-secondary:    var(--neutral-50);
+  --border-warning-focus-secondary:    var(--neutral-60);
+  --border-warning-pressed-secondary:  var(--neutral-70);
+
+  /* =======================================================================
+     SEMANTIC COLOR VARIABLES  (Light mode — Critical role)
+     ======================================================================= */
+
+  /* -----------------------------------------------------------------------
+     FILL – Critical
+     ----------------------------------------------------------------------- */
+  --fill-critical-none-primary:       var(--red-10);
+  --fill-critical-none-secondary:     var(--red-60);
+  --fill-critical-enabled-primary:    var(--red-60);
+  --fill-critical-disabled-primary:   var(--neutral-20);
+  --fill-critical-hover-primary:      var(--red-50);
+  --fill-critical-focus-primary:      var(--red-60);
+  --fill-critical-pressed-primary:    var(--red-70);
+  --fill-critical-enabled-secondary:  var(--mono-white-100);
+  --fill-critical-disabled-secondary: var(--mono-white-100);
+  --fill-critical-hover-secondary:    var(--mono-white-100);
+  --fill-critical-focus-secondary:    var(--mono-white-100);
+  --fill-critical-pressed-secondary:  var(--neutral-10);
+
+  /* -----------------------------------------------------------------------
+     TEXT – Critical
+     ----------------------------------------------------------------------- */
+  --text-critical-none-primary:       var(--neutral-100);
+  --text-critical-none-secondary:     var(--neutral-60);
+  --text-critical-none-tertiary:      var(--mono-white-100);
+  --text-critical-enabled-primary:    var(--mono-white-100);
+  --text-critical-disabled-primary:   var(--neutral-30);
+  --text-critical-hover-primary:      var(--mono-white-100);
+  --text-critical-focus-primary:      var(--mono-white-100);
+  --text-critical-pressed-primary:    var(--neutral-10);
+  --text-critical-enabled-secondary:  var(--red-60);
+  --text-critical-disabled-secondary: var(--neutral-30);
+  --text-critical-hover-secondary:    var(--red-50);
+  --text-critical-focus-secondary:    var(--red-60);
+  --text-critical-pressed-secondary:  var(--red-70);
+
+  /* -----------------------------------------------------------------------
+     ICON – Critical
+     ----------------------------------------------------------------------- */
+  --icon-critical-none-primary:       var(--red-60);
+  --icon-critical-none-secondary:     var(--neutral-60);
+  --icon-critical-none-tertiary:      var(--mono-white-100);
+  --icon-critical-enabled-primary:    var(--mono-white-100);
+  --icon-critical-disabled-primary:   var(--neutral-30);
+  --icon-critical-hover-primary:      var(--mono-white-100);
+  --icon-critical-focus-primary:      var(--mono-white-100);
+  --icon-critical-pressed-primary:    var(--neutral-10);
+  --icon-critical-enabled-secondary:  var(--red-60);
+  --icon-critical-disabled-secondary: var(--neutral-30);
+  --icon-critical-hover-secondary:    var(--red-50);
+  --icon-critical-focus-secondary:    var(--red-60);
+  --icon-critical-pressed-secondary:  var(--red-70);
+
+  /* -----------------------------------------------------------------------
+     BORDER – Critical
+     ----------------------------------------------------------------------- */
+  --border-critical-none-primary:       var(--red-30);
+  --border-critical-none-secondary:     var(--neutral-60);
+  --border-critical-enabled-primary:    var(--red-60);
+  --border-critical-disabled-primary:   var(--neutral-30);
+  --border-critical-hover-primary:      var(--red-50);
+  --border-critical-focus-primary:      var(--red-60);
+  --border-critical-pressed-primary:    var(--red-70);
+  --border-critical-enabled-secondary:  var(--neutral-60);
+  --border-critical-disabled-secondary: var(--neutral-30);
+  --border-critical-hover-secondary:    var(--neutral-50);
+  --border-critical-focus-secondary:    var(--neutral-60);
+  --border-critical-pressed-secondary:  var(--neutral-70);
+}

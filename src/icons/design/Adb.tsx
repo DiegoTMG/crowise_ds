@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Adb: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M18.22 2.04875L16.12 4.14875C17.86 5.41875 19 7.45875 19 9.77875V10.7788H5V9.77875C5 7.45875 6.14 5.41875 7.88 4.14875L5.78 2.04875L6.6 1.21875L8.91 3.52875C9.84 3.05875 10.88 2.77875 12 2.77875C13.12 2.77875 14.16 3.05875 15.1 3.52875L17.4 1.21875L18.22 2.04875ZM12 22.7773C8.13 22.7773 5 19.6473 5 15.7773V11.7773H19V15.7773C19 19.6473 15.87 22.7773 12 22.7773ZM9 8.77734C8.45 8.77734 8 8.32734 8 7.77734C8 7.22734 8.45 6.77734 9 6.77734C9.55 6.77734 10 7.22734 10 7.77734C10 8.32734 9.55 8.77734 9 8.77734ZM14 7.77734C14 8.32734 14.45 8.77734 15 8.77734C15.55 8.77734 16 8.32734 16 7.77734C16 7.22734 15.55 6.77734 15 6.77734C14.45 6.77734 14 7.22734 14 7.77734Z" fill="currentColor"/>
+  </svg>
+);
+
+Adb.displayName = "Adb";
+export default Adb;

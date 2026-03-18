@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const OrganizerHigher: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M12.0002 5.83L15.1702 9L16.5802 7.59L12.0002 3L7.41016 7.59L8.83016 9L12.0002 5.83Z" fill="currentColor"/>
+<path d="M11.9999 18.17L8.82992 15L7.41992 16.41L11.9999 21L16.5899 16.41L15.1699 15L11.9999 18.17Z" fill="#C2C7D0"/>
+  </svg>
+);
+
+OrganizerHigher.displayName = "OrganizerHigher";
+export default OrganizerHigher;

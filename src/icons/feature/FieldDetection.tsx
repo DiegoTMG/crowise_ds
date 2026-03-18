@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const FieldDetection: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M18.43 17.02C18.79 16.43 19 15.74 19 15C19 12.79 17.21 11 15 11C12.79 11 11 12.79 11 15C11 17.21 12.79 19 15 19C15.74 19 16.43 18.78 17.02 18.43C17.95 19.36 18.64 20.05 19.59 21L21 19.59C19.5 18.09 20.21 18.79 18.43 17.02ZM15 17C13.9 17 13 16.1 13 15C13 13.9 13.9 13 15 13C16.1 13 17 13.9 17 15C17 16.1 16.1 17 15 17Z" fill="currentColor"/>
+<path d="M21 7V5L19 5V3H17V5L7 5V3H5V5L3 5V7H5L5 17H3L3 19H5V21L7 21V19H11.1345C10.46 18.4681 9.91077 17.7842 9.53846 17H7L7 7L17 7V9.53845C17.7842 9.91077 18.4681 10.4599 19 11.1345V7H21Z" fill="currentColor"/>
+  </svg>
+);
+
+FieldDetection.displayName = "FieldDetection";
+export default FieldDetection;

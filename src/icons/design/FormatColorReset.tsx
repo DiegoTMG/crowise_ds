@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const FormatColorReset: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M12 6.195C13.53 8.195 15.08 10.625 15.71 12.435L17.94 14.665C17.97 14.395 18 14.115 18 13.835C18 9.855 12 3.035 12 3.035C12 3.035 10.82 4.385 9.5 6.225L10.94 7.665C11.28 7.155 11.64 6.665 12 6.195ZM5.41 4.97641L4 6.38641L7.32 9.70641C6.55 11.1664 6 12.6264 6 13.8364C6 17.1464 8.69 19.8364 12 19.8364C13.52 19.8364 14.9 19.2664 15.95 18.3364L18.58 20.9664L20 19.5564L5.41 4.97641ZM8 13.835C8 16.045 9.79 17.835 12 17.835C12.96 17.835 13.83 17.475 14.53 16.915L8.81 11.195C8.32 12.215 8 13.145 8 13.835Z" fill="currentColor"/>
+  </svg>
+);
+
+FormatColorReset.displayName = "FormatColorReset";
+export default FormatColorReset;

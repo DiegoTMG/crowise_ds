@@ -1,0 +1,23 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const TankCleaning: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M14 4H12V6H15C14.5 6.5 14 7.50978 14 8H4V20H20V14C20.7676 14 21.468 13.4786 22 13V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V8C2 6.89543 2.89543 6 4 6H6V4H4V2H14V4ZM8 6H10V4H8V6Z" fill="currentColor"/>
+<path d="M8.2666 13.3076C9.3578 12.7621 10.6422 12.7621 11.7334 13.3076L11.7588 13.3203C12.1146 13.4982 12.4394 13.7324 12.7207 14.0137C13.5433 14.8362 14.8003 15.0405 15.8408 14.5205L16.0361 14.4229C16.5922 14.1448 17.2055 14.0001 17.8271 14H18V18H6V14H6.05566C6.59899 14 7.13512 13.8738 7.62109 13.6309L8.2666 13.3076Z" fill="currentColor"/>
+<path d="M19 3C19 3 22 7.3502 22 9C22 10.65 20.65 12 19 12C17.35 12 16 10.65 16 9C16 7.35 19 3 19 3Z" fill="currentColor"/>
+  </svg>
+);
+
+TankCleaning.displayName = "TankCleaning";
+export default TankCleaning;

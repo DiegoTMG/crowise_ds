@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const EditNote: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M3 10H14V12H3V10ZM3 8H14V6H3V8ZM3 16H10V14H3V16ZM18.01 12.87L18.72 12.16C19.11 11.77 19.74 11.77 20.13 12.16L20.84 12.87C21.23 13.26 21.23 13.89 20.84 14.28L20.13 14.99L18.01 12.87ZM17.3 13.58L12 18.88V21H14.12L19.42 15.7L17.3 13.58Z" fill="currentColor"/>
+  </svg>
+);
+
+EditNote.displayName = "EditNote";
+export default EditNote;

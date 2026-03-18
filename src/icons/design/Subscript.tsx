@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Subscript: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M22 18H20V19H23V20H19V18C19 17.45 19.45 17 20 17H22V16H19V15H22C22.55 15 23 15.45 23 16V17C23 17.55 22.55 18 22 18ZM5.88 18H8.54L11.94 12.58H12.06L15.46 18H18.12L13.47 10.73L17.81 4H15.13L12.06 8.99H11.94L8.85001 4H6.19L10.51 10.73L5.88 18Z" fill="currentColor"/>
+  </svg>
+);
+
+Subscript.displayName = "Subscript";
+export default Subscript;

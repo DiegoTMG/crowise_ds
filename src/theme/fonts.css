@@ -1,0 +1,213 @@
+/* ==========================================================================
+   Cropwise Design System v2 — Typography Theme
+   Source: Figma DSv2 — Cropwise default variable set
+   ==========================================================================
+   Breakpoints (mobile-first):
+     Phone / Tablet : base    (< 1024px)
+     S Desktop      : 1024px+ (< 1440px)
+     L Desktop      : 1440px+
+     PDF            : @media print
+   ========================================================================== */
+
+:root {
+  /* ---------------------------------------------------------------------------
+     Font Families
+     --------------------------------------------------------------------------- */
+  --font-family-heading: "Noto Sans", sans-serif;
+  --font-family-body: "Noto Sans", sans-serif;
+  --font-family-brand: "Anek Tamil", sans-serif;
+
+  /* ---------------------------------------------------------------------------
+     Font Weights
+     --------------------------------------------------------------------------- */
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+  /* ---------------------------------------------------------------------------
+     Phone / Tablet — Size
+     --------------------------------------------------------------------------- */
+  --font-size-display: 32px;
+  --font-size-heading: 24px;
+  --font-size-subheading: 20px;
+  --font-size-body-primary: 18px;
+  --font-size-body-secondary: 14px;
+  --font-size-label: 12px;
+
+  /* ---------------------------------------------------------------------------
+     Phone / Tablet — Line Height
+     --------------------------------------------------------------------------- */
+  --line-height-display: 40px;
+  --line-height-heading: 32px;
+  --line-height-subheading: 28px;
+  --line-height-body-primary: 24px;
+  --line-height-body-secondary: 20px;
+  --line-height-label: 16px;
+
+  /* ---------------------------------------------------------------------------
+     Phone / Tablet — Letter Spacing
+     --------------------------------------------------------------------------- */
+  --letter-spacing-display: -0.03px;
+  --letter-spacing-heading: -0.02px;
+  --letter-spacing-subheading: -0.15px;
+  --letter-spacing-body-primary: 0px;
+  --letter-spacing-body-secondary: -0.01px;
+  --letter-spacing-label: 0px;
+}
+
+/* ==========================================================================
+   S Desktop — 1024px+
+   ========================================================================== */
+@media (min-width: 1024px) {
+  :root {
+    /* Size */
+    --font-size-display: 32px;
+    --font-size-heading: 24px;
+    --font-size-subheading: 20px;
+    --font-size-body-primary: 18px;
+    --font-size-body-secondary: 14px;
+    --font-size-label: 12px;
+
+    /* Line Height */
+    --line-height-display: 40px;
+    --line-height-heading: 32px;
+    --line-height-subheading: 28px;
+    --line-height-body-primary: 24px;
+    --line-height-body-secondary: 20px;
+    --line-height-label: 16px;
+
+    /* Letter Spacing */
+    --letter-spacing-display: -0.56px;
+    --letter-spacing-heading: -0.3px;
+    --letter-spacing-subheading: -0.15px;
+    --letter-spacing-body-primary: -0.12px;
+    --letter-spacing-body-secondary: -0.1px;
+    --letter-spacing-label: -0.09px;
+  }
+}
+
+/* ==========================================================================
+   L Desktop — 1440px+
+   ========================================================================== */
+@media (min-width: 1440px) {
+  :root {
+    /* Size */
+    --font-size-display: 40px;
+    --font-size-heading: 32px;
+    --font-size-subheading: 24px;
+    --font-size-body-primary: 20px;
+    --font-size-body-secondary: 16px;
+    --font-size-label: 14px;
+
+    /* Line Height */
+    --line-height-display: 52px;
+    --line-height-heading: 40px;
+    --line-height-subheading: 32px;
+    --line-height-body-primary: 28px;
+    --line-height-body-secondary: 24px;
+    --line-height-label: 20px;
+
+    /* Letter Spacing */
+    --letter-spacing-display: -0.7px;
+    --letter-spacing-heading: -0.56px;
+    --letter-spacing-subheading: -0.3px;
+    --letter-spacing-body-primary: -0.3px;
+    --letter-spacing-body-secondary: -0.12px;
+    --letter-spacing-label: -0.1px;
+  }
+}
+
+/* ==========================================================================
+   PDF — Print
+   ========================================================================== */
+@media print {
+  :root {
+    /* Size */
+    --font-size-display: 20px;
+    --font-size-heading: 18px;
+    --font-size-subheading: 14px;
+    --font-size-body-primary: 12px;
+    --font-size-body-secondary: 10px;
+    --font-size-label: 8px;
+
+    /* Line Height */
+    --line-height-display: 28px;
+    --line-height-heading: 24px;
+    --line-height-subheading: 20px;
+    --line-height-body-primary: 16px;
+    --line-height-body-secondary: 14px;
+    --line-height-label: 12px;
+
+    /* Letter Spacing */
+    --letter-spacing-display: -0.03px;
+    --letter-spacing-heading: -0.02px;
+    --letter-spacing-subheading: -0.15px;
+    --letter-spacing-body-primary: 0px;
+    --letter-spacing-body-secondary: -0.01px;
+    --letter-spacing-label: 0px;
+  }
+}
+
+/* ==========================================================================
+   Typography Utility Classes
+   ========================================================================== */
+
+.type-display {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-display);
+  letter-spacing: var(--letter-spacing-display);
+}
+
+.type-heading {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+}
+
+.type-subheading {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-subheading);
+  letter-spacing: var(--letter-spacing-subheading);
+}
+
+.type-body-primary {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-primary);
+  letter-spacing: var(--letter-spacing-body-primary);
+}
+
+.type-body-secondary {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-secondary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-secondary);
+  letter-spacing: var(--letter-spacing-body-secondary);
+}
+
+.type-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-label);
+  letter-spacing: var(--letter-spacing-label);
+}
+
+/* Bold variants */
+.type-display--bold { font-weight: var(--font-weight-bold); }
+.type-heading--bold { font-weight: var(--font-weight-bold); }
+.type-subheading--bold { font-weight: var(--font-weight-bold); }
+.type-body-primary--bold { font-weight: var(--font-weight-bold); }
+.type-body-secondary--bold { font-weight: var(--font-weight-bold); }
+.type-label--bold { font-weight: var(--font-weight-bold); }
+
+/* Brand font variant (Anek Tamil) */
+.type-brand {
+  font-family: var(--font-family-brand);
+}

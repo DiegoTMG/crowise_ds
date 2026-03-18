@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Earbuds: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M16 3C13.24 3 11 5.24 11 8V16C11 17.66 9.66 19 8 19C6.34 19 5 17.66 5 16V9H5.83C7.44 9 8.89 7.82 9 6.21C9.12 4.52 7.84 3.11 6.2 3C4.44 2.89 3 4.42 3 6.19V16C3 18.76 5.24 21 8 21C10.76 21 13 18.76 13 16V8C13 6.34 14.34 5 16 5C17.66 5 19 6.34 19 8V15H18.17C16.56 15 15.11 16.18 15 17.79C14.88 19.48 16.16 20.89 17.8 21C19.56 21.12 21 19.58 21 17.82V8C21 5.24 18.76 3 16 3ZM5 6C5 5.45 5.45 5 6 5C6.55 5 7 5.45 7 6C7 6.55 6.55 7 6 7H5V6ZM19 18C19 18.55 18.55 19 18 19C17.45 19 17 18.55 17 18C17 17.45 17.45 17 18 17H19V18Z" fill="currentColor"/>
+  </svg>
+);
+
+Earbuds.displayName = "Earbuds";
+export default Earbuds;

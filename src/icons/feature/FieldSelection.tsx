@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const FieldSelection: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M7 5H17V3H19V5H21V7H19V11L17 10V7H7V17H10L11 19H7V21H5V19H3V17H5V7H3V5H5V3H7V5Z" fill="currentColor"/>
+<path d="M19 13L16.7168 15.3076L20.9971 19.5879L19.585 21L15.3018 16.7354L13 19L11 11L19 13Z" fill="currentColor"/>
+  </svg>
+);
+
+FieldSelection.displayName = "FieldSelection";
+export default FieldSelection;

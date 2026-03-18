@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Search: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M14.9649 14.2539H15.7549L20.7449 19.2539L19.2549 20.7439L14.2549 15.7539V14.9639L13.9849 14.6839C12.8449 15.6639 11.3649 16.2539 9.75488 16.2539C6.16488 16.2539 3.25488 13.3439 3.25488 9.75391C3.25488 6.16391 6.16488 3.25391 9.75488 3.25391C13.3449 3.25391 16.2549 6.16391 16.2549 9.75391C16.2549 11.3639 15.6649 12.8439 14.6849 13.9839L14.9649 14.2539ZM5.25488 9.75391C5.25488 12.2439 7.26488 14.2539 9.75488 14.2539C12.2449 14.2539 14.2549 12.2439 14.2549 9.75391C14.2549 7.26391 12.2449 5.25391 9.75488 5.25391C7.26488 5.25391 5.25488 7.26391 5.25488 9.75391Z" fill="currentColor"/>
+  </svg>
+);
+
+Search.displayName = "Search";
+export default Search;

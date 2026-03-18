@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Split: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M3 2H9V4H4V20H9V22H3C2.44772 22 2 21.5523 2 21V3C2 2.44772 2.44772 2 3 2ZM20 20H15V22H21C21.5523 22 22 21.5523 22 21V3C22 2.44772 21.5523 2 21 2H15V4H20V20ZM11 2V3L13 3V2H11ZM11 5V7H13V5H11ZM11 9V11H13V9H11ZM11 13V15H13V13H11ZM11 17V19H13V17H11ZM11 21V22H13V21H11Z" fill="currentColor"/>
+  </svg>
+);
+
+Split.displayName = "Split";
+export default Split;

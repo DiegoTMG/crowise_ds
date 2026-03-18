@@ -69,9 +69,9 @@ const featureRange = getFrameRange('3:176');
 const designRange = getFrameRange('3:891');
 
 // Get the SVG files we have
-const cropSvgs = new Set(fs.readdirSync('/Users/diegogoncalves/Desktop/VibeCoding/Icons/svg/crop').map(f => f.replace('.svg', '')));
-const featureSvgs = new Set(fs.readdirSync('/Users/diegogoncalves/Desktop/VibeCoding/Icons/svg/feature').map(f => f.replace('.svg', '')));
-const designSvgs = new Set(fs.readdirSync('/Users/diegogoncalves/Desktop/VibeCoding/Icons/svg/design').map(f => f.replace('.svg', '')));
+const cropSvgs = new Set(fs.readdirSync('/Users/diegogoncalves/Desktop/VibeCoding/cropwise_ds/svg/crop').map(f => f.replace('.svg', '')));
+const featureSvgs = new Set(fs.readdirSync('/Users/diegogoncalves/Desktop/VibeCoding/cropwise_ds/svg/feature').map(f => f.replace('.svg', '')));
+const designSvgs = new Set(fs.readdirSync('/Users/diegogoncalves/Desktop/VibeCoding/cropwise_ds/svg/design').map(f => f.replace('.svg', '')));
 
 // For each node, determine category based on position in metadata
 const seen = new Set();
@@ -89,13 +89,13 @@ for (const node of allNodes) {
   
   if (cropRange && nodePos >= cropRange.start && nodePos <= cropRange.end && cropSvgs.has(kebabName)) {
     category = 'crop';
-    source = `src/crop/${componentName}.tsx`;
+    source = `src/icons/crop/${componentName}.tsx`;
   } else if (featureRange && nodePos >= featureRange.start && nodePos <= featureRange.end && featureSvgs.has(kebabName)) {
     category = 'feature';
-    source = `src/feature/${componentName}.tsx`;
+    source = `src/icons/feature/${componentName}.tsx`;
   } else if (designRange && nodePos >= designRange.start && nodePos <= designRange.end && designSvgs.has(kebabName)) {
     category = 'design';
-    source = `src/design/${componentName}.tsx`;
+    source = `src/icons/design/${componentName}.tsx`;
   }
   
   if (source) {
@@ -115,7 +115,7 @@ console.log(`  Feature: ${mappings.filter(m => m.source.includes('/feature/')).l
 console.log(`  Design: ${mappings.filter(m => m.source.includes('/design/')).length}`);
 
 // Write to file
-fs.writeFileSync('/Users/diegogoncalves/Desktop/VibeCoding/Icons/code-connect-mappings.json', JSON.stringify(mappings, null, 2));
+fs.writeFileSync('/Users/diegogoncalves/Desktop/VibeCoding/cropwise_ds/code-connect-mappings.json', JSON.stringify(mappings, null, 2));
 
 // Also output in a format ready for the MCP tool
 console.log('\nSample mappings:');

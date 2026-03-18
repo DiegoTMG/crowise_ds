@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
-const WORKSPACE = '/Users/diegogoncalves/Desktop/VibeCoding/Icons';
+const WORKSPACE = '/Users/diegogoncalves/Desktop/VibeCoding/cropwise_ds';
 const SVG_DIR = path.join(WORKSPACE, 'svg');
-const SRC_DIR = path.join(WORKSPACE, 'src');
+const SRC_DIR = path.join(WORKSPACE, 'src', 'icons');
 
 function toPascalCase(str) {
   return str
@@ -168,7 +168,7 @@ function main() {
     }
   }
   
-  // Write main index
+  // Write main icons index
   const mainIndex = generateMainIndex(allIcons);
   fs.writeFileSync(path.join(SRC_DIR, 'index.ts'), mainIndex);
   
@@ -182,7 +182,7 @@ function main() {
     manifest[icon.category].push({
       name: icon.baseName,
       component: icon.componentName,
-      import: `import { ${icon.componentName} } from "./src/${icon.category}";`,
+      import: `import { ${icon.componentName} } from "./src/icons/${icon.category}";`,
     });
   }
   fs.writeFileSync(path.join(WORKSPACE, 'icon-manifest.json'), JSON.stringify(manifest, null, 2));

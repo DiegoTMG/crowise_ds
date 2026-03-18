@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 19 19" fill="none">
-<path d="M16 0H14V3H11C11.01 3.01 11 5 11 5H14V7.99C14.01 8 16 7.99 16 7.99V5H19V3H16V0Z" fill="var(--fill-0, #696F88)"/>
-<path d="M14 17.22H2V5H9V3H2C0.9 3 0 3.9 0 5V17C0 18.1 0.9 19 2 19H14C15.1 19 16 18.1 16 17V10H14V17.22Z" fill="var(--fill-0, #696F88)"/>
-<path d="M4 7H12V9H4V7Z" fill="var(--fill-0, #696F88)"/>
-<path d="M4 10V12H12V10H4Z" fill="var(--fill-0, #696F88)"/>
-<path d="M4 13H12V15H4V13Z" fill="var(--fill-0, #696F88)"/>
-</svg>

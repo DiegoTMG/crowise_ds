@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const FormatShapes: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M23 1V7H21V17H23V23H17V21H7V23H1V17H3V7H1V1H7V3H17V1H23ZM5 3H3V5H5V3ZM5 21H3V19H5V21ZM7 17V19H17V17H19V7H17V5H7V7H5V17H7ZM21 21H19V19H21V21ZM19 3V5H21V3H19ZM13.73 14H10.24L9.51 16H7.89L11.29 7H12.69L16.1 16H14.47L13.73 14ZM13.3 12.74H10.69L12 8.91L13.3 12.74Z" fill="currentColor"/>
+  </svg>
+);
+
+FormatShapes.displayName = "FormatShapes";
+export default FormatShapes;

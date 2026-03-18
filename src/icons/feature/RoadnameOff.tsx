@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const RoadnameOff: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M18.3848 19.9419L17 21.0876V21.5H7.5V19.5H11.5V17H4.5L2.25 14L4.5 11H8.39121L7.56388 10H5L2.75 7L3.85879 5.52161L2.00003 3.2749L3.54102 2L18.3848 19.9419ZM10.0459 13H5.5L4.75 14L5.5 15H11.5V14.7576L10.0459 13ZM13.5 17.1751V19.5H15.4235L13.5 17.1751Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M11.5 2V4H7.19567L8.85032 6H11.5V8H10.505L14.6416 13H20L22.3204 9.90616L19.4142 7H13.5V2H11.5ZM19 11H13.5V9H18.5858L19.6796 10.0938L19 11Z" fill="currentColor"/>
+  </svg>
+);
+
+RoadnameOff.displayName = "RoadnameOff";
+export default RoadnameOff;

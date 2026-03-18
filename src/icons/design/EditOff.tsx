@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const EditOff: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M14.0596 9.01859L14.9796 9.93859L13.8696 11.0486L15.2796 12.4586L17.7996 9.93859L14.0496 6.18859L11.5296 8.70859L12.9396 10.1186L14.0596 9.01859ZM20.7096 7.03859C21.0996 6.64859 21.0996 6.01859 20.7096 5.62859L18.3696 3.28859C18.1696 3.08859 17.9196 2.99859 17.6596 2.99859C17.3996 2.99859 17.1496 3.09859 16.9596 3.28859L15.1296 5.11859L18.8796 8.86859L20.7096 7.03859ZM2.80965 2.80859L1.38965 4.21859L8.70965 11.5386L2.99965 17.2486V20.9986H6.74965L12.4596 15.2886L19.7796 22.6086L21.1896 21.1986L2.80965 2.80859ZM5.91965 18.9986H4.99965V18.0786L10.1296 12.9486L11.0496 13.8686L5.91965 18.9986Z" fill="currentColor"/>
+  </svg>
+);
+
+EditOff.displayName = "EditOff";
+export default EditOff;

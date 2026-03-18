@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const DirectionSouthwest: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M5.34317 18.6569L20.4767 12.0086L20.4979 11.1842L14.8705 9.12956L12.8159 3.50218L11.9915 3.52332L5.34317 18.6569Z" fill="currentColor"/>
+  </svg>
+);
+
+DirectionSouthwest.displayName = "DirectionSouthwest";
+export default DirectionSouthwest;

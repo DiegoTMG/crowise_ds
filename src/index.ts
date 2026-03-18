@@ -1,8 +1,5 @@
-// Crop Icons
-export * from "./crop";
+// Icons
+export * from "./icons";
 
-// Design Icons
-export * from "./design";
-
-// Feature Icons
-export * from "./feature";
+// Components (Buttons, Spinner)
+export * from "./components";

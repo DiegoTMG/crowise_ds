@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const DateTo: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M19 22C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4H18V2H16V4H8V2H6V4H5C3.89 4 3.01 4.9 3.01 6L3.00571 11H5V10H19V20H5V19H3.00143L3 20C3 21.1 3.89 22 5 22H19ZM5 6H19V8H5V6Z" fill="currentColor"/>
+<path d="M3 14H8.01V11L12 15L8.01 19V16H3V14Z" fill="currentColor"/>
+  </svg>
+);
+
+DateTo.displayName = "DateTo";
+export default DateTo;

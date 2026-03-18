@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const DownloadXls: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M14 2H6C4.9 2 4.01 2.9 4.01 4L4 20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM6 20V4H13V9H18V20H6ZM9 12L8.5 13.25L8 12H7L8 14.5L7 17H8L8.5 15.75L9 17H10L9 14.5L10 12H9ZM15 12C14.4477 12 14 12.4477 14 13V15H16V16H14V17H16C16.5523 17 17 16.5523 17 16V14H15V13H17V12H15ZM11 16V12H12V16H13V17H12C11.4477 17 11 16.5523 11 16Z" fill="currentColor"/>
+  </svg>
+);
+
+DownloadXls.displayName = "DownloadXls";
+export default DownloadXls;

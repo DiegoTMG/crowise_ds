@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const SiloNone: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M12.4472 2.22361C12.1657 2.08285 11.8343 2.08285 11.5528 2.22361L6.27639 4.86181C6.107 4.94651 6 5.11964 6 5.30903V20.0009H4.5C4.22386 20.0009 4 20.2247 4 20.5009V21.5009C4 21.777 4.22386 22.0009 4.5 22.0009H19.5C19.7761 22.0009 20 21.777 20 21.5009V20.5009C20 20.2247 19.7761 20.0009 19.5 20.0009H18V5.30903C18 5.11964 17.893 4.94651 17.7236 4.86181L12.4472 2.22361ZM7.75 14.0009V11.5009H16.25V14.0009H7.75ZM16.25 6.75085V9.00085H7.75V6.75085H16.25ZM8 16.0009V20.0009H16V16.0009H15L13.5 17.0009V18.5009C13.5 18.777 13.2761 19.0009 13 19.0009H11C10.7239 19.0009 10.5 18.777 10.5 18.5009V17.0009L9 16.0009H8Z" fill="currentColor"/>
+  </svg>
+);
+
+SiloNone.displayName = "SiloNone";
+export default SiloNone;

@@ -1,0 +1,23 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const CalendarPlan: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M20 2.90909H19V1H17V2.90909H7V1H5V2.90909H4C2.9 2.90909 2 3.76818 2 4.81818V20.0909C2 21.1409 2.9 22 4 22H11V20H4V10H20V11H22V4.81818C22 3.76818 21.1 2.90909 20 2.90909ZM20 22V23C21.1046 23 22 22.1046 22 21V20.0909C22 21.1409 21.1 22 20 22ZM4 8H20V5H4V8Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M18 22C20.2091 22 22 20.2091 22 18C22 15.7909 20.2091 14 18 14C15.7909 14 14 15.7909 14 18C14 20.2091 15.7909 22 18 22ZM18 24C21.3137 24 24 21.3137 24 18C24 14.6863 21.3137 12 18 12C14.6863 12 12 14.6863 12 18C12 21.3137 14.6863 24 18 24Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M18.5 15.5V17.5H20V19.5H16.5V15.5H18.5Z" fill="currentColor"/>
+  </svg>
+);
+
+CalendarPlan.displayName = "CalendarPlan";
+export default CalendarPlan;

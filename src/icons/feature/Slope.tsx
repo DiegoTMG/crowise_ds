@@ -1,0 +1,22 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Slope: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M10.3105 17.998H20V14.0503V10.1025L10.3105 17.998ZM22 18.498C22 19.3265 21.3284 19.998 20.5 19.998H3C2.44772 19.998 2 19.5503 2 18.998C2 18.4458 2.44772 17.998 3 17.998H7.14355L20.2051 7.35547L20.3438 7.25879C21.0541 6.83584 22 7.33996 22 8.20898V18.498Z" fill="currentColor"/>
+<path d="M17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8V6.27246L8.67578 12.0703C8.26866 12.4435 7.63589 12.4159 7.2627 12.0088C6.88972 11.6017 6.91717 10.9688 7.32422 10.5957L13.4287 5H12C11.4477 5 11 4.55228 11 4C11 3.44772 11.4477 3 12 3H16L16.1025 3.00488C16.6067 3.05621 17 3.48232 17 4V8Z" fill="currentColor"/>
+  </svg>
+);
+
+Slope.displayName = "Slope";
+export default Slope;

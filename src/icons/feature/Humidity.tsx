@@ -1,0 +1,24 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const Humidity: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M12 19C9.23858 19 7 16.7614 7 14C7 13.3893 7.37553 12.0262 7.97841 11.0542C8.90046 9.56752 10.2444 7.9156 11.4004 6.59761C11.6098 6.35881 11.8111 6.13327 12 5.92421C12.1889 6.13327 12.3902 6.35881 12.5996 6.59761C13.7556 7.9156 15.0995 9.56752 16.0216 11.0542C16.6245 12.0262 17 13.3893 17 14C17 16.7614 14.7614 19 12 19ZM13.3709 4.45855C14.6326 5.84727 16.4896 8.01422 17.7212 10C18.479 11.2217 19 12.9453 19 14C19 17.866 15.866 21 12 21C8.13401 21 5 17.866 5 14C5 12.9453 5.52102 11.2217 6.27877 10C7.51041 8.01422 9.36744 5.84727 10.6291 4.45855C11.4364 3.56996 12 3 12 3C12 3 12.5636 3.56996 13.3709 4.45855Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M9.5 12C9.5 11.4477 9.94772 11 10.5 11C11.0523 11 11.5 11.4477 11.5 12C11.5 12.5523 11.0523 13 10.5 13C9.94772 13 9.5 12.5523 9.5 12Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M12.5 15C12.5 14.4477 12.9477 14 13.5 14C14.0523 14 14.5 14.4477 14.5 15C14.5 15.5523 14.0523 16 13.5 16C12.9477 16 12.5 15.5523 12.5 15Z" fill="currentColor"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M14.3536 11.1464C14.5488 11.3417 14.5488 11.6583 14.3536 11.8536L10.3536 15.8536C10.1583 16.0488 9.84171 16.0488 9.64645 15.8536C9.45118 15.6583 9.45118 15.3417 9.64645 15.1464L13.6464 11.1464C13.8417 10.9512 14.1583 10.9512 14.3536 11.1464Z" fill="currentColor"/>
+  </svg>
+);
+
+Humidity.displayName = "Humidity";
+export default Humidity;

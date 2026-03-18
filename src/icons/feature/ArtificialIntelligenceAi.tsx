@@ -1,0 +1,23 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const ArtificialIntelligenceAi: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M19.026 16.3242L22 17.6763L19.026 19.0273L17.675 22L16.3241 19.0273L13.3512 17.6763L16.3241 16.3242L17.675 13.3515L19.026 16.3242Z" fill="currentColor"/>
+<path d="M19.2969 2C17.8575 5.53978 17.3117 8.63431 16.6089 11.1891L14.6138 10.2811C14.7378 9.81392 14.8635 9.30957 14.9975 8.76277C15.2798 7.61082 15.5913 6.31992 16.002 4.92158C14.2937 5.32083 12.771 5.7325 11.4259 6.18764C9.16558 6.95252 7.54524 7.79383 6.42311 8.77556C5.34981 9.71478 4.66777 10.8365 4.35596 12.3447C4.11299 13.5204 4.0947 15.1171 4.35596 16.9705C5.08302 16.8795 5.77447 16.811 6.41846 16.7485L6.51496 16.7392C7.65491 16.6286 8.60134 16.5367 9.45176 16.3811L10.3737 18.2669C8.18253 18.7564 5.5517 18.7331 2.59574 19.2981L2.48064 18.7424C0.169106 7.2163 6.26306 4.62218 19.2969 2Z" fill="currentColor"/>
+<path d="M12.7466 11.6902L14.9766 12.7028L12.7466 13.7166L11.7328 15.9464L10.7202 13.7166L8.49026 12.7028L10.7202 11.6902L11.7328 9.46033L12.7466 11.6902Z" fill="currentColor"/>
+  </svg>
+);
+
+ArtificialIntelligenceAi.displayName = "ArtificialIntelligenceAi";
+export default ArtificialIntelligenceAi;

@@ -1,0 +1,21 @@
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number | string;
+}
+
+const MergeType: React.FC<IconProps> = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path fillRule="evenodd" clipRule="evenodd" d="M10.9998 8.04688H7.49984L11.9998 3.54688L16.4998 8.04688H12.9998V14.4569L6.99984 20.4569L5.58984 19.0469L10.9998 13.6369V8.04688ZM18.4098 19.0469L16.9998 20.4569L13.5898 17.0469L14.9998 15.6369L18.4098 19.0469Z" fill="currentColor"/>
+  </svg>
+);
+
+MergeType.displayName = "MergeType";
+export default MergeType;
