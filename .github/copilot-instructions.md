@@ -54,14 +54,15 @@ Before executing any task, always perform this sequence:
 
 1. Inspect the target component/frame in Figma through MCP.
 2. Inspect `src/theme/theme.css`.
-3. Inspect `src/components/`.
-4. Inspect `src/icons/`.
-5. Check whether the component already exists in the codebase.
-6. Check whether the design is composed from existing design-system primitives.
-7. Map every Figma value to an existing token/component/icon/style.
-8. Verify whether any dependency is required to complete the task.
-9. **Before making changes, explicitly inform the user if any dependency must be installed first.**
-10. Only then implement.
+3. Inspect `src/theme/fonts.css`.
+4. Inspect `src/components/`.
+5. Inspect `src/icons/`.
+6. Check whether the component already exists in the codebase.
+7. Check whether the design is composed from existing design-system primitives.
+8. Map every Figma value to an existing token/component/icon/style.
+9. Verify whether any dependency is required to complete the task.
+10. **Before making changes, explicitly inform the user if any dependency must be installed first.**
+11. Only then implement.
 
 If a dependency is required:
 - **Stop before implementation**
@@ -104,6 +105,7 @@ The local Design System is authoritative for implementation resources.
 ### Mandatory files to inspect
 
 - `src/theme/theme.css`
+- `src/theme/fonts.css`
 - `src/components/`
 - `src/icons/`
 
@@ -385,6 +387,7 @@ Before creating any new component:
   - `src/components/`
   - `src/icons/`
   - `src/theme/theme.css`
+  - `src/theme/fonts.css`
 - When generating UI, **reuse and assemble existing system components** instead of creating custom elements.
 - If a Figma design references a component that already exists in code, use it.
 - Do not re-implement an existing component from scratch unless explicitly required.
@@ -480,15 +483,16 @@ For every Figma-to-code task, follow this behavior:
 1. Read the task carefully.
 2. Inspect the target in Figma via MCP.
 3. Inspect `src/theme/theme.css`.
-4. Inspect `src/components/`.
-5. Inspect `src/icons/`.
-6. Reuse existing system resources wherever possible.
-7. Verify whether any dependency is required.
-8. Inform the user before implementation if any dependency must be installed.
-9. Implement with exact fidelity.
-10. Export/register correctly.
-11. Keep the code aligned with the current design-system architecture.
-12. Do a final self-check against Figma:
+4. Inspect `src/theme/fonts.css`.
+5. Inspect `src/components/`.
+6. Inspect `src/icons/`.
+7. Reuse existing system resources wherever possible.
+8. Verify whether any dependency is required.
+9. Inform the user before implementation if any dependency must be installed.
+10. Implement with exact fidelity.
+11. Export/register correctly.
+12. Keep the code aligned with the current design-system architecture.
+13. Do a final self-check against Figma:
    - structure
    - spacing
    - sizing

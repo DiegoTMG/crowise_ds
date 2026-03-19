@@ -11,7 +11,7 @@
  *
  * Typography  — Figma: font-['Noto_sans:Regular',sans-serif] leading-[24px]
  *               not-italic text-[16px] tracking-[-0.12px] whitespace-nowrap
- *               → font-family: var(--font-family-primary)
+ *               → font-family: var(--font-family-body)
  *                 font-weight: 400  font-size: 16px  line-height: 24px
  *                 letter-spacing: -0.12px  font-style: normal
  *
@@ -107,7 +107,7 @@ const STATE_STYLES: Record<
 //        not-italic text-[16px] tracking-[-0.12px] whitespace-nowrap
 
 const LABEL_STYLE: React.CSSProperties = {
-  fontFamily:    "var(--font-family-primary)",  // "Noto Sans", sans-serif
+  fontFamily:    "var(--font-family-body)",  // "Noto Sans", sans-serif
   fontSize:      "16px",                         // text-[16px]
   fontWeight:    400,                            // Noto_sans:Regular
   fontStyle:     "normal",                       // not-italic
@@ -310,7 +310,7 @@ export function PrimaryRound() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -326,7 +326,7 @@ export function PrimaryRound() {
         <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -351,9 +351,9 @@ export function PrimaryRound() {
 
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -381,7 +381,7 @@ export function PrimaryRound() {
           <div>
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -394,9 +394,9 @@ export function PrimaryRound() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-family-primary)",
+                fontFamily: "var(--font-family-body)",
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -441,7 +441,7 @@ export function PrimaryRound() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -478,7 +478,7 @@ export function PrimaryRound() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -522,7 +522,7 @@ export function PrimaryRound() {
               {/* Description */}
               <p
                 style={{
-                  fontFamily:   "var(--font-family-primary)",
+                  fontFamily:   "var(--font-family-body)",
                   fontSize:     "14px",
                   fontWeight:   400,
                   lineHeight:   "22px",
@@ -556,7 +556,7 @@ export function PrimaryRound() {
         >
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -576,7 +576,7 @@ export function PrimaryRound() {
             }}
           >
             {[
-              { prop: "font-family",    value: "var(--font-family-primary)",   figma: "Noto_sans:Regular" },
+              { prop: "font-family",    value: "var(--font-family-body)",   figma: "Noto_sans:Regular" },
               { prop: "font-weight",    value: "400",                          figma: "Regular" },
               { prop: "font-size",      value: "16px",                         figma: "text-[16px]" },
               { prop: "line-height",    value: "24px",                         figma: "leading-[24px]" },
@@ -605,9 +605,9 @@ export function PrimaryRound() {
                 </code>
                 <span
                   style={{
-                    fontFamily: "var(--font-family-primary)",
+                    fontFamily: "var(--font-family-body)",
                     fontSize:   "13px",
-                    fontWeight: 400,
+                    fontWeight: "var(--font-weight-regular)",
                     color:      "var(--text-default-none-primary)",
                   }}
                 >

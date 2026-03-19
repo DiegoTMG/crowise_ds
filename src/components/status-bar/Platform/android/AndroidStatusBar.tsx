@@ -94,7 +94,7 @@ export function AndroidStatusBar({
           bottom: "16.67%",
           left: "3.33%",
           margin: 0,
-          fontFamily: "var(--font-family-primary)",
+          fontFamily: "var(--font-family-body)",
           fontWeight: 500,
           fontSize: 14,
           color: textColor,

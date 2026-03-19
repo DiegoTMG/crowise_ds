@@ -141,9 +141,9 @@ export function IOSNotchStatusBar({
       >
         <span
           style={{
-            fontFamily: "var(--font-family-primary)",
+            fontFamily: "var(--font-family-body)",
             fontSize: 15,
-            fontWeight: 600,
+            fontWeight: "var(--font-weight-bold)",
             letterSpacing: "-0.3px",
             color: fg,
             lineHeight: "21px",

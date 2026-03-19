@@ -117,6 +117,7 @@ export { default as Functions } from "./Functions";
 export { default as Height } from "./Height";
 export { default as Help } from "./Help";
 export { default as Highlight } from "./Highlight";
+export { default as History } from "./History";
 export { default as HorizontalDistribute } from "./HorizontalDistribute";
 export { default as Image } from "./Image";
 export { default as ImageNotSupported } from "./ImageNotSupported";

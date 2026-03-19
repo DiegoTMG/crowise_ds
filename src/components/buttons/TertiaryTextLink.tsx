@@ -216,7 +216,7 @@ export function TertiaryTextLinkAtom({
                   underline whitespace-nowrap                                     */}
         <p
           style={{
-            fontFamily:      "var(--font-family-primary)",
+            fontFamily:      "var(--font-family-body)",
             fontSize:        "16px",
             fontWeight:      400,
             fontStyle:       "normal",
@@ -309,7 +309,7 @@ export function TertiaryTextLink() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -325,7 +325,7 @@ export function TertiaryTextLink() {
         <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -338,7 +338,7 @@ export function TertiaryTextLink() {
           </p>
           <h1
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "32px",
               fontWeight:    600,
               letterSpacing: "-0.5px",
@@ -351,9 +351,9 @@ export function TertiaryTextLink() {
           </h1>
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -396,10 +396,10 @@ export function TertiaryTextLink() {
                 gap:           "4px",
               }}
             >
-              <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 600, color: "var(--text-default-none-primary)" }}>
+              <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-bold)", color: "var(--text-default-none-primary)" }}>
                 {trait}
               </span>
-              <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 400, lineHeight: "18px", color: "var(--text-default-none-secondary)" }}>
+              <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-regular)", lineHeight: "18px", color: "var(--text-default-none-secondary)" }}>
                 {desc}
               </span>
             </div>
@@ -419,10 +419,10 @@ export function TertiaryTextLink() {
           }}
         >
           <div>
-            <p style={{ fontFamily: "var(--font-family-primary)", fontSize: "11px", fontWeight: 600, letterSpacing: "2px", textTransform: "uppercase", color: "var(--text-default-none-primary)", margin: "0 0 4px" }}>
+            <p style={{ fontFamily: "var(--font-family-body)", fontSize: "11px", fontWeight: "var(--font-weight-bold)", letterSpacing: "2px", textTransform: "uppercase", color: "var(--text-default-none-primary)", margin: "0 0 4px" }}>
               Interactive preview
             </p>
-            <p style={{ fontFamily: "var(--font-family-primary)", fontSize: "14px", fontWeight: 400, lineHeight: "20px", color: "var(--text-default-none-secondary)", margin: 0 }}>
+            <p style={{ fontFamily: "var(--font-family-body)", fontSize: "14px", fontWeight: "var(--font-weight-regular)", lineHeight: "20px", color: "var(--text-default-none-secondary)", margin: 0 }}>
               Hover, Tab to focus, click to trigger a live loading state (2.4 s).
             </p>
           </div>
@@ -457,7 +457,7 @@ export function TertiaryTextLink() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -493,7 +493,7 @@ export function TertiaryTextLink() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -509,7 +509,7 @@ export function TertiaryTextLink() {
               </div>
 
               {/* Description */}
-              <p style={{ fontFamily: "var(--font-family-primary)", fontSize: "14px", fontWeight: 400, lineHeight: "22px", color: "var(--text-default-none-secondary)", margin: 0, paddingRight: "24px" }}>
+              <p style={{ fontFamily: "var(--font-family-body)", fontSize: "14px", fontWeight: "var(--font-weight-regular)", lineHeight: "22px", color: "var(--text-default-none-secondary)", margin: 0, paddingRight: "24px" }}>
                 {row.description}
               </p>
 
@@ -546,7 +546,7 @@ export function TertiaryTextLink() {
               background:   "var(--fill-default-none-secondary)",
             }}
           >
-            <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "11px", fontWeight: 600, letterSpacing: "1.5px", textTransform: "uppercase", color: "var(--text-default-none-secondary)" }}>
+            <span style={{ fontFamily: "var(--font-family-body)", fontSize: "11px", fontWeight: "var(--font-weight-bold)", letterSpacing: "1.5px", textTransform: "uppercase", color: "var(--text-default-none-secondary)" }}>
               All 6 states side-by-side
             </span>
           </div>
@@ -571,7 +571,7 @@ export function TertiaryTextLink() {
                 }}
               >
                 <TertiaryTextLinkAtom forcedState={state} />
-                <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "11px", fontWeight: 400, letterSpacing: "0.5px", color: "var(--text-default-none-secondary)", textAlign: "center" }}>
+                <span style={{ fontFamily: "var(--font-family-body)", fontSize: "11px", fontWeight: "var(--font-weight-regular)", letterSpacing: "0.5px", color: "var(--text-default-none-secondary)", textAlign: "center" }}>
                   {name}
                 </span>
               </div>
@@ -591,7 +591,7 @@ export function TertiaryTextLink() {
             gap:           "12px",
           }}
         >
-          <p style={{ fontFamily: "var(--font-family-primary)", fontSize: "11px", fontWeight: 600, letterSpacing: "2px", textTransform: "uppercase", color: "var(--text-default-none-primary)", margin: 0 }}>
+          <p style={{ fontFamily: "var(--font-family-body)", fontSize: "11px", fontWeight: "var(--font-weight-bold)", letterSpacing: "2px", textTransform: "uppercase", color: "var(--text-default-none-primary)", margin: 0 }}>
             Token reference
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "10px" }}>
@@ -611,7 +611,7 @@ export function TertiaryTextLink() {
                 style={{ background: "var(--fill-default-none-secondary)", borderRadius: "6px", padding: "12px 14px", display: "flex", flexDirection: "column", gap: "4px" }}
               >
                 <code style={{ fontFamily: "monospace", fontSize: "11px", color: "var(--text-default-none-secondary)" }}>{token}</code>
-                <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 400, color: "var(--text-default-none-primary)" }}>{value}</span>
+                <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-regular)", color: "var(--text-default-none-primary)" }}>{value}</span>
                 <span style={{ fontFamily: "monospace", fontSize: "10px", color: "var(--text-default-none-secondary)", opacity: 0.6 }}>Used in: {states}</span>
               </div>
             ))}

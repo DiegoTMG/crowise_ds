@@ -138,7 +138,7 @@ const STATE_TOKENS: Record<
 //        leading-[24px] tracking-[-0.12px] whitespace-nowrap
 
 const LABEL_STYLE: React.CSSProperties = {
-  fontFamily:    "var(--font-family-primary)",
+  fontFamily:    "var(--font-family-body)",
   fontSize:      "16px",
   fontWeight:    400,
   fontStyle:     "normal",
@@ -343,7 +343,7 @@ export function TertiaryStandardSquare() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -359,7 +359,7 @@ export function TertiaryStandardSquare() {
         <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -373,7 +373,7 @@ export function TertiaryStandardSquare() {
 
           <h1
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "32px",
               fontWeight:    600,
               letterSpacing: "-0.5px",
@@ -387,9 +387,9 @@ export function TertiaryStandardSquare() {
 
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -417,7 +417,7 @@ export function TertiaryStandardSquare() {
           <div>
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -430,9 +430,9 @@ export function TertiaryStandardSquare() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-family-primary)",
+                fontFamily: "var(--font-family-body)",
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -477,7 +477,7 @@ export function TertiaryStandardSquare() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -513,7 +513,7 @@ export function TertiaryStandardSquare() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -539,7 +539,7 @@ export function TertiaryStandardSquare() {
               {/* Description */}
               <p
                 style={{
-                  fontFamily:   "var(--font-family-primary)",
+                  fontFamily:   "var(--font-family-body)",
                   fontSize:     "14px",
                   fontWeight:   400,
                   lineHeight:   "22px",
@@ -573,7 +573,7 @@ export function TertiaryStandardSquare() {
         >
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -616,7 +616,7 @@ export function TertiaryStandardSquare() {
                 <code style={{ fontFamily: "monospace", fontSize: "11px", color: "var(--text-default-none-secondary)" }}>
                   {prop}
                 </code>
-                <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 400, color: "var(--text-default-none-primary)" }}>
+                <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-regular)", color: "var(--text-default-none-primary)" }}>
                   {value}
                 </span>
                 <span style={{ fontFamily: "monospace", fontSize: "10px", color: "var(--text-default-none-secondary)", opacity: 0.6 }}>

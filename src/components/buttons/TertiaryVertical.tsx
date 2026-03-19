@@ -296,7 +296,7 @@ export function TertiaryVerticalAtom({
           // Loading: single centered label only (no subtitle)
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "16px",
               fontWeight:    400,
               fontStyle:     "normal",
@@ -333,7 +333,7 @@ export function TertiaryVerticalAtom({
             {/* Title — 16px */}
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "16px",
                 fontWeight:    400,
                 fontStyle:     "normal",
@@ -354,7 +354,7 @@ export function TertiaryVerticalAtom({
             {tokens.subtitleColor !== null && (
               <p
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "14px",
                   fontWeight:    400,
                   fontStyle:     "normal",
@@ -464,7 +464,7 @@ export function TertiaryVertical() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -480,7 +480,7 @@ export function TertiaryVertical() {
         <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -493,7 +493,7 @@ export function TertiaryVertical() {
           </p>
           <h1
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "32px",
               fontWeight:    600,
               letterSpacing: "-0.5px",
@@ -506,9 +506,9 @@ export function TertiaryVertical() {
           </h1>
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -553,9 +553,9 @@ export function TertiaryVertical() {
             >
               <span
                 style={{
-                  fontFamily: "var(--font-family-primary)",
+                  fontFamily: "var(--font-family-body)",
                   fontSize:   "13px",
-                  fontWeight: 600,
+                  fontWeight: "var(--font-weight-bold)",
                   color:      "var(--text-default-none-primary)",
                 }}
               >
@@ -563,9 +563,9 @@ export function TertiaryVertical() {
               </span>
               <span
                 style={{
-                  fontFamily: "var(--font-family-primary)",
+                  fontFamily: "var(--font-family-body)",
                   fontSize:   "13px",
-                  fontWeight: 400,
+                  fontWeight: "var(--font-weight-regular)",
                   lineHeight: "18px",
                   color:      "var(--text-default-none-secondary)",
                 }}
@@ -591,7 +591,7 @@ export function TertiaryVertical() {
           <div>
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -604,9 +604,9 @@ export function TertiaryVertical() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-family-primary)",
+                fontFamily: "var(--font-family-body)",
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -647,7 +647,7 @@ export function TertiaryVertical() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -683,7 +683,7 @@ export function TertiaryVertical() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -709,7 +709,7 @@ export function TertiaryVertical() {
               {/* Description */}
               <p
                 style={{
-                  fontFamily:   "var(--font-family-primary)",
+                  fontFamily:   "var(--font-family-body)",
                   fontSize:     "14px",
                   fontWeight:   400,
                   lineHeight:   "22px",
@@ -747,7 +747,7 @@ export function TertiaryVertical() {
           >
             <span
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "1.5px",
@@ -781,7 +781,7 @@ export function TertiaryVertical() {
                 <TertiaryVerticalAtom forcedState={state} />
                 <span
                   style={{
-                    fontFamily:    "var(--font-family-primary)",
+                    fontFamily:    "var(--font-family-body)",
                     fontSize:      "11px",
                     fontWeight:    400,
                     letterSpacing: "0.5px",
@@ -810,7 +810,7 @@ export function TertiaryVertical() {
         >
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -859,7 +859,7 @@ export function TertiaryVertical() {
                 <code style={{ fontFamily: "monospace", fontSize: "11px", color: "var(--text-default-none-secondary)" }}>
                   {prop}
                 </code>
-                <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 400, color: "var(--text-default-none-primary)" }}>
+                <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-regular)", color: "var(--text-default-none-primary)" }}>
                   {value}
                 </span>
                 <span style={{ fontFamily: "monospace", fontSize: "10px", color: "var(--text-default-none-secondary)", opacity: 0.6 }}>

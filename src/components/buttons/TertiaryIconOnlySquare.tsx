@@ -306,7 +306,7 @@ export function TertiaryIconOnlySquare() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -322,7 +322,7 @@ export function TertiaryIconOnlySquare() {
         <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -336,7 +336,7 @@ export function TertiaryIconOnlySquare() {
 
           <h1
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "32px",
               fontWeight:    600,
               letterSpacing: "-0.5px",
@@ -350,9 +350,9 @@ export function TertiaryIconOnlySquare() {
 
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -386,13 +386,13 @@ export function TertiaryIconOnlySquare() {
             { label: "Border overlay",standard: "absolute inset-0",         iconOnly: "absolute inset-0 (identical)" },
           ].map(({ label, standard, iconOnly }) => (
             <div key={label} style={{ display: "flex", flexDirection: "column", gap: "4px", minWidth: "180px" }}>
-              <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "11px", fontWeight: 600, letterSpacing: "1px", textTransform: "uppercase", color: "var(--text-default-none-secondary)" }}>
+              <span style={{ fontFamily: "var(--font-family-body)", fontSize: "11px", fontWeight: "var(--font-weight-bold)", letterSpacing: "1px", textTransform: "uppercase", color: "var(--text-default-none-secondary)" }}>
                 {label}
               </span>
               <span style={{ fontFamily: "monospace", fontSize: "12px", color: "var(--text-default-none-secondary)", opacity: 0.6 }}>
                 Standard: {standard}
               </span>
-              <span style={{ fontFamily: "monospace", fontSize: "12px", color: "var(--text-default-none-primary)", fontWeight: 600 }}>
+              <span style={{ fontFamily: "monospace", fontSize: "12px", color: "var(--text-default-none-primary)", fontWeight: "var(--font-weight-bold)" }}>
                 Icon Only: {iconOnly}
               </span>
             </div>
@@ -414,7 +414,7 @@ export function TertiaryIconOnlySquare() {
           <div>
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -427,9 +427,9 @@ export function TertiaryIconOnlySquare() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-family-primary)",
+                fontFamily: "var(--font-family-body)",
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -475,7 +475,7 @@ export function TertiaryIconOnlySquare() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -511,7 +511,7 @@ export function TertiaryIconOnlySquare() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -537,7 +537,7 @@ export function TertiaryIconOnlySquare() {
               {/* Description */}
               <p
                 style={{
-                  fontFamily:   "var(--font-family-primary)",
+                  fontFamily:   "var(--font-family-body)",
                   fontSize:     "14px",
                   fontWeight:   400,
                   lineHeight:   "22px",
@@ -571,7 +571,7 @@ export function TertiaryIconOnlySquare() {
         >
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -615,7 +615,7 @@ export function TertiaryIconOnlySquare() {
                 <code style={{ fontFamily: "monospace", fontSize: "11px", color: "var(--text-default-none-secondary)" }}>
                   {prop}
                 </code>
-                <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 400, color: "var(--text-default-none-primary)" }}>
+                <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-regular)", color: "var(--text-default-none-primary)" }}>
                   {value}
                 </span>
                 <span style={{ fontFamily: "monospace", fontSize: "10px", color: "var(--text-default-none-secondary)", opacity: 0.6 }}>

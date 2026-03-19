@@ -25,7 +25,7 @@
  *   Loading   │ --fill-default-none-secondary     │ --text-default-pressed-secondary  green-70  + spinner
  *
  * Typography (Button/Label):
- *   font-family: var(--font-family-primary)  · weight: 400  · size: 16px
+ *   font-family: var(--font-family-body)  · weight: 400  · size: 16px
  *   line-height: 24px  · letter-spacing: -0.12px  · font-style: normal
  */
 
@@ -96,7 +96,7 @@ const STATE_STYLES: Record<
 // ─── Typography — Button/Label ────────────────────────────────────────────────
 
 const LABEL_STYLE: React.CSSProperties = {
-  fontFamily:    "var(--font-family-primary)",
+  fontFamily:    "var(--font-family-body)",
   fontSize:      "16px",
   fontWeight:    400,
   fontStyle:     "normal",
@@ -288,7 +288,7 @@ export function SecondaryStandardSquare() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -304,7 +304,7 @@ export function SecondaryStandardSquare() {
         <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -329,9 +329,9 @@ export function SecondaryStandardSquare() {
 
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -360,7 +360,7 @@ export function SecondaryStandardSquare() {
           <div>
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -373,9 +373,9 @@ export function SecondaryStandardSquare() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-family-primary)",
+                fontFamily: "var(--font-family-body)",
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -420,7 +420,7 @@ export function SecondaryStandardSquare() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -457,7 +457,7 @@ export function SecondaryStandardSquare() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -501,7 +501,7 @@ export function SecondaryStandardSquare() {
               {/* Description */}
               <p
                 style={{
-                  fontFamily:   "var(--font-family-primary)",
+                  fontFamily:   "var(--font-family-body)",
                   fontSize:     "14px",
                   fontWeight:   400,
                   lineHeight:   "22px",
@@ -535,7 +535,7 @@ export function SecondaryStandardSquare() {
         >
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -555,7 +555,7 @@ export function SecondaryStandardSquare() {
             }}
           >
             {[
-              { prop: "font-family",    value: "var(--font-family-primary)", figma: "Noto_sans:Regular"   },
+              { prop: "font-family",    value: "var(--font-family-body)", figma: "Noto_sans:Regular"   },
               { prop: "font-weight",    value: "400",                        figma: "Regular"             },
               { prop: "font-size",      value: "16px",                       figma: "text-[16px]"         },
               { prop: "line-height",    value: "24px",                       figma: "leading-[24px]"      },
@@ -576,7 +576,7 @@ export function SecondaryStandardSquare() {
                 <code style={{ fontFamily: "monospace", fontSize: "11px", color: "var(--text-default-none-secondary)" }}>
                   {prop}
                 </code>
-                <span style={{ fontFamily: "var(--font-family-primary)", fontSize: "13px", fontWeight: 400, color: "var(--text-default-none-primary)" }}>
+                <span style={{ fontFamily: "var(--font-family-body)", fontSize: "13px", fontWeight: "var(--font-weight-regular)", color: "var(--text-default-none-primary)" }}>
                   {value}
                 </span>
                 <span style={{ fontFamily: "monospace", fontSize: "10px", color: "var(--text-default-none-secondary)", opacity: 0.6 }}>

@@ -26,7 +26,7 @@
  *
  * Typography — Figma: font-['Noto_sans:Regular',sans-serif] not-italic
  *   text-[16px] leading-[24px] tracking-[-0.12px] whitespace-nowrap
- *   → font-family: var(--font-family-primary), weight 400
+ *   → font-family: var(--font-family-body), weight 400
  *
  * All colours → semantic / primitive tokens from /src/imports/theme.css
  * Spinner     → shared component from /src/app/components/icons/Spinner.tsx
@@ -112,7 +112,7 @@ function outerBg(disabled: boolean): string {
 //        leading-[24px] tracking-[-0.12px] whitespace-nowrap
 
 const LABEL: React.CSSProperties = {
-  fontFamily:    "var(--font-family-primary)",
+  fontFamily:    "var(--font-family-body)",
   fontSize:      "16px",
   fontWeight:    400,
   fontStyle:     "normal",
@@ -440,7 +440,7 @@ export function PrimarySplitRound() {
         minHeight:  "100vh",
         background: "var(--fill-default-none-secondary)",
         padding:    "48px 40px",
-        fontFamily: "var(--font-family-primary)",
+        fontFamily: "var(--font-family-body)",
       }}
     >
       <div
@@ -456,7 +456,7 @@ export function PrimarySplitRound() {
         <header style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           <p
             style={{
-              fontFamily:    "var(--font-family-primary)",
+              fontFamily:    "var(--font-family-body)",
               fontSize:      "11px",
               fontWeight:    600,
               letterSpacing: "2px",
@@ -481,9 +481,9 @@ export function PrimarySplitRound() {
 
           <p
             style={{
-              fontFamily: "var(--font-family-primary)",
+              fontFamily: "var(--font-family-body)",
               fontSize:   "16px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -511,7 +511,7 @@ export function PrimarySplitRound() {
           <div>
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -524,9 +524,9 @@ export function PrimarySplitRound() {
             </p>
             <p
               style={{
-                fontFamily: "var(--font-family-primary)",
+                fontFamily: "var(--font-family-body)",
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -574,7 +574,7 @@ export function PrimarySplitRound() {
               <span
                 key={col}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "11px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -611,7 +611,7 @@ export function PrimarySplitRound() {
                     padding:      "3px 10px",
                     border:       "1px solid var(--border-default-none-secondary)",
                     borderRadius: "4px",
-                    fontFamily:   "var(--font-family-primary)",
+                    fontFamily:   "var(--font-family-body)",
                     fontSize:     "13px",
                     fontWeight:   400,
                     color:        "var(--text-default-none-primary)",
@@ -637,7 +637,7 @@ export function PrimarySplitRound() {
               {/* Description */}
               <p
                 style={{
-                  fontFamily:   "var(--font-family-primary)",
+                  fontFamily:   "var(--font-family-body)",
                   fontSize:     "14px",
                   fontWeight:   400,
                   lineHeight:   "22px",
@@ -678,7 +678,7 @@ export function PrimarySplitRound() {
           >
             <p
               style={{
-                fontFamily:    "var(--font-family-primary)",
+                fontFamily:    "var(--font-family-body)",
                 fontSize:      "11px",
                 fontWeight:    600,
                 letterSpacing: "2px",
@@ -705,7 +705,7 @@ export function PrimarySplitRound() {
               <span
                 key={h}
                 style={{
-                  fontFamily:    "var(--font-family-primary)",
+                  fontFamily:    "var(--font-family-body)",
                   fontSize:      "10px",
                   fontWeight:    600,
                   letterSpacing: "1.5px",
@@ -735,9 +735,9 @@ export function PrimarySplitRound() {
             >
               <span
                 style={{
-                  fontFamily: "var(--font-family-primary)",
+                  fontFamily: "var(--font-family-body)",
                   fontSize:   "13px",
-                  fontWeight: 400,
+                  fontWeight: "var(--font-weight-regular)",
                   color:      "var(--text-default-none-primary)",
                 }}
               >

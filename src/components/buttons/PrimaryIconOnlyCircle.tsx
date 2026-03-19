@@ -250,7 +250,7 @@ const STATES: {
 
 // ─── Showcase page ────────────────────────────────────────────────────────────
 
-const FONT = "var(--font-family-primary)";
+const FONT = "var(--font-family-body)";
 
 export function PrimaryIconOnlyCircle() {
   const [liveLoading, setLiveLoading] = useState(false);
@@ -313,7 +313,7 @@ export function PrimaryIconOnlyCircle() {
             style={{
               fontFamily: FONT,
               fontSize:   "15px",
-              fontWeight: 400,
+              fontWeight: "var(--font-weight-regular)",
               lineHeight: "24px",
               color:      "var(--text-default-none-secondary)",
               margin:     0,
@@ -357,7 +357,7 @@ export function PrimaryIconOnlyCircle() {
               style={{
                 fontFamily: FONT,
                 fontSize:   "14px",
-                fontWeight: 400,
+                fontWeight: "var(--font-weight-regular)",
                 lineHeight: "20px",
                 color:      "var(--text-default-none-secondary)",
                 margin:     0,
@@ -572,7 +572,7 @@ export function PrimaryIconOnlyCircle() {
                   style={{
                     fontFamily: FONT,
                     fontSize:   "13px",
-                    fontWeight: 400,
+                    fontWeight: "var(--font-weight-regular)",
                     color:      "var(--text-default-none-primary)",
                   }}
                 >

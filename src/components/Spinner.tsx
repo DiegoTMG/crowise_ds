@@ -20,7 +20,7 @@ function ensureKeyframes() {
 export function Spinner({
   size = 24,
   trackColor = "var(--neutral-20, #DFE2E7)",
-  activeColor = "var(--annotation-mid-pink, #DA33AB)",
+  activeColor = "var(--fill-info-focus-primary)",
 }: SpinnerProps) {
   React.useEffect(ensureKeyframes, []);
 
