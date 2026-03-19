@@ -27,6 +27,16 @@ export const Default: Story = {
   },
 };
 
+export const Checked: Story = {
+  name: "With checkmark",
+  args: {
+    icon: <Scout size={18} />,
+    title: "Planting Quality",
+    info: "1 item to inspect",
+    checked: true,
+  },
+};
+
 export const MultipleItems: Story = {
   name: "Multiple items",
   args: {

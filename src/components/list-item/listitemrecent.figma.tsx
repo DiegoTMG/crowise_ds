@@ -1,9 +1,9 @@
 import figma from "@figma/code-connect";
-import { ListItem } from "./ListItem";
+import { ListItemRecent } from "./ListItemRecent";
 
 figma.connect(
-  ListItem,
-  "https://www.figma.com/design/aTjr3ahBbKrSPThrmcEhtD/%F0%9F%90%9B-Sample-problem?node-id=5178-10926",
+  ListItemRecent,
+  "https://www.figma.com/design/aTjr3ahBbKrSPThrmcEhtD/%F0%9F%90%9B-Sample-problem?node-id=5188-102121",
   {
     props: {
       icon: figma.instance("icon (24px)"),
@@ -12,7 +12,7 @@ figma.connect(
       checked: figma.boolean("checked"),
     },
     example: ({ icon, title, info, checked }) => (
-      <ListItem
+      <ListItemRecent
         icon={icon}
         title={title}
         info={info}
