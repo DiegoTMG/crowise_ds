@@ -140,6 +140,7 @@ export { default as LinkOff } from "./LinkOff";
 export { default as Logout } from "./Logout";
 export { default as Map } from "./Map";
 export { default as Mapoptions } from "./Mapoptions";
+export { default as ManageSearch } from "./ManageSearch";
 export { default as Margin } from "./Margin";
 export { default as Menu } from "./Menu";
 export { default as MenuBook } from "./MenuBook";

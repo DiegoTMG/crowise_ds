@@ -137,7 +137,6 @@ export function ListItem({
         >
           <span
             style={{
-              flex:           1,
               fontFamily:     "var(--font-family-primary)",
               fontSize:       16,
               fontWeight:     600,
@@ -157,7 +156,7 @@ export function ListItem({
           {/* Chevron right */}
           <KeyboardArrowRight
             size={18}
-            style={{ flexShrink: 0, color: "var(--neutral-100, #14151c)" }}
+            style={{ flexShrink: 0, color: "var(--neutral-60, #696f88)" }}
             data-node-id="5178:10933"
           />
         </div>
