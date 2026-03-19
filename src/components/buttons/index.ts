@@ -15,3 +15,5 @@ export * from "./TertiarySplitSquare";
 export * from "./TertiaryAddAnother";
 export * from "./TertiaryTextLink";
 export * from "./TertiaryVertical";
+export * from "./GhostStandard";
+export * from "./DestructiveStandard";
