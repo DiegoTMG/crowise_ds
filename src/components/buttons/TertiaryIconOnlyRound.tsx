@@ -52,9 +52,9 @@
 
 import React, { useState } from "react";
 import { Spinner } from "../Spinner";
+import { Add } from "../../icons";
 
 // ─── Inline SVG path constants ─────────────────────────────────────────────
-const PLUS_PATH        = "M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -129,51 +129,7 @@ const STATE_TOKENS: Record<
 // SVG: viewBox="0 0 14 14"  (same canvas as TertiaryIconOnlySquare)
 
 function PlusIcon({ fill }: { fill: string }) {
-  return (
-    // L1
-    <div
-      style={{
-        display:    "flex",
-        alignItems: "center",
-        position:   "relative",
-        flexShrink: 0,
-        width:      "24px",
-        height:     "24px",
-      }}
-    >
-      {/* L2 */}
-      <div
-        style={{
-          aspectRatio: "28 / 28",
-          height:      "100%",
-          overflow:    "clip",
-          position:    "relative",
-          flexShrink:  0,
-        }}
-      >
-        {/* L3 */}
-        <div
-          style={{
-            transform:   "translateY(-50%)",
-            position:    "absolute",
-            aspectRatio: "14 / 14",
-            left:        "20.83%",
-            right:       "20.83%",
-            top:         "50%",
-          }}
-        >
-          <svg
-            style={{ position: "absolute", display: "block", width: "100%", height: "100%" }}
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 14 14"
-          >
-            <path d={PLUS_PATH} fill={fill} id="Vector" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
+  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Button atom ──────────────────────────────────────────────────────────────

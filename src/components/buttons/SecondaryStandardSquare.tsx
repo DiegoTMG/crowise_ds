@@ -35,10 +35,9 @@ import React, { useState } from "react";
 
 // ─── Spinner ──────────────────────────────────────────────────────────────────
 import { Spinner } from "../Spinner";
+import { Add } from "../../icons";
 
 // ─── Inline SVG path constants ─────────────────────────────────────────────
-const PLUS_PATH_SMALL  = "M11.6667 6.66667H6.66667V11.6667H5V6.66667H0V5H5V0H6.66667V5H11.6667V6.66667Z";
-const PLUS_PATH        = "M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -110,52 +109,7 @@ const LABEL_STYLE: React.CSSProperties = {
 // Matches the three-level nesting seen in all Button-6-112xx frames exactly.
 
 function IconSecondary({ fill }: { fill: string }) {
-  return (
-    // content-stretch flex items-center p-[2px] relative shrink-0 size-[24px]
-    <div
-      style={{
-        display:    "flex",
-        alignItems: "center",
-        padding:    "2px",
-        position:   "relative",
-        flexShrink: 0,
-        width:      "24px",
-        height:     "24px",
-      }}
-    >
-      {/* aspect-[28/28] h-full overflow-clip relative shrink-0 */}
-      <div
-        style={{
-          aspectRatio: "28 / 28",
-          height:      "100%",
-          overflow:    "clip",
-          position:    "relative",
-          flexShrink:  0,
-        }}
-      >
-        {/* -translate-y-1/2 absolute aspect-[14/14] left-[20.83%] right-[20.83%] top-1/2 */}
-        <div
-          style={{
-            transform:   "translateY(-50%)",
-            position:    "absolute",
-            aspectRatio: "14 / 14",
-            left:        "20.83%",
-            right:       "20.83%",
-            top:         "50%",
-          }}
-        >
-          <svg
-            style={{ position: "absolute", display: "block", width: "100%", height: "100%" }}
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 11.6667 11.6667"
-          >
-            <path d={PLUS_PATH_SMALL} fill={fill} id="Vector" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
+  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Loading spinner ──────────────────────────────────────────────────────────

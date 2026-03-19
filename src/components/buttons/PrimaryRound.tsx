@@ -27,26 +27,14 @@ import React, { useState } from "react";
 
 // ─── Spinner icon from /src/app/components/icons ─────────────────────────────
 import { Spinner } from "../Spinner";
+import { Add } from "../../icons";
 
 // ─── Inline SVG path constants ─────────────────────────────────────────────
-const PLUS_PATH_SMALL  = "M11.6667 6.66667H6.66667V11.6667H5V6.66667H0V5H5V0H6.66667V5H11.6667V6.66667Z";
-const PLUS_PATH        = "M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type BtnState = "default" | "hover" | "focus" | "pressed" | "disabled" | "loading";
 
-// ─── SVG path data per state ──────────────────────────────────────────────────
-// All 5 share the same path shape; mapped individually per Figma file structure.
-
-const STATE_PATH: Partial<Record<BtnState, string>> = {
-  default:  PLUS_PATH_SMALL,
-  hover:    PLUS_PATH_SMALL,
-  focus:    PLUS_PATH_SMALL,
-  pressed:  PLUS_PATH_SMALL,
-  disabled: PLUS_PATH_SMALL,
-  // loading → no icon, spinner shown instead
-};
 
 // ─── Semantic token map ───────────────────────────────────────────────────────
 // Hex values from Figma → primitive token → semantic token
@@ -135,60 +123,8 @@ const LABEL_STYLE: React.CSSProperties = {
 // SVG:    absolute block size-full  fill="none"  preserveAspectRatio="none"
 //         viewBox="0 0 11.6667 11.6667"
 
-function IconPrimary({
-  pathData,
-  fill,
-}: {
-  pathData: string;
-  fill: string;
-}) {
-  return (
-    // Outer wrapper — content-stretch flex items-center p-[2px] relative shrink-0 size-[24px]
-    <div
-      style={{
-        display:    "flex",
-        alignItems: "center",
-        padding:    "2px",
-        position:   "relative",
-        flexShrink: 0,
-        width:      "24px",
-        height:     "24px",
-      }}
-    >
-      {/* Middle — aspect-[24/24] h-full overflow-clip relative shrink-0 */}
-      <div
-        style={{
-          aspectRatio: "24 / 24",
-          height:      "100%",
-          overflow:    "clip",
-          position:    "relative",
-          flexShrink:  0,
-        }}
-      >
-        {/* Inner — -translate-y-1/2 absolute aspect-[14/14] left-[20.83%] right-[20.83%] top-1/2 */}
-        <div
-          style={{
-            transform:   "translateY(-50%)",
-            position:    "absolute",
-            aspectRatio: "14 / 14",
-            left:        "20.83%",
-            right:       "20.83%",
-            top:         "50%",
-          }}
-        >
-          {/* SVG — absolute block size-full preserveAspectRatio="none" */}
-          <svg
-            style={{ position: "absolute", display: "block", width: "100%", height: "100%" }}
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 11.6667 11.6667"
-          >
-            <path d={pathData} fill={fill} id="Vector" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
+function IconPrimary({ fill }: { fill: string }) {
+  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Loading spinner ──────────────────────────────────────────────────────────
@@ -271,10 +207,7 @@ export function ButtonAtom({
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <IconPrimary
-          pathData={STATE_PATH[state] ?? PLUS_PATH_SMALL}
-          fill={s.iconColor}
-        />
+        <IconPrimary fill={s.iconColor} />
       )}
 
       <p

@@ -23,18 +23,15 @@ export function IOSNoNotchStatusBar({
 
   return (
     <div
-      className={`relative w-full ${className}`}
-      style={{ height: 34, backgroundColor: bg }}
+      style={{ position: "relative", width: "100%", height: 34, backgroundColor: bg }}
       data-name="StatusBar/iOS/HomeIndicator"
     >
       {/* Home indicator pill */}
       <div
-        className="absolute"
-        style={{ top: "65.63%", right: "32%", bottom: "18.75%", left: "32.27%" }}
+        style={{ position: "absolute", top: "65.63%", right: "32%", bottom: "18.75%", left: "32.27%" }}
       >
         <div
-          className="absolute inset-0 rounded-[10px]"
-          style={{ backgroundColor: pill }}
+          style={{ position: "absolute", inset: 0, borderRadius: 10, backgroundColor: pill }}
         />
       </div>
     </div>

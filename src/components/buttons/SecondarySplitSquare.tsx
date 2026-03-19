@@ -59,11 +59,8 @@
 
 import React, { useState } from "react";
 import { Spinner } from "../Spinner";
+import { Add, KeyboardArrowDown } from "../../icons";
 
-// ─── Inline SVG path constants ─────────────────────────────────────────────
-const PLUS_PATH_SMALL  = "M11.6667 6.66667H6.66667V11.6667H5V6.66667H0V5H5V0H6.66667V5H11.6667V6.66667Z";
-const PLUS_PATH        = "M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z";
-const CHEVRON_PATH     = "M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -154,44 +151,7 @@ const LABEL: React.CSSProperties = {
 //      viewBox="0 0 11.6667 11.6667"
 
 function PlusIcon({ fill }: { fill: string }) {
-  return (
-    // L1
-    <div
-      style={{
-        display:    "flex",
-        alignItems: "center",
-        padding:    "2px",
-        position:   "relative",
-        flexShrink: 0,
-        width:      "24px",
-        height:     "24px",
-      }}
-    >
-      {/* L2 — note: aspect-[24/24] here, not 28/28 (matches Split button Figma) */}
-      <div style={{ aspectRatio: "24 / 24", height: "100%", position: "relative", flexShrink: 0 }}>
-        {/* L3 */}
-        <div
-          style={{
-            transform:   "translateY(-50%)",
-            position:    "absolute",
-            aspectRatio: "14 / 14",
-            left:        "20.83%",
-            right:       "20.83%",
-            top:         "50%",
-          }}
-        >
-          <svg
-            style={{ position: "absolute", display: "block", width: "100%", height: "100%" }}
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 11.6667 11.6667"
-          >
-            <path d={PLUS_PATH_SMALL} fill={fill} id="Vector" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
+  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Chevron icon — exact Figma structure ─────────────────────────────────────
@@ -201,28 +161,7 @@ function PlusIcon({ fill }: { fill: string }) {
 //          viewBox="0 0 12 7.41"
 
 function ChevronIcon({ fill }: { fill: string }) {
-  return (
-    <div style={{ position: "relative", flexShrink: 0, width: "24px", height: "24px" }}>
-      <div
-        style={{
-          position: "absolute",
-          bottom:   "34.55%",
-          left:     "25%",
-          right:    "25%",
-          top:      "34.57%",
-        }}
-      >
-        <svg
-          style={{ position: "absolute", display: "block", width: "100%", height: "100%" }}
-          fill="none"
-          preserveAspectRatio="none"
-          viewBox="0 0 12 7.41"
-        >
-          <path d={CHEVRON_PATH} fill={fill} id="Vector" />
-        </svg>
-      </div>
-    </div>
-  );
+  return <KeyboardArrowDown size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Split button atom ────────────────────────────────────────────────────────

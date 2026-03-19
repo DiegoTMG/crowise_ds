@@ -35,11 +35,9 @@
 
 import React, { useState } from "react";
 import { Spinner } from "../Spinner";
+import { Add } from "../../icons";
 
 // ─── SVG path — identical across all active-state Figma files ─────────────────
-// viewBox "0 0 14 14"
-const PLUS_PATH = "M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z";
-
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 export type IconOnlySquareState =
@@ -105,57 +103,7 @@ const STATE_STYLES: Record<
 //                fill="none" viewBox="0 0 14 14"
 
 function PlusIcon({ fill }: { fill: string }) {
-  return (
-    // Outer — content-stretch flex items-center relative shrink-0 size-[24px]
-    <div
-      style={{
-        display:    "flex",
-        alignItems: "center",
-        position:   "relative",
-        flexShrink: 0,
-        width:      "24px",
-        height:     "24px",
-      }}
-    >
-      {/* Middle — aspect-[28/28] h-full overflow-clip relative shrink-0 */}
-      <div
-        style={{
-          aspectRatio: "28 / 28",
-          height:      "100%",
-          overflow:    "clip",
-          position:    "relative",
-          flexShrink:  0,
-        }}
-      >
-        {/* Inner — -translate-y-1/2 absolute aspect-[14/14] left-[20.83%] right-[20.83%] top-1/2 */}
-        <div
-          style={{
-            transform:   "translateY(-50%)",
-            position:    "absolute",
-            aspectRatio: "14 / 14",
-            left:        "20.83%",
-            right:       "20.83%",
-            top:         "50%",
-          }}
-        >
-          {/* SVG — absolute block size-full preserveAspectRatio="none" viewBox="0 0 14 14" */}
-          <svg
-            style={{
-              position: "absolute",
-              display:  "block",
-              width:    "100%",
-              height:   "100%",
-            }}
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 14 14"
-          >
-            <path d={PLUS_PATH} fill={fill} id="Vector" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
+  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Button atom ──────────────────────────────────────────────────────────────
