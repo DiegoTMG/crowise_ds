@@ -71,6 +71,6 @@
   ],
   "dependencies": {
     "@figma/code-connect": "^1.4.1",
-    "@icons-library/cropwise": "^1.0.0"
+    "all": "^0.0.0"
   }
 }
