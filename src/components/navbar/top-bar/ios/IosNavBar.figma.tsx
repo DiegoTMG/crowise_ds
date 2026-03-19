@@ -1,8 +1,10 @@
-import figma from "@figma/code-connect";
-import { IosNavBar } from "./IosNavBar";
+// import figma from "@figma/code-connect";
+// import { IosNavBar } from "./IosNavBar";
 
-// Figma: "Figma Make Components" › 04 - Navbar › Top bar › Topbar (default size)
-// OS=iOS (old), Colour=Dark, Display bar=No, Search bar=No
+// TODO: Fix Code Connect — node-id=125-4145 is not a top level component or variant.
+// Re-enable once the correct Figma node-id is used.
+
+/*
 figma.connect(
   IosNavBar,
   "https://www.figma.com/design/AnqFoDnF8mDF6RWwrVW9rR/Figma-Make-Components?node-id=125-4145",
@@ -28,3 +30,4 @@ figma.connect(
     ),
   }
 );
+*/

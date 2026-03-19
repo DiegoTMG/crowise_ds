@@ -3,9 +3,9 @@
     "parser": "react",
     "include": ["src/**/*.figma.tsx", "src/**/*.tsx"],
     "importPaths": {
-      "src/icons/crop/*": "@diegogoncalves/cropwise/icons/crop",
-      "src/icons/design/*": "@diegogoncalves/cropwise/icons/design",
-      "src/icons/feature/*": "@diegogoncalves/cropwise/icons/feature"
+      "src/icons/crop/*": "@cropwiseds/cropwise/icons/crop",
+      "src/icons/design/*": "@cropwiseds/cropwise/icons/design",
+      "src/icons/feature/*": "@cropwiseds/cropwise/icons/feature"
     }
   }
 }

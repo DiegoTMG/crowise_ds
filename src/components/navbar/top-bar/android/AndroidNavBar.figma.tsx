@@ -1,8 +1,10 @@
-import figma from "@figma/code-connect";
-import { AndroidNavBar } from "./AndroidNavBar";
+// import figma from "@figma/code-connect";
+// import { AndroidNavBar } from "./AndroidNavBar";
 
-// Figma: "Figma Make Components" › 04 - Navbar › Top bar › Topbar (default size)
-// OS=Android/React Native, Colour=Light, Display bar=No, Search bar=No
+// TODO: Fix Code Connect — node-id=125-4091 is not a top level component or variant.
+// Re-enable once the correct Figma node-id is used.
+
+/*
 figma.connect(
   AndroidNavBar,
   "https://www.figma.com/design/AnqFoDnF8mDF6RWwrVW9rR/Figma-Make-Components?node-id=125-4091",
@@ -23,3 +25,4 @@ figma.connect(
     ),
   }
 );
+*/
