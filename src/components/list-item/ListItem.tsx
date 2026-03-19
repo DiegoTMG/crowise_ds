@@ -21,6 +21,7 @@
  */
 
 import React from "react";
+import Check from "../../icons/design/Check";
 import KeyboardArrowRight from "../../icons/design/KeyboardArrowRight";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -32,6 +33,8 @@ export interface ListItemProps {
   iconBgColor?: string;
   /** Colour applied to the icon (sets CSS `color` so SVGs using currentColor inherit it). */
   iconColor?: string;
+  /** Shows a teal checkmark badge on the icon container. */
+  checked?: boolean;
   /** Primary text displayed on the first line. */
   title: string;
   /** Secondary text displayed below the title. */
@@ -46,6 +49,7 @@ export function ListItem({
   icon,
   iconBgColor = "var(--teal-10, #e0f9f7)",
   iconColor   = "var(--teal-60, #217c74)",
+  checked     = false,
   title,
   info,
   onClick,
@@ -75,6 +79,7 @@ export function ListItem({
       {icon != null && (
         <div
           style={{
+            position:       "relative",
             display:        "flex",
             alignItems:     "center",
             justifyContent: "center",
@@ -89,6 +94,27 @@ export function ListItem({
           data-node-id="5178:10928"
         >
           {icon}
+
+          {/* Checkmark badge */}
+          {checked && (
+            <div
+              style={{
+                position:     "absolute",
+                top:          -4,
+                left:         40,
+                display:      "flex",
+                alignItems:   "center",
+                padding:      2,
+                background:   "var(--teal-60, #217c74)",
+                border:       "1px solid var(--mono-white-100, #ffffff)",
+                borderRadius: 56,
+                color:        "var(--mono-white-100, #ffffff)",
+              }}
+              data-node-id="5188:102157"
+            >
+              <Check size={12} />
+            </div>
+          )}
         </div>
       )}
 
