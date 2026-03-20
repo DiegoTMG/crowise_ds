@@ -37,18 +37,14 @@
       "types": "./dist/components/index.d.ts"
     },
     "./theme/theme.css": "./dist/theme/theme.css",
-    "./theme/fonts.css": "./dist/theme/fonts.css",
-    "./styles/theme.css": "./dist/styles/theme.css",
-    "./styles/fonts.css": "./dist/styles/fonts.css",
-    "./theme.css": "./dist/theme.css",
-    "./fonts.css": "./dist/fonts.css"
+    "./theme/fonts.css": "./dist/theme/fonts.css"
   },
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "build": "tsup src/index.ts src/icons/index.ts src/icons/crop/index.ts src/icons/design/index.ts src/icons/feature/index.ts src/components/index.ts --format esm,cjs --dts && node -e \"const fs=require('fs'); ['theme','styles',''].forEach(d=>{fs.mkdirSync('dist/'+(d?d+'/':''),{recursive:true}); ['theme.css','fonts.css'].forEach(f=>fs.copyFileSync('src/theme/'+f,'dist/'+(d?d+'/':'')+f))})\"",
+    "build": "tsup src/index.ts src/icons/index.ts src/icons/crop/index.ts src/icons/design/index.ts src/icons/feature/index.ts src/components/index.ts --format esm,cjs --dts && node -e \"require('fs').mkdirSync('dist/theme',{recursive:true}); ['theme.css','fonts.css'].forEach(f=>require('fs').copyFileSync('src/theme/'+f,'dist/theme/'+f))\"",
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
