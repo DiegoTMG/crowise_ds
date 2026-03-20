@@ -3,9 +3,14 @@ export type {
   StatusBarProps,
   StatusBarMode,
   StatusBarPlatform,
+  StatusBarLayout,
 } from "./StatusBar";
 
-export { IOSStatusBar } from "./Platform/ios/IosStatusBar";
-export type { StatusBarLayout } from "./Platform/ios/IosStatusBar";
+export { AndroidStatusBar } from "./AndroidStatusBar";
+export type { AndroidStatusBarProps } from "./AndroidStatusBar";
 
-export { AndroidStatusBar } from "./Platform/android/AndroidStatusBar";
+export { IosStatusBarUpper } from "./IosStatusBarUpper";
+export type { IosStatusBarUpperProps } from "./IosStatusBarUpper";
+
+export { IosStatusBarLower } from "./IosStatusBarLower";
+export type { IosStatusBarLowerProps } from "./IosStatusBarLower";

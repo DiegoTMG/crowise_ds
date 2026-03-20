@@ -1,3 +1,4 @@
+export * from "./bottom-sheet";
 export * from "./buttons";
 export * from "./list-item";
 export { Spinner } from "./Spinner";
@@ -6,3 +7,4 @@ export * from "./status-bar";
 export * from "./navbar";
 export * from "./switch-menu";
 export * from "./search-button";
+export * from "./tooltip";

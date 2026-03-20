@@ -48,3 +48,37 @@ export const LargeSize: Story = {
   name: "Light · Large",
   args: { colour: "light", size: "large", title: "My Page", time: "9:41" },
 };
+
+export const DarkLargeSize: Story = {
+  name: "Dark · Large",
+  args: { colour: "dark", size: "large", title: "My Page", time: "9:41" },
+  parameters: { backgrounds: { default: "dark" } },
+};
+
+export const LargeWithDisplayBar: Story = {
+  name: "Light · Large · Display Bar",
+  args: {
+    colour: "light", size: "large", displayBar: true,
+    title: "Home", subtitle: "My Farm", time: "9:41",
+  },
+};
+
+export const LargeWithSearchBar: Story = {
+  name: "Light · Large · Search Bar",
+  args: { colour: "light", size: "large", searchBar: true, time: "9:41" },
+};
+
+export const DarkWithSearchBar: Story = {
+  name: "Dark · Search Bar",
+  args: { colour: "dark", searchBar: true, time: "9:41" },
+  parameters: { backgrounds: { default: "dark" } },
+};
+
+export const DarkWithDisplayBar: Story = {
+  name: "Dark · Display Bar",
+  args: {
+    colour: "dark", displayBar: true,
+    title: "Home", subtitle: "My Farm", time: "9:41",
+  },
+  parameters: { backgrounds: { default: "dark" } },
+};

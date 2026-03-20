@@ -54,3 +54,44 @@ export const LargeSize: Story = {
   name: "Light · Notch · Large",
   args: { mode: "light", hasNotch: true, size: "large", title: "My Page", time: "9:41" },
 };
+
+export const LargeOld: Story = {
+  name: "Light · Old · Large",
+  args: { mode: "light", hasNotch: false, size: "large", title: "My Page", time: "1:20 PM" },
+};
+
+export const DarkLargeNotch: Story = {
+  name: "Dark · Notch · Large",
+  args: { mode: "dark", hasNotch: true, size: "large", title: "My Page", time: "9:41" },
+  parameters: { backgrounds: { default: "dark" } },
+};
+
+export const LargeNotchWithDisplayBar: Story = {
+  name: "Light · Notch · Large · Display Bar",
+  args: {
+    mode: "light", hasNotch: true, size: "large", displayBar: true,
+    title: "Home", subtitle: "My Farm", time: "9:41",
+  },
+};
+
+export const LargeNotchWithSearchBar: Story = {
+  name: "Light · Notch · Large · Search Bar",
+  args: { mode: "light", hasNotch: true, size: "large", searchBar: true, time: "9:41" },
+};
+
+export const LargeOldWithSearchBar: Story = {
+  name: "Light · Old · Large · Search Bar",
+  args: { mode: "light", hasNotch: false, size: "large", searchBar: true, time: "1:20 PM" },
+};
+
+export const DarkNotchSearchBar: Story = {
+  name: "Dark · Notch · Search Bar",
+  args: { mode: "dark", hasNotch: true, searchBar: true, time: "9:41" },
+  parameters: { backgrounds: { default: "dark" } },
+};
+
+export const DarkOld: Story = {
+  name: "Dark · Old · Default",
+  args: { mode: "dark", hasNotch: false, title: "My Page", time: "1:20 PM" },
+  parameters: { backgrounds: { default: "dark" } },
+};

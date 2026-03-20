@@ -764,3 +764,65 @@
   --border-critical-focus-secondary:    var(--neutral-60);
   --border-critical-pressed-secondary:  var(--neutral-70);
 }
+
+/* ==========================================================================
+   THEME BRIDGE TOKENS
+   Surface-level tokens that change across light / dark / accessibility.
+   Components must reference these instead of raw primitives where theme
+   adaptation is required.
+   ========================================================================== */
+:root {
+  /* Sheet / card surface */
+  --ds-sheet-bg:    var(--fill-default-none-primary);   /* white / dark / yellow */
+
+  /* Neutral separators, dividers, drag handles */
+  --ds-drag-handle: var(--neutral-20);
+  --ds-divider:     var(--neutral-20);
+}
+
+/* ==========================================================================
+   DARK MODE  (parent must carry  data-theme="dark")
+   ========================================================================== */
+[data-theme="dark"] {
+  /* Bridge tokens */
+  --ds-drag-handle: var(--neutral-70);
+  --ds-divider:     var(--neutral-70);
+
+  /* Semantic surface overrides */
+  --fill-default-none-primary:         var(--neutral-100);   /* #14151C */
+  --fill-default-none-secondary:       var(--neutral-90);    /* #232630 */
+  --fill-default-none-tertiary:        var(--neutral-80);    /* #363948 */
+
+  /* Text */
+  --text-default-none-primary:         var(--neutral-10);    /* #F3F4F6 */
+  --text-default-none-secondary:       var(--neutral-40);    /* #A3A9B9 */
+
+  /* Icons */
+  --icon-default-none-primary:         var(--neutral-40);
+
+  /* Borders */
+  --border-default-none-secondary:     var(--neutral-70);
+  --border-default-disabled-primary:   var(--neutral-60);    /* visible on dark */
+
+  /* Select (radio / checkbox) — darken blue tints */
+  --fill-select-enabled-secondary:     var(--blue-90);       /* #002747 */
+  --blue-30:                           var(--blue-70);       /* darker selected border */
+}
+
+/* ==========================================================================
+   ACCESSIBILITY MODE  (parent must carry  data-theme="accessibility")
+   Yellow-background high-contrast theme.
+   ========================================================================== */
+[data-theme="accessibility"] {
+  /* Bridge tokens */
+  --ds-drag-handle: var(--neutral-50);
+  --ds-divider:     var(--fill-default-enabled-primary);   /* green-60 */
+
+  /* Semantic surface overrides */
+  --fill-default-none-primary:         #FFEEBA;            /* warm yellow */
+  --fill-default-none-secondary:       var(--yellow-20);   /* #FFF3BF */
+
+  /* Borders → green-60 for maximum contrast */
+  --border-default-disabled-primary:   var(--fill-default-enabled-primary);
+  --border-default-none-secondary:     var(--fill-default-enabled-primary);
+}

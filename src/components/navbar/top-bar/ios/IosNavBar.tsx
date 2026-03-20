@@ -5,10 +5,11 @@
 // Design tokens → /src/theme/theme.css
 //   --neutral-00: #FFFFFF   --neutral-10: #F3F4F6   --neutral-20: #DFE2E7
 //   --neutral-40: #A3A9B9   --neutral-50: #868CA2   --neutral-60: #696F88
-//   --neutral-70: #4D5165   --neutral-80: #363948   --neutral-100: #14151C
+//   --neutral-70: #4D5165   --neutral-80: #363948   --neutral-90: #232630
+//   --neutral-100: #14151C
 //
-// Typography: "Noto Sans" SemiBold 16/24px (title), Regular 14/22px, 12/20px
-// Icons: inline SVG — Material Design paths
+// Typography: "Noto Sans" SemiBold 16/24px (default title), 20/28px (large title)
+// Icons: design-system icon components
 
 import React from "react";
 
@@ -86,9 +87,10 @@ function IosNoNotchStatusBar({
         }}
       >
         <svg width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true">
-          <path d="M7.5 3c-2.07 0-3.94.84-5.3 2.2L0.9 3.9C2.6 2.17 4.93 1.1 7.5 1.1s4.9 1.07 6.6 2.8L12.8 5.2C11.44 3.84 9.57 3 7.5 3z" fill={fg} />
-          <path d="M7.5 5.5c-1.3 0-2.48.53-3.34 1.38L2.8 5.52A6.15 6.15 0 0 1 7.5 3.5a6.15 6.15 0 0 1 4.7 2.02L10.84 6.88A3.73 3.73 0 0 0 7.5 5.5z" fill={fg} />
-          <path d="M7.5 8.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" fill={fg} />
+          <path d="M0.13 5.84A9 9 0 0 0 14.87 5.84L14.05 6.41A8 8 0 0 1 0.95 6.41Z" fill={fg} />
+          <path d="M2.18 7.27A6.5 6.5 0 0 0 12.82 7.27L11.6 8.13A5 5 0 0 1 3.4 8.13Z" fill={fg} />
+          <path d="M4.63 8.99A3.5 3.5 0 0 0 10.37 8.99L9.14 9.85A2 2 0 0 1 5.86 9.85Z" fill={fg} />
+          <circle cx="7.5" cy="10.7" r="0.8" fill={fg} />
         </svg>
       </div>
 
@@ -99,8 +101,8 @@ function IosNoNotchStatusBar({
           left: "50%",
           top: "50%",
           transform: "translate(-50%, -50%)",
-          fontFamily: "var(--font-family-body)",
-          fontWeight: "var(--font-weight-bold)",
+          fontFamily: '"SF Pro Text", -apple-system, sans-serif',
+          fontWeight: 400,
           fontSize: 12,
           color: fg,
           lineHeight: "normal",
@@ -120,9 +122,9 @@ function IosNoNotchStatusBar({
         }}
       >
         <svg width="25" height="12" viewBox="0 0 25 12" fill="none" aria-hidden="true">
-          <rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke={fg} strokeOpacity="0.35" />
-          <rect x="2" y="2" width="17" height="8" rx="2" fill={fg} />
-          <path d="M23 4v4" stroke={fg} strokeWidth="2" strokeLinecap="round" />
+          <rect x="0.5" y="0.33" width="22" height="11.33" rx="2.67" stroke={fg} strokeOpacity="0.35" />
+          <rect x="2" y="2" width="18" height="7.33" rx="1.33" fill={fg} />
+          <rect x="23" y="3.67" width="1.33" height="4" rx="0.67" fill={fg} fillOpacity="0.4" />
         </svg>
       </div>
     </div>
@@ -149,16 +151,18 @@ function IosNotchStatusBar({
       <span
         style={{
           position: "absolute",
-          left: 24,
-          top: "50%",
-          transform: "translateY(0%)",
-          marginTop: 4,
-          fontFamily: "var(--font-family-body)",
-          fontWeight: "var(--font-weight-bold)",
+          left: 48,
+          top: "calc(50% - 8px)",
+          transform: "translateX(-50%)",
+          fontFamily: '"SF Pro Text", -apple-system, sans-serif',
+          fontWeight: 600,
           fontSize: 15,
           color: fg,
+          letterSpacing: "-0.3px",
           lineHeight: "normal",
           whiteSpace: "nowrap",
+          textAlign: "center" as const,
+          width: 54,
         }}
       >
         {time}
@@ -186,29 +190,37 @@ function IosNotchStatusBar({
         </svg>
 
         {/* Wifi */}
-        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true">
-          <path d="M8 2.67c-2.21 0-4.21.9-5.67 2.36L1.07 3.76C2.87 1.76 5.29.67 8 .67s5.13 1.09 6.93 3.09L13.67 5c-1.46-1.46-3.46-2.33-5.67-2.33z" fill={fg} />
-          <path d="M8 5.33c-1.47 0-2.8.6-3.77 1.57L3.07 5.73C4.37 4.42 6.1 3.6 8 3.6s3.63.82 4.93 2.13l-1.16 1.17C10.8 5.93 9.47 5.33 8 5.33z" fill={fg} />
-          <path d="M8 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill={fg} />
+        <svg width="15" height="11" viewBox="0 0 15.33 11" fill="none" aria-hidden="true">
+          <path d="M0.3 5.34A9 9 0 0 0 15.04 5.34L14.22 5.91A8 8 0 0 1 1.12 5.91Z" fill={fg} />
+          <path d="M2.35 6.77A6.5 6.5 0 0 0 12.99 6.77L11.77 7.63A5 5 0 0 1 3.57 7.63Z" fill={fg} />
+          <path d="M4.8 8.49A3.5 3.5 0 0 0 10.54 8.49L9.31 9.35A2 2 0 0 1 6.03 9.35Z" fill={fg} />
+          <circle cx="7.67" cy="10.2" r="0.8" fill={fg} />
         </svg>
 
         {/* Battery */}
         <svg width="25" height="12" viewBox="0 0 25 12" fill="none" aria-hidden="true">
-          <rect x="0.5" y="0.5" width="21" height="11" rx="3.5" stroke={fg} strokeOpacity="0.35" />
-          <rect x="2" y="2" width="17" height="8" rx="2" fill={fg} />
-          <path d="M23 4v4" stroke={fg} strokeWidth="2" strokeLinecap="round" />
+          <rect x="0.5" y="0.33" width="22" height="11.33" rx="2.67" stroke={fg} strokeOpacity="0.35" />
+          <rect x="2" y="2" width="18" height="7.33" rx="1.33" fill={fg} />
+          <rect x="23" y="3.67" width="1.33" height="4" rx="0.67" fill={fg} fillOpacity="0.4" />
         </svg>
       </div>
     </div>
   );
 }
 
-// ─── Search Bar Row ───────────────────────────────────────────────────────────
-function SearchBarRow({ colour }: { colour: "light" | "dark" }) {
+// ─── Search Bar (default: h40 14px / large: h44 16px) ─────────────────────────
+function SearchBarRow({
+  colour,
+  size = "default",
+}: {
+  colour: "light" | "dark";
+  size?: "default" | "large";
+}) {
   const isLight  = colour === "light";
   const inputBg  = isLight ? "var(--neutral-10)" : "var(--neutral-90)";
   const iconFg   = isLight ? "var(--neutral-60)" : "var(--neutral-50)";
   const placeholder = isLight ? "var(--neutral-40)" : "var(--neutral-50)";
+  const isLarge = size === "large";
 
   return (
     <div
@@ -216,11 +228,11 @@ function SearchBarRow({ colour }: { colour: "light" | "dark" }) {
         display: "flex",
         alignItems: "center",
         flex: 1,
-        height: 40,
+        height: isLarge ? 44 : 36,
         backgroundColor: inputBg,
         borderRadius: 4,
-        padding: "0 8px 0 12px",
-        gap: 8,
+        padding: "0 10px",
+        gap: 4,
       }}
       data-name="search-bar"
     >
@@ -230,10 +242,11 @@ function SearchBarRow({ colour }: { colour: "light" | "dark" }) {
           flex: 1,
           fontFamily: "var(--font-family-body)",
           fontWeight: "var(--font-weight-regular)",
-          fontSize: 14,
+          fontSize: isLarge ? 16 : 14,
           color: placeholder,
-          letterSpacing: "-0.105px",
-          lineHeight: "22px",
+          letterSpacing: isLarge ? "-0.12px" : "-0.105px",
+          lineHeight: isLarge ? "24px" : "22px",
+          fontVariationSettings: "'CTGR' 0, 'wdth' 100",
         }}
       >
         Search...
@@ -248,10 +261,12 @@ function DisplayNavPanel({
   colour,
   title,
   subtitle,
+  panelTopOffset,
 }: {
   colour: "light" | "dark";
   title: string;
   subtitle: string;
+  panelTopOffset: number;
 }) {
   const isLight    = colour === "light";
   const cardBg     = isLight ? "var(--mono-white-100)" : "var(--neutral-70)";
@@ -265,7 +280,7 @@ function DisplayNavPanel({
     <div
       style={{
         position: "absolute",
-        top: "calc(50% + 64px)",
+        top: `calc(50% + ${panelTopOffset}px)`,
         transform: "translateY(-50%)",
         left: "4.27%",  // ~16px of 375
         right: "4.27%",
@@ -307,7 +322,7 @@ function DisplayNavPanel({
           left: 68,
           top: "50%",
           transform: "translateY(-50%)",
-          width: "calc(100% - 68px - 40px)",
+          width: 224,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -324,6 +339,7 @@ function DisplayNavPanel({
             whiteSpace: "nowrap",
             overflow: "hidden",
             textOverflow: "ellipsis",
+            fontVariationSettings: "'CTGR' 0, 'wdth' 100",
           }}
         >
           {title}
@@ -339,6 +355,7 @@ function DisplayNavPanel({
             whiteSpace: "nowrap",
             overflow: "hidden",
             textOverflow: "ellipsis",
+            fontVariationSettings: "'CTGR' 0, 'wdth' 100",
           }}
         >
           {subtitle}
@@ -350,7 +367,7 @@ function DisplayNavPanel({
         style={{
           position: "absolute",
           right: 8,
-          top: "50%",
+          top: "calc(50% + 1px)",
           transform: "translateY(-50%)",
         }}
       >
@@ -393,12 +410,6 @@ export interface IosNavBarProps {
  *   Display bar: yes | no
  *   Search bar : yes | no
  *   Size       : default | large
- *
- * ```tsx
- * <IosNavBar mode="light" title="My Page" />
- * <IosNavBar mode="dark" hasNotch title="Home" displayBar subtitle="My Farm" />
- * <IosNavBar mode="light" hasNotch searchBar />
- * ```
  */
 export const IosNavBar: React.FC<IosNavBarProps> = ({
   mode = "light",
@@ -412,20 +423,25 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
   onBack,
   onAction,
 }) => {
-  const colour = mode; // alias to match Figma naming
+  const colour = mode;
   const isLight = mode === "light";
+  const isLarge = size === "large";
 
   // Figma height values for iOS:
-  //   old, no display         : 84px  (status 20 + content 64)
-  //   old, display            : 104px (status 20 + content 64 + display extends below)
-  //   notch, no display       : 88px  (status 44 + content 44)
-  //   notch, display          : 120px (status 44 + content 60 + display extends below)
-  //   large size adds ~4px to content
-  const statusH  = hasNotch ? 44 : 20;
+  //   old, default, no display  : 84px  (status 20 + content 64)
+  //   old, default, display     : 104px (+20)
+  //   old, large, no display    : 84px  (status 20 + content 64)
+  //   old, large, display       : 104px (+20)
+  //   notch, default, no display: 88px  (status 44 + content 44)
+  //   notch, default, display   : 104px (+16)
+  //   notch, large, no display  : 104px (status 44 + content 60)
+  //   notch, large, display     : 120px (+16)
+  const statusH = hasNotch ? 44 : 20;
   const contentH = hasNotch
-    ? (size === "default" ? 44 : 48)
-    : (size === "default" ? 64 : 68);
-  const totalH   = statusH + contentH + (displayBar ? 16 : 0);
+    ? (isLarge ? 60 : 44)
+    : 64;
+  const displayOffset = hasNotch ? 16 : 20;
+  const totalH = statusH + contentH + (displayBar ? displayOffset : 0);
 
   const defaultTime = hasNotch ? "9:41" : "1:20 PM";
 
@@ -433,11 +449,24 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
   const iconColor   = isLight ? "var(--neutral-100)" : "var(--mono-white-100)";
   const titleColor  = isLight ? "var(--neutral-100)" : "var(--mono-white-100)";
   const borderColor = isLight ? "var(--neutral-20)" : "transparent";
+  const circleBg    = isLight ? "var(--neutral-10)" : "var(--neutral-90)";
 
-  // Icon center fixed per Figma: old=60px from top (125:4145 top-[57.14%] of 84px),
-  // notch=66px (125:4172 top-[calc(50%+22px)] of 88px).
-  const iconCenter = hasNotch ? 66 : 60;
-  const iconTopOffset = iconCenter - totalH / 2;
+  // Icon vertical centering per Figma:
+  // iOS old default (84px): calc(50%+18px)  → center at 60px
+  // iOS old large (84px): calc(50%+12px)    → center at 54px
+  // iOS notch default (88px): calc(50%+22px) → center at 66px
+  // iOS notch large (104px): calc(50%+22px)  → center at 74px
+  const iconTopOffset = (() => {
+    if (hasNotch) {
+      return 22;
+    }
+    return isLarge ? 12 : 18;
+  })();
+
+  // Adjust for display bar offset
+  const effectiveIconTopOffset = displayBar
+    ? iconTopOffset - displayOffset / 2
+    : iconTopOffset;
 
   return (
     <div
@@ -460,47 +489,205 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
 
       {/* ── Main navigation row ─────────────────────────────────────── */}
       {searchBar ? (
-        /* Search bar mode: search bar fills available width + Cancel text on right */
-        <div
-          style={{
-            position: "absolute",
-            left: 16,
-            right: 16,
-            top: `calc(50% + ${iconTopOffset}px)`,
-            transform: "translateY(-50%)",
-            display: "flex",
-            alignItems: "center",
-            gap: 4,
-          }}
-        >
-          <SearchBarRow colour={colour} />
+        isLarge ? (
+          /* Large search mode: search bar + Cancel text */
+          <div
+            style={{
+              position: "absolute",
+              left: 16,
+              right: 16,
+              top: `calc(50% + ${effectiveIconTopOffset}px)`,
+              transform: "translateY(-50%)",
+              display: "flex",
+              alignItems: "center",
+              gap: 4,
+            }}
+          >
+            <SearchBarRow colour={colour} size="large" />
+            <button
+              onClick={onBack}
+              style={{ background: "none", border: "none", cursor: "pointer", padding: 0, flexShrink: 0 }}
+              aria-label="Cancel"
+            >
+              <span
+                style={{
+                  fontFamily: "var(--font-family-body)",
+                  fontWeight: "var(--font-weight-regular)",
+                  fontSize: 16,
+                  color: isLight ? "var(--neutral-60)" : "var(--neutral-40)",
+                  letterSpacing: "-0.12px",
+                  lineHeight: "24px",
+                  whiteSpace: "nowrap",
+                  fontVariationSettings: "'CTGR' 0, 'wdth' 100",
+                }}
+              >
+                Cancel
+              </span>
+            </button>
+          </div>
+        ) : (
+          /* Default search mode: search bar + Cancel text (absolute positioned per Figma) */
+          (() => {
+            // Figma offsets: old search=+16, notch search=+22, notch cancel=+24
+            const baseSearchOffset = hasNotch ? 22 : 16;
+            const baseCancelOffset = hasNotch ? 24 : 16;
+            const searchTopOff = displayBar ? baseSearchOffset - displayOffset / 2 : baseSearchOffset;
+            const cancelTopOff = displayBar ? baseCancelOffset - displayOffset / 2 : baseCancelOffset;
+            return (
+              <>
+                <div
+                  style={{
+                    position: "absolute",
+                    left: 16,
+                    top: `calc(50% + ${searchTopOff}px)`,
+                    transform: "translateY(-50%)",
+                    width: 280,
+                    height: 36,
+                  }}
+                >
+                  <SearchBarRow colour={colour} size="default" />
+                </div>
+                <button
+                  onClick={onBack}
+                  style={{
+                    position: "absolute",
+                    right: 16,
+                    top: `calc(50% + ${cancelTopOff}px)`,
+                    transform: "translateY(-50%)",
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    padding: 0,
+                    width: 76,
+                    textAlign: "right" as const,
+                  }}
+                  aria-label="Cancel"
+                >
+                  <span
+                    style={{
+                      fontFamily: "var(--font-family-body)",
+                      fontWeight: "var(--font-weight-regular)",
+                      fontSize: 14,
+                      color: isLight ? "var(--neutral-60)" : "var(--neutral-40)",
+                      letterSpacing: "-0.105px",
+                      lineHeight: "22px",
+                      whiteSpace: "nowrap",
+                      fontVariationSettings: "'CTGR' 0, 'wdth' 100",
+                    }}
+                  >
+                    Cancel
+                  </span>
+                </button>
+              </>
+            );
+          })()
+        )
+      ) : isLarge ? (
+        /* Large default mode — 2 icons in circles + large title */
+        <>
+          {/* Left circle background */}
+          <div
+            style={{
+              position: "absolute",
+              left: 16,
+              top: `calc(50% + ${effectiveIconTopOffset}px)`,
+              transform: "translateY(-50%)",
+              width: 44,
+              height: 44,
+              borderRadius: 22,
+              backgroundColor: circleBg,
+            }}
+          />
+          {/* Chevron left — left:26px */}
           <button
             onClick={onBack}
-            style={{ background: "none", border: "none", cursor: "pointer", padding: 0, flexShrink: 0 }}
-            aria-label="Cancel"
+            style={{
+              position: "absolute",
+              left: 26,
+              top: `calc(50% + ${effectiveIconTopOffset}px)`,
+              transform: "translateY(-50%)",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              padding: 0,
+              display: "flex",
+              alignItems: "center",
+            }}
+            aria-label="Voltar"
+          >
+            <ChevronLeftIcon color={iconColor} />
+          </button>
+
+          {/* Right circle background */}
+          <div
+            style={{
+              position: "absolute",
+              right: hasNotch ? 16 : 15,
+              top: `calc(50% + ${effectiveIconTopOffset}px)`,
+              transform: "translateY(-50%)",
+              width: 44,
+              height: 44,
+              borderRadius: 22,
+              backgroundColor: circleBg,
+            }}
+          />
+          {/* Action icon — right:25-26px */}
+          <button
+            onClick={onAction}
+            style={{
+              position: "absolute",
+              right: hasNotch ? 26 : 25,
+              top: `calc(50% + ${effectiveIconTopOffset}px)`,
+              transform: "translateY(-50%)",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              padding: 0,
+              display: "flex",
+              alignItems: "center",
+            }}
+            aria-label="Ação"
+          >
+            <AddIcon color={iconColor} />
+          </button>
+
+          {/* Title — 20/28px SemiBold, left:20.27% right:20% */}
+          <div
+            style={{
+              position: "absolute",
+              left: "20.27%",
+              right: "20%",
+              top: `calc(50% + ${effectiveIconTopOffset}px)`,
+              transform: "translateY(-50%)",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              height: 24,
+              textAlign: "center",
+            }}
           >
             <span
               style={{
                 fontFamily: "var(--font-family-body)",
-                fontWeight: "var(--font-weight-regular)",
-                fontSize: size === "large" ? 16 : 14,
-                color: isLight ? "var(--neutral-60)" : "var(--neutral-40)",
-                letterSpacing: size === "large" ? "-0.12px" : "-0.105px",
-                lineHeight: size === "large" ? "24px" : "22px",
-                whiteSpace: "nowrap",
+                fontWeight: "var(--font-weight-bold)",
+                fontSize: 20,
+                color: titleColor,
+                letterSpacing: "-0.15px",
+                lineHeight: "28px",
+                fontVariationSettings: "'CTGR' 0, 'wdth' 100",
               }}
             >
-              Cancel
+              {title}
             </span>
-          </button>
-        </div>
+          </div>
+        </>
       ) : (
-        /* Default mode — absolutely positioned matching Figma (125:4145 / 125:4172) exactly */
+        /* Default mode — 4 icons absolutely positioned */
         <>
           {/* Chevron left — left:16px */}
           <button
             onClick={onBack}
-            style={{ position: "absolute", left: 16, top: `calc(50% + ${iconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
+            style={{ position: "absolute", left: 16, top: `calc(50% + ${effectiveIconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
             aria-label="Voltar"
           >
             <ChevronLeftIcon color={iconColor} />
@@ -509,15 +696,15 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
           {/* Secondary action — left:60px */}
           <button
             onClick={onAction}
-            style={{ position: "absolute", left: 60, top: `calc(50% + ${iconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
+            style={{ position: "absolute", left: 60, top: `calc(50% + ${effectiveIconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
             aria-label="Ação"
           >
             <AddIcon color={iconColor} />
           </button>
 
-          {/* Title — left:24.53% / right:24.53% of 375px ≈ 92px each side */}
+          {/* Title — 16/24px SemiBold, left:24.53% right:24.53% */}
           <div
-            style={{ position: "absolute", left: "24.53%", right: "24.53%", top: `calc(50% + ${iconTopOffset}px)`, transform: "translateY(-50%)", textAlign: "center" }}
+            style={{ position: "absolute", left: "24.53%", right: "24.53%", top: `calc(50% + ${effectiveIconTopOffset}px)`, transform: "translateY(-50%)", display: "flex", flexDirection: "column", justifyContent: "center", height: 24, textAlign: "center" }}
           >
             <span
               style={{
@@ -527,6 +714,7 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
                 color: titleColor,
                 letterSpacing: "-0.12px",
                 lineHeight: "24px",
+                fontVariationSettings: "'CTGR' 0, 'wdth' 100",
               }}
             >
               {title}
@@ -536,7 +724,7 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
           {/* Secondary action — right:60px */}
           <button
             onClick={onAction}
-            style={{ position: "absolute", right: 60, top: `calc(50% + ${iconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
+            style={{ position: "absolute", right: 60, top: `calc(50% + ${effectiveIconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
             aria-label="Ação"
           >
             <AddIcon color={iconColor} />
@@ -545,7 +733,7 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
           {/* Primary action — right:16px */}
           <button
             onClick={onAction}
-            style={{ position: "absolute", right: 16, top: `calc(50% + ${iconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
+            style={{ position: "absolute", right: 16, top: `calc(50% + ${effectiveIconTopOffset}px)`, transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", padding: 0, display: "flex", alignItems: "center" }}
             aria-label="Ação"
           >
             <AddIcon color={iconColor} />
@@ -555,7 +743,12 @@ export const IosNavBar: React.FC<IosNavBarProps> = ({
 
       {/* ── Display navigation panel (extends below bar) ────────────── */}
       {displayBar && (
-        <DisplayNavPanel colour={colour} title={title} subtitle={subtitle} />
+        <DisplayNavPanel
+          colour={colour}
+          title={title}
+          subtitle={subtitle}
+          panelTopOffset={Math.round(totalH / 2 - displayOffset + 32)}
+        />
       )}
     </div>
   );
