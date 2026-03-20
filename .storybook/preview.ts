@@ -59,6 +59,11 @@ const preview: Preview = {
         date:  /Date$/i,
       },
     },
+    options: {
+      storySort: {
+        order: ["Design System", ["Showcase", "*"]],
+      },
+    },
   },
 };
 
