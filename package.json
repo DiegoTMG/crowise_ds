@@ -37,7 +37,9 @@
       "types": "./dist/components/index.d.ts"
     },
     "./theme/theme.css": "./dist/theme/theme.css",
-    "./theme/fonts.css": "./dist/theme/fonts.css"
+    "./theme/fonts.css": "./dist/theme/fonts.css",
+    "./theme.css": "./dist/theme/theme.css",
+    "./fonts.css": "./dist/theme/fonts.css"
   },
   "files": [
     "dist",
