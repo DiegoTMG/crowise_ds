@@ -1,0 +1,15 @@
+# Storybook story files — not needed in published package
+*.stories.tsx
+*.stories.ts
+src/**/*.stories.tsx
+src/**/*.stories.ts
+
+# Storybook config
+.storybook/
+
+# Build scripts and config not needed by consumers
+generate-*.mjs
+scaffold-*.mjs
+build-*.mjs
+resolve-*.mjs
+figma.config.json
