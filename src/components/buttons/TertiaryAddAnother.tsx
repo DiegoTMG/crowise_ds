@@ -148,7 +148,7 @@ const STATE_TOKENS: Record<
 // SVG: viewBox="0 0 11.6667 11.6667"  path: p2f57dbf0
 
 function PlusIcon({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Button atom ──────────────────────────────────────────────────────────────

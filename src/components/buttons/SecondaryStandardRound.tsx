@@ -48,50 +48,64 @@ export type SecondaryRoundState =
   | "loading";
 
 // ─── State style map ──────────────────────────────────────────────────────────
-// bg       → background fill (Figma bg-* class)
-// accent   → border + text + icon colour (they are identical per state per Figma)
-// shadow   → box-shadow (focus ring only)
-// cursor   → pointer / not-allowed / wait
+// bg          → background fill  (Figma: --fill-default-{state}-tertiary)
+// borderColor → border colour    (Figma: --border-default-{state}-primary)
+// textColor   → label colour     (Figma: --text-default-{state}-secondary)
+// iconColor   → icon fill colour (Figma: --icon-default-{state}-secondary)
+// shadow      → box-shadow (focus ring only)
+// cursor      → pointer / not-allowed / wait
 
 const STATE_STYLES: Record<
   SecondaryRoundState,
-  { bg: string; accent: string; shadow: string; cursor: string }
+  { bg: string; borderColor: string; textColor: string; iconColor: string; shadow: string; cursor: string }
 > = {
   default: {
-    bg:     "var(--mono-white-100)",              // bg-white
-    accent: "var(--text-default-enabled-secondary)", // green-60 #14803C
-    shadow: "none",
-    cursor: "pointer",
+    bg:          "var(--fill-default-enabled-tertiary)",     // white
+    borderColor: "var(--border-default-enabled-primary)",    // green-60 #14803C
+    textColor:   "var(--text-default-enabled-secondary)",    // green-60 #14803C
+    iconColor:   "var(--icon-default-enabled-secondary)",    // green-60 #14803C
+    shadow:      "none",
+    cursor:      "pointer",
   },
   hover: {
-    bg:     "var(--mono-white-100)",              // bg-white
-    accent: "var(--text-default-hover-secondary)",   // green-50 #19A04B
-    shadow: "none",
-    cursor: "pointer",
+    bg:          "var(--fill-default-hover-tertiary)",       // white
+    borderColor: "var(--border-default-hover-primary)",      // green-50 #19A04B
+    textColor:   "var(--text-default-hover-secondary)",      // green-50 #19A04B
+    iconColor:   "var(--icon-default-hover-secondary)",      // green-50 #19A04B
+    shadow:      "none",
+    cursor:      "pointer",
   },
   focus: {
-    bg:     "var(--mono-white-100)",              // bg-white
-    accent: "var(--text-default-focus-secondary)",   // green-60 #14803C
-    shadow: "var(--focus-border)",               // 0 0 0 3px rgba(0,146,228,0.5)
-    cursor: "pointer",
+    bg:          "var(--fill-default-focus-tertiary)",       // white
+    borderColor: "var(--border-default-focus-primary)",      // green-60 #14803C
+    textColor:   "var(--text-default-focus-secondary)",      // green-60 #14803C
+    iconColor:   "var(--icon-default-focus-secondary)",      // green-60 #14803C
+    shadow:      "var(--focus-border)",                      // 0 0 0 3px rgba(0,146,228,0.5)
+    cursor:      "pointer",
   },
   pressed: {
-    bg:     "var(--fill-default-none-secondary)", // neutral-10 #F3F4F6
-    accent: "var(--text-default-pressed-secondary)", // green-70 #0C612C
-    shadow: "none",
-    cursor: "pointer",
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70 #0C612C
+    textColor:   "var(--text-default-pressed-secondary)",    // green-70 #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70 #0C612C
+    shadow:      "none",
+    cursor:      "pointer",
   },
   disabled: {
-    bg:     "var(--mono-white-100)",              // bg-white
-    accent: "var(--text-default-disabled-secondary)", // neutral-30 #C2C7D0
-    shadow: "none",
-    cursor: "not-allowed",
+    bg:          "var(--fill-default-disabled-tertiary)",    // white
+    borderColor: "var(--border-default-disabled-primary)",   // neutral-30 #C2C7D0
+    textColor:   "var(--text-default-disabled-secondary)",   // neutral-30 #C2C7D0
+    iconColor:   "var(--icon-default-disabled-secondary)",   // neutral-30 #C2C7D0
+    shadow:      "none",
+    cursor:      "not-allowed",
   },
   loading: {
-    bg:     "var(--fill-default-none-secondary)", // neutral-10 #F3F4F6
-    accent: "var(--text-default-pressed-secondary)", // green-70 #0C612C
-    shadow: "none",
-    cursor: "wait",
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70 #0C612C
+    textColor:   "var(--text-default-pressed-secondary)",    // green-70 #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70 #0C612C
+    shadow:      "none",
+    cursor:      "wait",
   },
 };
 
@@ -114,7 +128,7 @@ const LABEL_STYLE: React.CSSProperties = {
 // SVG   : absolute, block, size-full, fill="none", preserveAspectRatio="none", viewBox "0 0 11.6667 11.6667"
 
 function IconSecondary({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Loading spinner ──────────────────────────────────────────────────────────
@@ -185,9 +199,9 @@ export function SecondaryRoundAtom({
         position:       "relative",
         // ── Colours ───────────────────────────────────────────────────────
         background: s.bg,
-        color:      s.accent,
-        // ── Border — 1 px solid, colour = accent token (matches Figma) ───
-        border:     `1px solid ${s.accent}`,
+        color:      s.textColor,
+        // ── Border — 1 px solid, colour = Figma --border-default-{state}-primary ──
+        border:     `1px solid ${s.borderColor}`,
         // ── Focus ring ────────────────────────────────────────────────────
         boxShadow: s.shadow,
         // ── Misc ──────────────────────────────────────────────────────────
@@ -200,13 +214,13 @@ export function SecondaryRoundAtom({
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <IconSecondary fill={s.accent} />
+        <IconSecondary fill={s.iconColor} />
       )}
 
       <p
         style={{
           ...LABEL_STYLE,
-          color:    s.accent,
+          color:    s.textColor,
           position: "relative",
           margin:   0,
         }}

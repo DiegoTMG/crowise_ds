@@ -59,41 +59,47 @@ export type SecondaryIconOnlySquareState =
 
 const STATE_STYLES: Record<
   SecondaryIconOnlySquareState,
-  { bg: string; accent: string; focusShadow: string; cursor: string }
+  { bg: string; borderColor: string; iconColor: string; focusShadow: string; cursor: string }
 > = {
   default: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-enabled-secondary)", // green-60  #14803C
+    bg:          "var(--fill-default-enabled-tertiary)",     // white
+    borderColor: "var(--border-default-enabled-primary)",    // green-60  #14803C
+    iconColor:   "var(--icon-default-enabled-secondary)",    // green-60  #14803C
     focusShadow: "none",
     cursor:      "pointer",
   },
   hover: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-hover-secondary)",   // green-50  #19A04B
+    bg:          "var(--fill-default-hover-tertiary)",       // white
+    borderColor: "var(--border-default-hover-primary)",      // green-50  #19A04B
+    iconColor:   "var(--icon-default-hover-secondary)",      // green-50  #19A04B
     focusShadow: "none",
     cursor:      "pointer",
   },
   focus: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-focus-secondary)",   // green-60  #14803C
-    focusShadow: "var(--focus-border)",                   // 0 0 0 3px rgba(0,146,228,0.5)
+    bg:          "var(--fill-default-focus-tertiary)",       // white
+    borderColor: "var(--border-default-focus-primary)",      // green-60  #14803C
+    iconColor:   "var(--icon-default-focus-secondary)",      // green-60  #14803C
+    focusShadow: "var(--focus-border)",                      // 0 0 0 3px rgba(0,146,228,0.5)
     cursor:      "pointer",
   },
   pressed: {
-    bg:          "var(--fill-default-none-secondary)",    // neutral-10 #F3F4F6
-    accent:      "var(--text-default-pressed-secondary)", // green-70  #0C612C
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70  #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70  #0C612C
     focusShadow: "none",
     cursor:      "pointer",
   },
   disabled: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-disabled-secondary)",// neutral-30 #C2C7D0
+    bg:          "var(--fill-default-disabled-tertiary)",    // white
+    borderColor: "var(--border-default-disabled-primary)",   // neutral-30 #C2C7D0
+    iconColor:   "var(--icon-default-disabled-secondary)",   // neutral-30 #C2C7D0
     focusShadow: "none",
     cursor:      "not-allowed",
   },
   loading: {
-    bg:          "var(--fill-default-none-secondary)",    // neutral-10 #F3F4F6
-    accent:      "var(--text-default-pressed-secondary)", // green-70  #0C612C (border only; spinner replaces icon)
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70  #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70  #0C612C (border only; spinner replaces icon)
     focusShadow: "none",
     cursor:      "wait",
   },
@@ -106,7 +112,7 @@ const STATE_STYLES: Record<
 // SVG: absolute block size-full fill="none" preserveAspectRatio="none" viewBox="0 0 14 14"
 
 function IconSecondary({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Loading spinner ──────────────────────────────────────────────────────────
@@ -190,7 +196,7 @@ export function SecondaryIconOnlySquareAtom({
           transition:     "background 0.1s",
         }}
       >
-        {isLoading ? <LoadingSpinner /> : <IconSecondary fill={s.accent} />}
+        {isLoading ? <LoadingSpinner /> : <IconSecondary fill={s.iconColor} />}
       </div>
 
       {/* Border overlay — exact Figma: absolute border border-solid inset-0
@@ -201,7 +207,7 @@ export function SecondaryIconOnlySquareAtom({
         style={{
           position:      "absolute",
           inset:         0,
-          border:        `1px solid ${s.accent}`,
+          border:        `1px solid ${s.borderColor}`,
           borderRadius:  "8px",
           pointerEvents: "none",
           boxShadow:     s.focusShadow !== "none" ? s.focusShadow : undefined,

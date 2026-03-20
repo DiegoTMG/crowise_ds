@@ -76,54 +76,66 @@ export type SplitSquareState =
 
 const SECTION_TOKENS: Record<
   SplitSquareState,
-  { bg: string; accent: string; focusShadow: string }
+  { bg: string; borderColor: string; textColor: string; iconColor: string; focusShadow: string }
 > = {
   default: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-enabled-secondary)", // green-60  #14803C
+    bg:          "var(--fill-default-enabled-tertiary)",     // white
+    borderColor: "var(--border-default-enabled-primary)",    // green-60  #14803C
+    textColor:   "var(--text-default-enabled-secondary)",    // green-60  #14803C
+    iconColor:   "var(--icon-default-enabled-secondary)",    // green-60  #14803C
     focusShadow: "none",
   },
   hover: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-hover-secondary)",   // green-50  #19A04B
+    bg:          "var(--fill-default-hover-tertiary)",       // white
+    borderColor: "var(--border-default-hover-primary)",      // green-50  #19A04B
+    textColor:   "var(--text-default-hover-secondary)",      // green-50  #19A04B
+    iconColor:   "var(--icon-default-hover-secondary)",      // green-50  #19A04B
     focusShadow: "none",
   },
   focus: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-focus-secondary)",   // green-60  #14803C
-    focusShadow: "var(--focus-border)",                   // 0 0 0 3px rgba(0,146,228,0.5)
+    bg:          "var(--fill-default-focus-tertiary)",       // white
+    borderColor: "var(--border-default-focus-primary)",      // green-60  #14803C
+    textColor:   "var(--text-default-focus-secondary)",      // green-60  #14803C
+    iconColor:   "var(--icon-default-focus-secondary)",      // green-60  #14803C
+    focusShadow: "var(--focus-border)",                      // 0 0 0 3px rgba(0,146,228,0.5)
   },
   pressed: {
-    bg:          "var(--fill-default-none-secondary)",    // neutral-10 #F3F4F6
-    accent:      "var(--text-default-pressed-secondary)", // green-70  #0C612C
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70  #0C612C
+    textColor:   "var(--text-default-pressed-secondary)",    // green-70  #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70  #0C612C
     focusShadow: "none",
   },
   disabled: {
-    bg:          "var(--mono-white-100)",
-    accent:      "var(--text-default-disabled-secondary)",// neutral-30 #C2C7D0
+    bg:          "var(--fill-default-disabled-tertiary)",    // white
+    borderColor: "var(--border-default-disabled-primary)",   // neutral-30 #C2C7D0
+    textColor:   "var(--text-default-disabled-secondary)",   // neutral-30 #C2C7D0
+    iconColor:   "var(--icon-default-disabled-secondary)",   // neutral-30 #C2C7D0
     focusShadow: "none",
   },
   loading: {
-    bg:          "var(--fill-default-none-secondary)",    // neutral-10 #F3F4F6
-    accent:      "var(--text-default-pressed-secondary)", // green-70  #0C612C
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70  #0C612C
+    textColor:   "var(--text-default-pressed-secondary)",    // green-70  #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70  #0C612C
     focusShadow: "none",
   },
 };
 
 // ─── Outer divider bg ─────────────────────────────────────────────────────────
 // Figma: outer wrapper bg = gap divider colour (because gap:1px exposes it as a line)
-//   Active  → #14803C = --text-default-enabled-secondary
-//   Loading → #0C612C = --text-default-pressed-secondary
-//   Disabled → #C2C7D0 = --text-default-disabled-secondary
+//   Active   → #14803C = --border-default-enabled-primary
+//   Loading  → #0C612C = --border-default-pressed-primary
+//   Disabled → #C2C7D0 = --border-default-disabled-primary
 
 function outerBg(primaryState: SplitSquareState, menuState: SplitSquareState): string {
   if (primaryState === "disabled" && menuState === "disabled") {
-    return "var(--text-default-disabled-secondary)";
+    return "var(--border-default-disabled-primary)";
   }
   if (primaryState === "loading" || menuState === "loading") {
-    return "var(--text-default-pressed-secondary)";
+    return "var(--border-default-pressed-primary)";
   }
-  return "var(--text-default-enabled-secondary)";
+  return "var(--border-default-enabled-primary)";
 }
 
 // ─── Typography — Button/Label ────────────────────────────────────────────────
@@ -151,7 +163,7 @@ const LABEL: React.CSSProperties = {
 //      viewBox="0 0 11.6667 11.6667"
 
 function PlusIcon({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Chevron icon — exact Figma structure ─────────────────────────────────────
@@ -161,7 +173,7 @@ function PlusIcon({ fill }: { fill: string }) {
 //          viewBox="0 0 12 7.41"
 
 function ChevronIcon({ fill }: { fill: string }) {
-  return <KeyboardArrowDown size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <KeyboardArrowDown size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Split button atom ────────────────────────────────────────────────────────
@@ -257,10 +269,10 @@ export function SecondarySplitSquareAtom({
         {primaryState === "loading" ? (
           <Spinner size={18} trackColor="var(--neutral-20)" activeColor="var(--fill-default-enabled-primary)" />
         ) : (
-          <PlusIcon fill={ps.accent} />
+          <PlusIcon fill={ps.iconColor} />
         )}
 
-        <p style={{ ...LABEL, color: ps.accent }}>
+        <p style={{ ...LABEL, color: ps.textColor }}>
           {primaryState === "loading" ? "Loading..." : label}
         </p>
 
@@ -273,9 +285,9 @@ export function SecondarySplitSquareAtom({
             pointerEvents: "none",
             borderRadius:  "8px 0 0 8px",
             // 3-sided border: left + top + bottom, NO right
-            borderTop:    `1px solid ${ps.accent}`,
-            borderBottom: `1px solid ${ps.accent}`,
-            borderLeft:   `1px solid ${ps.accent}`,
+            borderTop:    `1px solid ${ps.borderColor}`,
+            borderBottom: `1px solid ${ps.borderColor}`,
+            borderLeft:   `1px solid ${ps.borderColor}`,
             borderRight:  "none",
             // Focus ring via box-shadow on the overlay
             boxShadow:    ps.focusShadow !== "none" ? ps.focusShadow : undefined,
@@ -343,7 +355,7 @@ export function SecondarySplitSquareAtom({
                 padding:    "12px",
               }}
             >
-              <ChevronIcon fill={ms.accent} />
+              <ChevronIcon fill={ms.iconColor} />
             </div>
           </div>
 
@@ -356,9 +368,9 @@ export function SecondarySplitSquareAtom({
               pointerEvents: "none",
               borderRadius:  "0 8px 8px 0",
               // 3-sided border: right + top + bottom, NO left
-              borderTop:    `1px solid ${ms.accent}`,
-              borderBottom: `1px solid ${ms.accent}`,
-              borderRight:  `1px solid ${ms.accent}`,
+              borderTop:    `1px solid ${ms.borderColor}`,
+              borderBottom: `1px solid ${ms.borderColor}`,
+              borderRight:  `1px solid ${ms.borderColor}`,
               borderLeft:   "none",
               // Focus ring via box-shadow on the overlay
               boxShadow:    ms.focusShadow !== "none" ? ms.focusShadow : undefined,

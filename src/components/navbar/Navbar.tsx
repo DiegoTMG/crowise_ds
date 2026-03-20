@@ -23,12 +23,12 @@
  *   Count    : SemiBold 16px / 24px  letterSpacing -0.12px  (Body Med)
  *
  * Icons
- *   Left  : ArrowBackIos 24×24  (src/icons/design/ArrowBackIos)
+ *   Left  : ArrowBack 24×24     (src/icons/design/ArrowBack)
  *   Right : Scout 24×24          (src/icons/feature/Scout)
  */
 
 import React from "react";
-import ArrowBackIos from "../../icons/design/ArrowBackIos";
+import ArrowBack from "../../icons/design/ArrowBack";
 import Scout from "../../icons/feature/Scout";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -38,7 +38,7 @@ export interface NavbarProps {
   title: string;
   /** Optional subtitle info line (e.g. "130 ac • DAE: 45") */
   subtitle?: string;
-  /** Custom left icon — defaults to ArrowBackIos 24×24 */
+  /** Custom left icon — defaults to ArrowBack 24×24 */
   leftIcon?: React.ReactNode;
   /** Custom right icon — defaults to Scout 24×24 */
   rightIcon?: React.ReactNode;
@@ -69,7 +69,7 @@ const leftSectionStyle: React.CSSProperties = {
   width: 68,
   height: 24,
   flexShrink: 0,
-  color: "var(--text-default-none-primary)",
+  color: "var(--icon-default-none-primary)",
 };
 
 const centerSectionStyle: React.CSSProperties = {
@@ -169,7 +169,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onBackPress,
   onRightPress,
 }) => {
-  const leftContent = leftIcon ?? <ArrowBackIos size={24} />;
+  const leftContent = leftIcon ?? <ArrowBack size={24} />;
   const rightContent = rightIcon ?? <Scout size={24} />;
 
   return (

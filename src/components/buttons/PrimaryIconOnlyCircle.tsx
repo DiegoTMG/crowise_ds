@@ -105,7 +105,7 @@ const STATE_STYLES: Record<
 //                fill="none" viewBox="0 0 14 14"
 
 function PlusIcon({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Button atom ──────────────────────────────────────────────────────────────

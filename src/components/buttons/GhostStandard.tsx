@@ -30,9 +30,7 @@
 
 import React, { useState } from "react";
 import { Spinner } from "../Spinner";
-
-// ─── Inline SVG path constants ──────────────────────────────────────────────
-const PLUS_PATH_SMALL = "M11.6667 6.66667H6.66667V11.6667H5V6.66667H0V5H5V0H6.66667V5H11.6667V6.66667Z";
+import { Add } from "../../icons";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -118,49 +116,7 @@ const LABEL_STYLE: React.CSSProperties = {
 // ─── Plus icon — three-level Figma nesting ────────────────────────────────────
 
 function PlusIcon({ fill }: { fill: string }) {
-  return (
-    <div
-      style={{
-        display:    "flex",
-        alignItems: "center",
-        padding:    "2px",
-        position:   "relative",
-        flexShrink: 0,
-        width:      "24px",
-        height:     "24px",
-      }}
-    >
-      <div
-        style={{
-          aspectRatio: "28 / 28",
-          height:      "100%",
-          overflow:    "clip",
-          position:    "relative",
-          flexShrink:  0,
-        }}
-      >
-        <div
-          style={{
-            transform:   "translateY(-50%)",
-            position:    "absolute",
-            aspectRatio: "14 / 14",
-            left:        "20.83%",
-            right:       "20.83%",
-            top:         "50%",
-          }}
-        >
-          <svg
-            style={{ position: "absolute", display: "block", width: "100%", height: "100%" }}
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 11.6667 11.6667"
-          >
-            <path d={PLUS_PATH_SMALL} fill={fill} id="Vector" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Button atom ──────────────────────────────────────────────────────────────

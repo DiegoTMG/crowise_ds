@@ -53,43 +53,55 @@ export type SecondarySquareState =
 
 const STATE_STYLES: Record<
   SecondarySquareState,
-  { bg: string; accent: string; shadow: string; cursor: string }
+  { bg: string; borderColor: string; textColor: string; iconColor: string; shadow: string; cursor: string }
 > = {
   default: {
-    bg:     "var(--mono-white-100)",
-    accent: "var(--text-default-enabled-secondary)", // green-60  #14803C
-    shadow: "none",
-    cursor: "pointer",
+    bg:          "var(--fill-default-enabled-tertiary)",     // white
+    borderColor: "var(--border-default-enabled-primary)",    // green-60  #14803C
+    textColor:   "var(--text-default-enabled-secondary)",    // green-60  #14803C
+    iconColor:   "var(--icon-default-enabled-secondary)",    // green-60  #14803C
+    shadow:      "none",
+    cursor:      "pointer",
   },
   hover: {
-    bg:     "var(--mono-white-100)",
-    accent: "var(--text-default-hover-secondary)",   // green-50  #19A04B
-    shadow: "none",
-    cursor: "pointer",
+    bg:          "var(--fill-default-hover-tertiary)",       // white
+    borderColor: "var(--border-default-hover-primary)",      // green-50  #19A04B
+    textColor:   "var(--text-default-hover-secondary)",      // green-50  #19A04B
+    iconColor:   "var(--icon-default-hover-secondary)",      // green-50  #19A04B
+    shadow:      "none",
+    cursor:      "pointer",
   },
   focus: {
-    bg:     "var(--mono-white-100)",
-    accent: "var(--text-default-focus-secondary)",   // green-60  #14803C
-    shadow: "var(--focus-border)",                   // 0 0 0 3px rgba(0,146,228,0.5)
-    cursor: "pointer",
+    bg:          "var(--fill-default-focus-tertiary)",       // white
+    borderColor: "var(--border-default-focus-primary)",      // green-60  #14803C
+    textColor:   "var(--text-default-focus-secondary)",      // green-60  #14803C
+    iconColor:   "var(--icon-default-focus-secondary)",      // green-60  #14803C
+    shadow:      "var(--focus-border)",                      // 0 0 0 3px rgba(0,146,228,0.5)
+    cursor:      "pointer",
   },
   pressed: {
-    bg:     "var(--fill-default-none-secondary)",    // neutral-10 #F3F4F6
-    accent: "var(--text-default-pressed-secondary)", // green-70  #0C612C
-    shadow: "none",
-    cursor: "pointer",
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70  #0C612C
+    textColor:   "var(--text-default-pressed-secondary)",    // green-70  #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70  #0C612C
+    shadow:      "none",
+    cursor:      "pointer",
   },
   disabled: {
-    bg:     "var(--mono-white-100)",
-    accent: "var(--text-default-disabled-secondary)",// neutral-30 #C2C7D0
-    shadow: "none",
-    cursor: "not-allowed",
+    bg:          "var(--fill-default-disabled-tertiary)",    // white
+    borderColor: "var(--border-default-disabled-primary)",   // neutral-30 #C2C7D0
+    textColor:   "var(--text-default-disabled-secondary)",   // neutral-30 #C2C7D0
+    iconColor:   "var(--icon-default-disabled-secondary)",   // neutral-30 #C2C7D0
+    shadow:      "none",
+    cursor:      "not-allowed",
   },
   loading: {
-    bg:     "var(--fill-default-none-secondary)",    // neutral-10 #F3F4F6
-    accent: "var(--text-default-pressed-secondary)", // green-70  #0C612C
-    shadow: "none",
-    cursor: "wait",
+    bg:          "var(--fill-default-pressed-tertiary)",     // neutral-10 #F3F4F6
+    borderColor: "var(--border-default-pressed-primary)",    // green-70  #0C612C
+    textColor:   "var(--text-default-pressed-secondary)",    // green-70  #0C612C
+    iconColor:   "var(--icon-default-pressed-secondary)",    // green-70  #0C612C
+    shadow:      "none",
+    cursor:      "wait",
   },
 };
 
@@ -109,7 +121,7 @@ const LABEL_STYLE: React.CSSProperties = {
 // Matches the three-level nesting seen in all Button-6-112xx frames exactly.
 
 function IconSecondary({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Loading spinner ──────────────────────────────────────────────────────────
@@ -180,25 +192,25 @@ export function SecondarySquareAtom({
         paddingRight:   "16px",
         // ── Colour ──────────────────────────────────────────────────────
         background: s.bg,
-        color:      s.accent,
+        color:      s.textColor,
         // ── Border (via box-shadow so focus ring can stack independently) ─
         // We use outline for the border to avoid box-sizing interference,
         // matching the Figma overlay-div approach.
         border:    "none",
         outline:   "none",
-        boxShadow: `inset 0 0 0 1px ${s.accent}${s.shadow !== "none" ? `, ${s.shadow}` : ""}`,
+        boxShadow: `inset 0 0 0 1px ${s.borderColor}${s.shadow !== "none" ? `, ${s.shadow}` : ""}`,
         // ── Misc ────────────────────────────────────────────────────────
         cursor:     s.cursor,
         ...LABEL_STYLE,
         transition: "background 0.1s, box-shadow 0.1s, color 0.1s",
       }}
     >
-      {isLoading ? <LoadingSpinner /> : <IconSecondary fill={s.accent} />}
+      {isLoading ? <LoadingSpinner /> : <IconSecondary fill={s.iconColor} />}
 
       <p
         style={{
           ...LABEL_STYLE,
-          color:    s.accent,
+          color:    s.textColor,
           position: "relative",
           margin:   0,
         }}

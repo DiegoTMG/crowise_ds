@@ -132,7 +132,7 @@ const LABEL: React.CSSProperties = {
 //         viewBox="0 0 11.6667 11.6667"
 
 function PlusIcon({ fill }: { fill: string }) {
-  return <Add size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <Add size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Chevron icon — exact Figma structure ─────────────────────────────────────
@@ -142,7 +142,7 @@ function PlusIcon({ fill }: { fill: string }) {
 //           viewBox="0 0 12 7.41"
 
 function ChevronIcon({ fill }: { fill: string }) {
-  return <KeyboardArrowDown size={16} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
+  return <KeyboardArrowDown size={24} style={{ color: fill, flexShrink: 0 }} aria-hidden />;
 }
 
 // ─── Split button atom ────────────────────────────────────────────────────────

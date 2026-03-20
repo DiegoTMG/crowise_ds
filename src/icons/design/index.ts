@@ -15,6 +15,7 @@ export { default as AlignVerticalCenter } from "./AlignVerticalCenter";
 export { default as AlignVerticalTop } from "./AlignVerticalTop";
 export { default as Android } from "./Android";
 export { default as Archive } from "./Archive";
+export { default as ArrowBack } from "./ArrowBack";
 export { default as ArrowBackIos } from "./ArrowBackIos";
 export { default as ArrowCircleDown } from "./ArrowCircleDown";
 export { default as ArrowCircleUp } from "./ArrowCircleUp";
