@@ -142,12 +142,14 @@ function LoadingSpinner() {
 export interface SecondarySquareAtomProps {
   forcedState?: SecondarySquareState;
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function SecondarySquareAtom({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: SecondarySquareAtomProps) {
   const [live, setLive] = useState<SecondarySquareState>("default");
@@ -205,7 +207,7 @@ export function SecondarySquareAtom({
         transition: "background 0.1s, box-shadow 0.1s, color 0.1s",
       }}
     >
-      {isLoading ? <LoadingSpinner /> : <IconSecondary fill={s.iconColor} />}
+      {!hideIcon && (isLoading ? <LoadingSpinner /> : <IconSecondary fill={s.iconColor} />)}
 
       <p
         style={{

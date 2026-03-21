@@ -167,12 +167,14 @@ export interface TertiaryStandardRoundAtomProps {
   /** Pin to a specific visual state (for library previews). */
   forcedState?: TertiaryRoundState;
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function TertiaryStandardRoundAtom({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: TertiaryStandardRoundAtomProps) {
   const [liveState, setLiveState] = useState<TertiaryRoundState>("default");
@@ -235,16 +237,18 @@ export function TertiaryStandardRoundAtom({
         }}
       >
         {/* Icon or Spinner */}
-        {isLoading ? (
-          // Figma Button-13-3795: "TEMP LOADING SPINNER" — bg-[#da33ab] rounded-[100px] size-[24px]
-          // → shared Spinner component, size 18, activeColor = --fill-default-enabled-primary
-          <Spinner
-            size={18}
-            trackColor="var(--neutral-20)"
-            activeColor="var(--fill-default-enabled-primary)"
-          />
-        ) : (
-          <PlusIcon fill={tokens.iconColor} />
+        {!hideIcon && (
+          isLoading ? (
+            // Figma Button-13-3795: "TEMP LOADING SPINNER" — bg-[#da33ab] rounded-[100px] size-[24px]
+            // → shared Spinner component, size 18, activeColor = --fill-default-enabled-primary
+            <Spinner
+              size={18}
+              trackColor="var(--neutral-20)"
+              activeColor="var(--fill-default-enabled-primary)"
+            />
+          ) : (
+            <PlusIcon fill={tokens.iconColor} />
+          )
         )}
 
         {/* Label */}

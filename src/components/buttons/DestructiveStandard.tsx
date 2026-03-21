@@ -133,12 +133,14 @@ export interface DestructiveStandardProps {
   /** Pin to a specific visual state (for library / showcase previews). */
   forcedState?: DestructiveStandardState;
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function DestructiveStandard({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: DestructiveStandardProps) {
   const [liveState, setLiveState] = useState<DestructiveStandardState>("default");
@@ -195,14 +197,16 @@ export function DestructiveStandard({
         }}
       >
         {/* Icon or Spinner */}
-        {isLoading ? (
-          <Spinner
-            size={18}
-            trackColor="var(--neutral-20)"
-            activeColor="var(--annotation-mid-pink)"
-          />
-        ) : (
-          <PlusIcon fill={tokens.iconColor} />
+        {!hideIcon && (
+          isLoading ? (
+            <Spinner
+              size={18}
+              trackColor="var(--neutral-20)"
+              activeColor="var(--annotation-mid-pink)"
+            />
+          ) : (
+            <PlusIcon fill={tokens.iconColor} />
+          )
         )}
 
         {/* Label */}

@@ -167,12 +167,14 @@ export interface TertiaryStandardSquareAtomProps {
   /** Pin to a specific visual state (for library / showcase previews). */
   forcedState?: TertiarySquareState;
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function TertiaryStandardSquareAtom({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: TertiaryStandardSquareAtomProps) {
   const [liveState, setLiveState] = useState<TertiarySquareState>("default");
@@ -232,17 +234,19 @@ export function TertiaryStandardSquareAtom({
         }}
       >
         {/* Icon or Spinner */}
-        {isLoading ? (
-          // Figma Button-13-4032: "TEMP LOADING SPINNER"
-          // bg-[#da33ab] rounded-[100px] shrink-0 size-[24px]
-          // → shared Spinner, size 18, activeColor = --fill-default-enabled-primary
-          <Spinner
-            size={18}
-            trackColor="var(--neutral-20)"
-            activeColor="var(--fill-default-enabled-primary)"
-          />
-        ) : (
-          <PlusIcon fill={tokens.iconColor} />
+        {!hideIcon && (
+          isLoading ? (
+            // Figma Button-13-4032: "TEMP LOADING SPINNER"
+            // bg-[#da33ab] rounded-[100px] shrink-0 size-[24px]
+            // → shared Spinner, size 18, activeColor = --fill-default-enabled-primary
+            <Spinner
+              size={18}
+              trackColor="var(--neutral-20)"
+              activeColor="var(--fill-default-enabled-primary)"
+            />
+          ) : (
+            <PlusIcon fill={tokens.iconColor} />
+          )
         )}
 
         {/* Label */}

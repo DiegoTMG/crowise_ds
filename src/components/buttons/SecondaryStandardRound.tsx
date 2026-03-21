@@ -152,12 +152,14 @@ function LoadingSpinner() {
 export interface SecondaryRoundAtomProps {
   forcedState?: SecondaryRoundState;
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function SecondaryRoundAtom({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: SecondaryRoundAtomProps) {
   const [live, setLive] = useState<SecondaryRoundState>("default");
@@ -211,10 +213,12 @@ export function SecondaryRoundAtom({
         transition: "background 0.1s, box-shadow 0.1s, border-color 0.1s, color 0.1s",
       }}
     >
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
-        <IconSecondary fill={s.iconColor} />
+      {!hideIcon && (
+        isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <IconSecondary fill={s.iconColor} />
+        )
       )}
 
       <p

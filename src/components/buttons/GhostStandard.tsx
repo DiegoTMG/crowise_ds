@@ -125,12 +125,14 @@ export interface GhostStandardProps {
   /** Pin to a specific visual state (for library / showcase previews). */
   forcedState?: GhostStandardState;
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function GhostStandard({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: GhostStandardProps) {
   const [liveState, setLiveState] = useState<GhostStandardState>("default");
@@ -187,14 +189,16 @@ export function GhostStandard({
         }}
       >
         {/* Icon or Spinner */}
-        {isLoading ? (
-          <Spinner
-            size={18}
-            trackColor="var(--neutral-20)"
-            activeColor="var(--fill-default-enabled-primary)"
-          />
-        ) : (
-          <PlusIcon fill={tokens.iconColor} />
+        {!hideIcon && (
+          isLoading ? (
+            <Spinner
+              size={18}
+              trackColor="var(--neutral-20)"
+              activeColor="var(--fill-default-enabled-primary)"
+            />
+          ) : (
+            <PlusIcon fill={tokens.iconColor} />
+          )
         )}
 
         {/* Label */}

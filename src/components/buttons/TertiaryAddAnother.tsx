@@ -158,12 +158,14 @@ export interface TertiaryAddAnotherAtomProps {
   forcedState?: TertiaryAddAnotherState;
   /** Button label — defaults to "[Button]" matching Figma. */
   label?:       string;
+  hideIcon?:    boolean;
   onClick?:     () => void;
 }
 
 export function TertiaryAddAnotherAtom({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: TertiaryAddAnotherAtomProps) {
   const [liveState, setLiveState] = useState<TertiaryAddAnotherState>("default");
@@ -224,14 +226,16 @@ export function TertiaryAddAnotherAtom({
         }}
       >
         {/* Icon or Spinner */}
-        {tokens.showSpinner ? (
-          <Spinner
-            size={18}
-            trackColor="var(--neutral-20)"
-            activeColor="var(--fill-default-enabled-primary)"
-          />
-        ) : (
-          <PlusIcon fill={tokens.iconColor} />
+        {!hideIcon && (
+          tokens.showSpinner ? (
+            <Spinner
+              size={18}
+              trackColor="var(--neutral-20)"
+              activeColor="var(--fill-default-enabled-primary)"
+            />
+          ) : (
+            <PlusIcon fill={tokens.iconColor} />
+          )
         )}
 
         {/* Label */}

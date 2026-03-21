@@ -148,12 +148,14 @@ function LoadingSpinner() {
 export interface ButtonAtomProps {
   forcedState?: BtnState;
   label?: string;
+  hideIcon?: boolean;
   onClick?: () => void;
 }
 
 export function ButtonAtom({
   forcedState,
   label = "[Button]",
+  hideIcon = false,
   onClick,
 }: ButtonAtomProps) {
   const [live, setLive] = useState<BtnState>("default");
@@ -204,10 +206,12 @@ export function ButtonAtom({
         transition: "background 0.1s, box-shadow 0.1s",
       }}
     >
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
-        <IconPrimary fill={s.iconColor} />
+      {!hideIcon && (
+        isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <IconPrimary fill={s.iconColor} />
+        )
       )}
 
       <p
