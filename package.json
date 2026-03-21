@@ -1,6 +1,6 @@
 {
   "name": "@cropwiseds/cropwise",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Cropwise Components Library - React components from Figma",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
