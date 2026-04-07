@@ -27,3 +27,14 @@ export { TertiaryVerticalAtom, type TertiaryVerticalAtomProps, type TertiaryVert
 // Ghost & Destructive
 export { GhostStandard, type GhostStandardProps, type GhostStandardState } from "./GhostStandard";
 export { DestructiveStandard, type DestructiveStandardProps, type DestructiveStandardState } from "./DestructiveStandard";
+
+// Unified multi-variant
+export {
+  SimpleButton,
+  type SimpleButtonProps,
+  type SimpleButtonStyle,
+  type SimpleButtonShape,
+  type SimpleButtonProminence,
+  type SimpleButtonSize,
+  type SimpleButtonAlignment,
+} from "./SimpleButton";
