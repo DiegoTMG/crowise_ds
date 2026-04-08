@@ -110,13 +110,42 @@ export const AllStyles: Story = {
 };
 
 // ─── Full-width Alignment ─────────────────────────────────────────────────────
+// Figma node 266:1169 extends full-width support to ALL shape/prominence/size/style
+// combinations. The component handles this via alignment="full-width" universally.
 
 export const FullWidth: Story = {
-  render: () => (
-    <div style={{ width: "400px" }}>
-      <SimpleButton alignment="full-width" text="Full Width Button" />
-    </div>
-  ),
+  render: () => {
+    const proms = ["primary", "secondary", "tertiary", "quaternary"] as const;
+    const shapes = ["round", "square"] as const;
+    const sizes = ["medium", "small"] as const;
+
+    return (
+      <div style={{ display: "flex", flexDirection: "column", gap: "32px", width: "400px" }}>
+        {shapes.map((shape) => (
+          <div key={shape}>
+            <p style={{ fontFamily: "Noto Sans, sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "2px", textTransform: "uppercase", color: "#696F88", margin: "0 0 12px" }}>
+              {shape}
+            </p>
+            {sizes.map((size) => (
+              <div key={size} style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "16px" }}>
+                <p style={{ fontFamily: "Noto Sans, sans-serif", fontSize: "11px", color: "#868CA2", margin: "0 0 4px" }}>{size}</p>
+                {proms.filter(p => !(shape === "low" && p !== "quaternary")).map((prominence) => (
+                  <SimpleButton
+                    key={prominence}
+                    shape={shape}
+                    prominence={prominence}
+                    size={size}
+                    alignment="full-width"
+                    text={prominence.charAt(0).toUpperCase() + prominence.slice(1)}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  },
 };
 
 // ─── Badges ───────────────────────────────────────────────────────────────────
@@ -135,36 +164,42 @@ export const WithBadgeStatus: Story = {
   },
 };
 
-// ─── Matrix — Prominence × Shape ─────────────────────────────────────────────
+// ─── Matrix — Prominence × Shape × Size × Alignment ──────────────────────────
+// Reflects both Figma nodes: 264:860 (Hug) + 266:1169 (Full-width for all)
 
 export const Matrix: Story = {
   render: () => {
     const shapes    = ["round", "square"] as const;
     const proms     = ["primary", "secondary", "tertiary", "quaternary"] as const;
     const sizes     = ["medium", "small"] as const;
+    const alignments = ["hug", "full-width"] as const;
 
     return (
-      <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
         {sizes.map((size) => (
           <div key={size}>
-            <p style={{ fontFamily: "Noto Sans, sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "2px", textTransform: "uppercase", color: "#696F88", marginBottom: "12px" }}>
+            <p style={{ fontFamily: "Noto Sans, sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "2px", textTransform: "uppercase", color: "#696F88", marginBottom: "16px" }}>
               Size — {size}
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {shapes.map((shape) => (
-                <div key={shape} style={{ display: "flex", gap: "12px", alignItems: "center", flexWrap: "wrap" }}>
-                  {proms.map((prominence) => (
-                    <SimpleButton
-                      key={prominence}
-                      shape={shape}
-                      prominence={prominence}
-                      size={size}
-                      text={prominence.charAt(0).toUpperCase() + prominence.slice(1)}
-                    />
-                  ))}
-                </div>
-              ))}
-            </div>
+            {shapes.map((shape) => (
+              <div key={shape} style={{ marginBottom: "20px" }}>
+                <p style={{ fontFamily: "Noto Sans, sans-serif", fontSize: "11px", color: "#868CA2", margin: "0 0 8px" }}>Shape — {shape}</p>
+                {alignments.map((alignment) => (
+                  <div key={alignment} style={{ display: "flex", gap: "12px", alignItems: "center", flexWrap: "wrap", marginBottom: "8px", width: alignment === "full-width" ? "400px" : undefined }}>
+                    {proms.map((prominence) => (
+                      <SimpleButton
+                        key={prominence}
+                        shape={shape}
+                        prominence={prominence}
+                        size={size}
+                        alignment={alignment}
+                        text={prominence.charAt(0).toUpperCase() + prominence.slice(1)}
+                      />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         ))}
       </div>
